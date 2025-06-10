@@ -1,6 +1,6 @@
 import React from "react";
 import ItemListHeader from "./ItemListHeader/ItemListHeader";
-import IconsListHeader from "./IconsListHeader/IconsListHeader";
+import { IconsListHeader } from "./IconsListHeader/IconsListHeader";
 
 function Header() {
   return (
