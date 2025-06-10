@@ -1,4 +1,4 @@
-import prisma from "@/libs/db"; 
+import prisma from "@/lib/db"; 
 
 export async function getAllUsers() {
   return prisma.user.findMany();
