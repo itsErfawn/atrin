@@ -11,22 +11,22 @@ const links = [
 
 function FooterLinks() {
   return (
-    <div className="flex flex-row sm:flex-row w-full md:w-[35%] gap-8 order-2">
+    <div className="footer-links-container">
       {[1, 2].map((_, index) => (
-        <aside key={index} className="w-full sm:w-1/2">
-          <h3 className="text-xl font-bold mb-4">
+        <div key={index} className="footer-link-wrapper">
+          <h3 className="footer-link-wrapper_heading">
             {index === 0 ? "خدمات مشتریان" : "دسترسی سریع"}
           </h3>
           <ul className="space-y-2">
             {links.map(({ href, label }) => (
               <li key={href}>
-                <Link href={href} className="hover:text-gray-400">
+                <Link href={href} className="footer-link">
                   {label}
                 </Link>
               </li>
             ))}
           </ul>
-        </aside>
+        </div>
       ))}
     </div>
   );

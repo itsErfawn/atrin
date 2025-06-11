@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+/* ==========================
+   🔧 SYSTEM SECTION START
+========================== */
+
 :root{
   --font-yekan:"yekanBakh";
 }
@@ -22,5 +27,88 @@ body,*{
   @apply font-yekanBakh
 }
 .container{
-  @apply w-full mx-auto  px-4 wide:w-[1320px]  desktop:w-[1140px] max-laptop:w-[960px] max-tablet:w-[720px] max-mobile:w-full;
+  max-width: min(100%,1328px,1440px,1600px);
+  @apply w-full px-4 my-0 mx-auto;
+
 }
+
+/* ========================
+   ✅ SYSTEM SECTION END
+======================== */
+
+
+
+/* ========================
+  🔧 STORIES SECTION START
+======================== */
+
+.story-slider-container{
+  @apply  p-2 w-10/12 max-wide:w-full
+}
+.story-wrapper{
+  @apply flex flex-col items-center cursor-pointer
+}
+.story-image_wrapper{
+@apply w-24 h-24 max-tablet:w-16 max-tablet:h-16 rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600
+}
+.story-image{
+@apply w-full h-full object-cover rounded-full border-2 border-white
+}
+.story-title{
+@apply text-sm  max-tablet:text-xs mt-1 text-center
+}
+
+/* ========================
+   ✅ STORIES SECTION END
+======================== */
+
+
+
+/* ========================
+   🔧 FOOTER START
+======================== */
+
+footer{
+@apply border-t border-stone-300 py-10 text-right
+}
+.footer-info-container{
+@apply  w-4/12 text-justify px-3 leading-7 text-sm max-laptop:w-1/2 max-mobile:w-full
+}
+.footer-info-wrapper{
+@apply flex max-laptop:flex-wrap justify-between py-4
+}
+.footer-links-container{
+  @apply w-5/12 flex flex-row gap-8  px-3 max-laptop:w-1/2 max-mobile:w-full
+}
+.footer-link-wrapper{
+  @apply  w-full sm:w-1/2;
+}
+.footer-link-wrapper_heading{
+  @apply text-xl font-bold mb-3
+}
+.footer-link{
+  transition: var(--main-transition); 
+  @apply  hover:text-gray-400 text-sm;
+}
+.footer-trust-container{
+ @apply w-3/12 max-mobile:w-full ;
+}
+.footer-app-container{
+  @apply  px-4 py-4 rounded-md mt-10 flex flex-col md:flex-row justify-between bg-[#313131] items-center gap-6 md:gap-0 text-white
+}
+.footer-app_image-wrapper{
+  @apply  flex flex-row gap-2 max-tablet:flex-wrap justify-center items-stretch
+}
+.footer-up-wrapper{
+  @apply flex justify-end items-center py-4
+}
+.footer-up-btn{
+  transition: var(--main-transition);
+  @apply flex items-center gap-1 text-sm hover:text-gray-400 border p-2 rounded-2xl border-gray-300 cursor-pointer
+}
+.footer-CR-wrapper{
+  @apply  flex flex-col md:flex-row justify-between items-center border-t border-gray-300 pt-4 gap-2 md:gap-0
+}
+/* ========================
+   ✅ FOOTER END
+======================== */

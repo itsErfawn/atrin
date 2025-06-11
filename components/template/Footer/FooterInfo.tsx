@@ -2,7 +2,7 @@ import React from "react";
 
 function FooterInfo() {
   return (
-    <aside className="w-full md:w-[35%] order-1 md:order-4">
+    <div className="footer-info-container">
       <h3 className="text-xl font-bold mb-4">فروشگاه آترین</h3>
       <p className="text-[#7A7A7A] text-right">
         به دنیای فروشگاه آترین خوش آمدید، جایی که زیبایی و کیفیت در هم
@@ -10,7 +10,7 @@ function FooterInfo() {
         عزیزان تأسیس شده است. ما در آترین به دنبال آن هستیم که با دقت و علاقه به
         انتخاب محصولات باکیفیت و متنوع، نیازهای روزمره شما را برطرف کنیم.
       </p>
-    </aside>
+    </div>
   );
 }
 

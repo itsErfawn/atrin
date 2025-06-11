@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import yekanBakh from "@/fonts/yekanBakh";
-import Header from "@/components/Template/layout/Header/Header";
-import Footer from "@/components/Template/layout/Footer/Footer";
+import Header from "@/components/template/Header/Header";
+import Footer from "@/components/template/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,12 +16,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa">
-      <body
-        className={`antialiased min-h-screen grid grid-rows-[auto_1fr_auto] ${yekanBakh.variable}`}
-      >
+    <html lang="fa" dir="rtl">
+      <body className={`${yekanBakh.variable}`} >
         <Header />
-        <main className="max-w-[1224px] mx-auto w-full">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>

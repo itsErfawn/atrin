@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Story from "./Story";
 import StoryItemList from "./StoryItemList";
+import Container from "../container/Container";
 
 type StoryItem = {
   image: string;
@@ -27,16 +28,20 @@ function StoryList() {
   const handleClose = () => setOpenStoryIndex(null);
 
   return (
-    <div>
-      <StoryItemList storyItems={storyItems} onItemClick={handleClick} />
-      {openStoryIndex !== null && (
-        <Story
-          images={storyItems.map((s) => s.image)}
-          currentIndex={openStoryIndex}
-          onClose={handleClose}
-        />
-      )}
-    </div>
+    <section>
+      <Container>
+        <div className="flex items-center justify-center py-4">
+          <StoryItemList storyItems={storyItems} onItemClick={handleClick} />
+          {openStoryIndex !== null && (
+            <Story
+              images={storyItems.map((s) => s.image)}
+              currentIndex={openStoryIndex}
+              onClose={handleClose}
+            />
+          )}
+        </div>
+      </Container>
+    </section>
   );
 }
 

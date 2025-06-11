@@ -1,16 +1,16 @@
-import AtrinBlog from "@/components/Module/main/AtrinBlog";
-import Bestproducts from "@/components/Module/main/Bestproducts";
-import CategoryProducts from "@/components/Module/main/CategoryProducts";
-import LatestAtrinProducts from "@/components/Module/main/LatestAtrinProducts";
-import Mostpopularbrands from "@/components/Module/main/Mostpopularbrands";
-import Specialauction from "@/components/Module/main/Specialauction";
-import StoryList from "@/components/Module/main/StoryList";
-import VIPproducts from "@/components/Module/main/VIPproducts";
-import Womenclothing from "@/components/Module/main/Womenclothing";
+import AtrinBlog from "@/components/module/main/AtrinBlog";
+import Bestproducts from "@/components/module/main/Bestproducts";
+import CategoryProducts from "@/components/module/main/CategoryProducts";
+import LatestAtrinProducts from "@/components/module/main/LatestAtrinProducts";
+import Mostpopularbrands from "@/components/module/main/Mostpopularbrands";
+import Specialauction from "@/components/module/main/Specialauction";
+import StoryList from "@/components/module/main/StoryList";
+import VIPproducts from "@/components/module/main/VIPproducts";
+import Womenclothing from "@/components/module/main/Womenclothing";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-4">
+    <>
       <StoryList />
       <Bestproducts />
       <AtrinBlog />
@@ -20,6 +20,6 @@ export default function Home() {
       <CategoryProducts />
       <Womenclothing />
       <Specialauction />
-    </div>
+    </>
   );
 }

@@ -1,7 +1,6 @@
 "use client";
 import React, { useMemo } from "react";
 import Stories from "react-insta-stories";
-import { StoryProps } from "react-insta-stories/dist/interfaces";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -10,7 +9,6 @@ type Props = {
   currentIndex: number;
   onClose: () => void;
 };
-
 const backdropVariants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1 },
@@ -31,8 +29,8 @@ const containerVariants = {
 };
 
 const Story: React.FC<Props> = ({ images, currentIndex, onClose }) => {
-  const stories: StoryProps[] = useMemo(() => {
-    const baseStories: StoryProps[] = images
+  const stories= useMemo(() => {
+    const baseStories = images
       ? images.map((img) => ({
           url: img,
           type: "image",

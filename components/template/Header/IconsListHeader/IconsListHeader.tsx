@@ -1,74 +1,26 @@
-"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { User, Search, Heart, ShoppingCart, Menu } from "lucide-react";
-import { Button } from "@/components/Module/ui/button";
-import { Input } from "@/components/Module/ui/input";
-import { Badge } from "@/components/Module/ui/badge";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-} from "@/components/Module/ui/sheet";
+import { Button } from "@/components/module/ui/button";
+import { Input } from "@/components/module/ui/input";
+import { Badge } from "@/components/module/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from "@/components/Module/ui/dropdown-menu";
-import { usePathname } from "next/navigation";
-import { Linknav } from "@/context/DataListHeaderItem";
+} from "@/components/module/ui/dropdown-menu";
 
 export function IconsListHeader() {
   const cartItems = [
     { name: "آیفون ۱۵ پرو", price: 999, image: "/products/iphone.jpg" },
     { name: "مک‌بوک ایر", price: 1299, image: "/products/macbook.jpg" },
   ];
-  const pathname = usePathname();
   const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0);
 
   return (
     <section className="flex justify-center">
       <div className="container flex h-16 items-center justify-between">
-        <Sheet>
-          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-5 w-5" />
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="right" className="w-[300px] rtl">
-            <div className="mt-10 space-y-6 px-4">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-gray-400" />
-                <Input
-                  placeholder="جستجو..."
-                  className="w-full pl-10 py-2 rounded-md bg-gray-100 focus:ring-2 focus:ring-orange-400 transition"
-                />
-              </div>
-
-              <nav className="flex flex-col gap-3 text-right text-base font-medium">
-                {Linknav.map((item, index) => {
-                  const isActive = pathname === item.Path;
-
-                  return (
-                    <Link
-                      key={index}
-                      href={item.Path}
-                      className={`px-3 py-2 rounded-lg transition-colors duration-200 ${
-                        isActive
-                          ? "bg-gray-100 text-gray-600 font-semibold"
-                          : "hover:bg-gray-100 hover:text-gray-600 text-gray-700"
-                      }`}
-                    >
-                      {item.Name}
-                    </Link>
-                  );
-                })}
-              </nav>
-            </div>
-          </SheetContent>
-        </Sheet>
-
         <div className="hidden md:flex items-center gap-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -121,13 +73,7 @@ export function IconsListHeader() {
 
         <div className="flex items-center p-4">
           <Link href="/" className="flex items-center gap-2 ">
-            <Image
-              src="/logo.png"
-              width={100}
-              height={60}
-              alt="لوگو"
-              className=" hover:scale-105 transition-transform"
-            />
+          <img className="w-24 h-14" src="/logo.png" alt="" />
           </Link>
         </div>
 

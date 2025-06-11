@@ -1,5 +1,4 @@
 "use client";
-
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -13,7 +12,6 @@ function ItemListHeader() {
       <ul className="flex justify-center gap-6 text-sm md:text-base font-medium">
         {Linknav.map((item, index) => {
           const isActive = pathname === item.Path;
-
           return (
             <li key={index}>
               <Link

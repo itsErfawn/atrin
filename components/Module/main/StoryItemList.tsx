@@ -16,54 +16,36 @@ type Props = {
 function StoryItemList({ storyItems, onItemClick }: Props) {
   return (
     <>
-      {/* Desktop View */}
-      <div className="hidden sm:flex gap-4 p-4 bg-white rounded-md">
-        {storyItems.map((item, index) => (
-          <div
-            key={index}
-            onClick={() => onItemClick(index)}
-            className="flex flex-col items-center cursor-pointer"
-          >
-            <div className="w-[6.5rem] h-[6.5rem] rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
-              <img
-                src={item.image}
-                alt={item.name}
-                className="w-full h-full object-cover rounded-full border-2 border-white"
-              />
-            </div>
-            <span className="text-sm mt-1">{item.name}</span>
-          </div>
-        ))}
-      </div>
-
-      {/* Mobile View */}
-      <div className="block sm:hidden p-4 bg-white rounded-md w-full max-w-full overflow-hidden">
-        <Swiper
+    <Swiper
+          className="story-slider-container"
           spaceBetween={12}
-          slidesPerView={3.5}
-          freeMode={true}
-          className="py-2"
+          slidesPerView={4}
           onResize={(swiper) => swiper.update()}
+          breakpoints={{
+            576:{slidesPerView:5.5},
+            992:{slidesPerView:7.5},
+            1100:{slidesPerView:8},
+            1200:{slidesPerView:9}
+          }}
         >
           {storyItems.map((item, index) => (
             <SwiperSlide key={index}>
               <div
                 onClick={() => onItemClick(index)}
-                className="flex flex-col items-center cursor-pointer"
+                className="story-wrapper"
               >
-                <div className="w-16 h-16 rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600">
+                <div className="story-image_wrapper">
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-full h-full object-cover rounded-full border-2 border-white"
+                    className=" story-image "
                   />
                 </div>
-                <span className="text-xs mt-1 text-center">{item.name}</span>
+                <span className="story-title">{item.name}</span>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
     </>
   );
 }
