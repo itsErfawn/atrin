@@ -4,7 +4,6 @@ import CategoryProducts from "@/components/Module/main/CategoryProducts";
 import LatestAtrinProducts from "@/components/Module/main/LatestAtrinProducts";
 import Mostpopularbrands from "@/components/Module/main/Mostpopularbrands";
 import Specialauction from "@/components/Module/main/Specialauction";
-import Story from "@/components/Module/main/Story";
 import StoryList from "@/components/Module/main/StoryList";
 import VIPproducts from "@/components/Module/main/VIPproducts";
 import Womenclothing from "@/components/Module/main/Womenclothing";
