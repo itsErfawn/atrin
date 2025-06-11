@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import { Instagram, Youtube, Send } from "lucide-react";
 
 function Footer() {
@@ -22,29 +23,29 @@ function Footer() {
             <h3 className="text-xl font-bold mb-4">خدمات مشتریان</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-gray-400">
+                <Link href="/" className="hover:text-gray-400">
                   صفحه اصلی
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/my-account" className="hover:text-gray-400">
+                <Link href="/my-account" className="hover:text-gray-400">
                   حساب کاربری من
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/cart" className="hover:text-gray-400">
+                <Link href="/cart" className="hover:text-gray-400">
                   سبد خرید
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="hover:text-gray-400">
+                <Link href="/blog" className="hover:text-gray-400">
                   وبلاگ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/shop" className="hover:text-gray-400">
+                <Link href="/shop" className="hover:text-gray-400">
                   فروشگاه
-                </a>
+                </Link>
               </li>
             </ul>
           </aside>
@@ -53,35 +54,35 @@ function Footer() {
             <h3 className="text-xl font-bold mb-4">دسترسی سریع</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/" className="hover:text-gray-400">
+                <Link href="/" className="hover:text-gray-400">
                   صفحه اصلی
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/my-account" className="hover:text-gray-400">
+                <Link href="/my-account" className="hover:text-gray-400">
                   حساب کاربری من
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/cart" className="hover:text-gray-400">
+                <Link href="/cart" className="hover:text-gray-400">
                   سبد خرید
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="hover:text-gray-400">
+                <Link href="/blog" className="hover:text-gray-400">
                   وبلاگ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/shop" className="hover:text-gray-400">
+                <Link href="/shop" className="hover:text-gray-400">
                   فروشگاه
-                </a>
+                </Link>
               </li>
             </ul>
           </aside>
         </div>
 
-        <aside className="w-full  md:w-[20%] order-3 md:order-1">
+        <aside className="w-full md:w-[20%] order-3 md:order-1">
           <h3 className="text-xl font-bold mb-4">نماد اعتماد</h3>
           <img
             src="https://d1.siteroze.ir/wp-content/uploads/2025/04/per.png"
@@ -91,7 +92,7 @@ function Footer() {
         </aside>
       </div>
 
-      <div className="container mx-auto  px-4 py-4 rounded-md  mt-10 flex flex-col md:flex-row justify-between bg-[#313131] items-center gap-6 md:gap-0 rtl text-white">
+      <div className="container mx-auto px-4 py-4 rounded-md mt-10 flex flex-col md:flex-row justify-between bg-[#313131] items-center gap-6 md:gap-0 rtl text-white">
         <div className="flex flex-wrap justify-center md:justify-start gap-4">
           <div className="flex flex-col gap-2 sm:flex-row">
             <a href="#">
@@ -136,7 +137,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4  flex justify-between items-center pt-4">
+      <div className="container mx-auto px-4 flex justify-between items-center pt-4">
         <div></div>
         <div>
           <button
