@@ -18,11 +18,14 @@
     "@shadcn/ui": "^0.0.4",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "framer-motion": "^12.17.0",
     "lucide-react": "^0.513.0",
     "next": "15.3.3",
     "prisma": "^6.9.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-insta-stories": "^2.8.0",
+    "swiper": "^11.2.8",
     "tailwind-merge": "^3.3.0"
   },
   "devDependencies": {

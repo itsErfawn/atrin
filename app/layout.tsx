@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/layout/Header/Header";
-import Footer from "@/components/layout/Footer/Footer";
-import yekanBakh from "@/fonts/yekanBakh";
 
+import yekanBakh from "@/fonts/yekanBakh";
+import Header from "@/components/Template/layout/Header/Header";
+import Footer from "@/components/Template/layout/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa">
-      <body className={`antialiased min-h-screen grid grid-rows-[auto_1fr_auto] ${yekanBakh.variable}`}>
+      <body
+        className={`antialiased min-h-screen grid grid-rows-[auto_1fr_auto] ${yekanBakh.variable}`}
+      >
         <Header />
         <main className="max-w-[1224px] mx-auto w-full">{children}</main>
         <Footer />
