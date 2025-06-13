@@ -29,7 +29,7 @@ const containerVariants = {
 };
 
 const Story: React.FC<Props> = ({ images, currentIndex, onClose }) => {
-  const stories= useMemo(() => {
+  const stories = useMemo(() => {
     const baseStories = images
       ? images.map((img) => ({
           url: img,
@@ -54,13 +54,14 @@ const Story: React.FC<Props> = ({ images, currentIndex, onClose }) => {
       >
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-white text-4xl font-bold z-50 hover:text-red-500 transition"
+          className="fixed top-4 right-4 text-white text-4xl font-bold z-[100] hover:text-red-500 transition"
           aria-label="Close"
+          style={{ pointerEvents: "auto" }}
         >
           <X className="w-8 h-8" />
         </button>
         <motion.div
-          className="relative w-full max-w-[100vw] h-full max-h-[100vh] sm:max-w-[400px] sm:max-h-[600px] rounded-md overflow-hidden shadow-lg"
+          className="relative w-full  h-full  sm:max-w-[400px] sm:max-h-[600px] rounded-md overflow-hidden shadow-lg"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

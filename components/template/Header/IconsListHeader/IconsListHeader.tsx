@@ -1,15 +1,14 @@
-
 import Image from "next/image";
 import Link from "next/link";
 import { User, Search, Heart, ShoppingCart, Menu } from "lucide-react";
-import { Button } from "@/components/module/ui/button";
-import { Input } from "@/components/module/ui/input";
-import { Badge } from "@/components/module/ui/badge";
+import { Button } from "@/components/Module/ui/button";
+import { Input } from "@/components/Module/ui/input";
+import { Badge } from "@/components/Module/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from "@/components/module/ui/dropdown-menu";
+} from "@/components/Module/ui/dropdown-menu";
 
 export function IconsListHeader() {
   const cartItems = [
@@ -73,7 +72,7 @@ export function IconsListHeader() {
 
         <div className="flex items-center p-4">
           <Link href="/" className="flex items-center gap-2 ">
-          <img className="w-24 h-14" src="/logo.png" alt="" />
+            <img className="w-24 h-14" src="/logo.png" alt="" />
           </Link>
         </div>
 

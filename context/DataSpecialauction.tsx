@@ -1,0 +1,86 @@
+export const Specialauctiondata = [
+  {
+    name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/2321138f25dff33d1fa7d661eb3bf6d2.jpg",
+    isVideo: true,
+    price: "595,500",
+    title: "ست زمستانی",
+    discount: "100,000",
+    time: "20d",
+  },
+  {
+    name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/2321138f25dff33d1fa7d661eb3bf6d2.jpg",
+    isVideo: false,
+    price: "595,500",
+    title: "ست زمستانی",
+    discount: "100,000",
+    time: "20d",
+  },
+  {
+    name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/2321138f25dff33d1fa7d661eb3bf6d2.jpg",
+    isVideo: true,
+    price: "595,500",
+    title: "ست زمستانی",
+    discount: "100,000",
+    time: "2d",
+  },
+  {
+    name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/2321138f25dff33d1fa7d661eb3bf6d2.jpg",
+    isVideo: true,
+    price: "595,500",
+    title: "ست زمستانی",
+    discount: "100,000",
+    time: "20d",
+  },
+  {
+    name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/2321138f25dff33d1fa7d661eb3bf6d2.jpg",
+    isVideo: false,
+    price: "595,500",
+    title: "ست زمستانی",
+    discount: "100,000",
+    time: "20d",
+  },
+  {
+    name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/2321138f25dff33d1fa7d661eb3bf6d2.jpg",
+    isVideo: true,
+    price: "595,500",
+    title: "ست زمستانی",
+    discount: "100,000",
+    time: "2d",
+  },
+  {
+    name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/0e0dd273ad87d3ad6fedb1f0d2517ec2.jpg",
+    isVideo: false,
+    price: "595,500",
+    title: "ست زمستانی",
+    discount: "100,000",
+    time: "10d",
+  },
+  {
+    name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/2321138f25dff33d1fa7d661eb3bf6d2.jpg",
+    isVideo: true,
+    price: "595,500",
+    title: "ست زمستانی",
+    discount: "100,000",
+    time: "15d",
+  },
+  {
+    name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/0e0dd273ad87d3ad6fedb1f0d2517ec2.jpg",
+    isVideo: false,
+    price: "595,500",
+    title: "ست زمستانی",
+    discount: "100,000",
+    time: "8d",
+  },
+];
+
+export const bestvideos = [
+  {
+    bestname:
+      "https://d1.siteroze.ir/wp-content/uploads/2025/04/0e0dd273ad87d3ad6fedb1f0d2517ec2.jpg",
+    bestisVideo: false,
+    bestprice: "595,500",
+    besttitle: "ست زمستانی",
+    bestdiscount: "100,000",
+    besttime: "8d",
+  },
+];

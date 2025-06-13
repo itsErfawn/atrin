@@ -4,7 +4,7 @@ import FooterLinks from "./FooterLinks";
 import FooterTrust from "./FooterTrust";
 import FooterApps from "./FooterApps";
 import FooterBottom from "./FooterBottom";
-import Container from "@/components/module/container/Container";
+import Container from "@/components/Module/container/Container";
 
 function Footer() {
   return (

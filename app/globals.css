@@ -1,114 +1,157 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-
 /* ==========================
    🔧 SYSTEM SECTION START
 ========================== */
 
-:root{
-  --font-yekan:"yekanBakh";
+:root {
+  --font-yekan: "yekanBakh";
 }
-@theme inline{
-  --color-primary:#353535;
-  --color-secondary:#1BD2A3;
-  --font-yekanBakh:var(--font-yekan);
+@theme inline {
+  --color-primary: #353535;
+  --color-secondary: #1bd2a3;
+  --font-yekanBakh: var(--font-yekan);
   --breakpoint-wide: 1400px;
   --breakpoint-desktop: 1200px;
   --breakpoint-laptop: 992px;
   --breakpoint-tablet: 768px;
   --breakpoint-mobile: 576px;
 }
-:root{
-  --main-transition : all 0.2s ease-in-out;
+:root {
+  --main-transition: all 0.2s ease-in-out;
 }
 
-body,*{
-  @apply font-yekanBakh
+body,
+* {
+  @apply font-yekanBakh;
 }
-.container{
-  max-width: min(100%,1328px,1440px,1600px);
+.container {
+  max-width: min(100%, 1328px, 1440px, 1600px);
   @apply w-full px-4 my-0 mx-auto;
+}
 
+.bg {
+  background-color: var(--color-primary);
 }
 
 /* ========================
    ✅ SYSTEM SECTION END
 ======================== */
 
-
-
 /* ========================
   🔧 STORIES SECTION START
 ======================== */
 
-.story-slider-container{
-  @apply  p-2 w-10/12 max-wide:w-full
+.story-slider-container {
+  @apply p-2 w-10/12 max-wide:w-full;
 }
-.story-wrapper{
-  @apply flex flex-col items-center cursor-pointer
+.story-wrapper {
+  @apply flex flex-col items-center cursor-pointer;
 }
-.story-image_wrapper{
-@apply w-24 h-24 max-tablet:w-16 max-tablet:h-16 rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600
+.story-image_wrapper {
+  @apply w-24 h-24 max-tablet:w-16 max-tablet:h-16 rounded-full p-[2px] bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600;
 }
-.story-image{
-@apply w-full h-full object-cover rounded-full border-2 border-white
+.story-image {
+  @apply w-full h-full object-cover rounded-full border-2 border-white;
 }
-.story-title{
-@apply text-sm  max-tablet:text-xs mt-1 text-center
+.story-title {
+  @apply text-sm  max-tablet:text-xs mt-1 text-center;
 }
 
 /* ========================
    ✅ STORIES SECTION END
 ======================== */
 
-
-
 /* ========================
    🔧 FOOTER START
 ======================== */
 
-footer{
-@apply border-t border-stone-300 py-10 text-right
+footer {
+  @apply border-t border-stone-300 py-10 text-right;
 }
-.footer-info-container{
-@apply  w-4/12 text-justify px-3 leading-7 text-sm max-laptop:w-1/2 max-mobile:w-full
+.footer-info-container {
+  @apply w-4/12 text-justify px-3 leading-7 text-sm max-laptop:w-1/2 max-mobile:w-full;
 }
-.footer-info-wrapper{
-@apply flex max-laptop:flex-wrap justify-between py-4
+.footer-info-wrapper {
+  @apply flex max-laptop:flex-wrap justify-between py-4;
 }
-.footer-links-container{
-  @apply w-5/12 flex flex-row gap-8  px-3 max-laptop:w-1/2 max-mobile:w-full
+.footer-links-container {
+  @apply w-5/12 flex flex-row gap-8  px-3 max-laptop:w-1/2 max-mobile:w-full;
 }
-.footer-link-wrapper{
-  @apply  w-full sm:w-1/2;
+.footer-link-wrapper {
+  @apply w-full sm:w-1/2;
 }
-.footer-link-wrapper_heading{
-  @apply text-xl font-bold mb-3
+.footer-link-wrapper_heading {
+  @apply text-xl font-bold mb-3;
 }
-.footer-link{
-  transition: var(--main-transition); 
-  @apply  hover:text-gray-400 text-sm;
-}
-.footer-trust-container{
- @apply w-3/12 max-mobile:w-full ;
-}
-.footer-app-container{
-  @apply  px-4 py-4 rounded-md mt-10 flex flex-col md:flex-row justify-between bg-[#313131] items-center gap-6 md:gap-0 text-white
-}
-.footer-app_image-wrapper{
-  @apply  flex flex-row gap-2 max-tablet:flex-wrap justify-center items-stretch
-}
-.footer-up-wrapper{
-  @apply flex justify-end items-center py-4
-}
-.footer-up-btn{
+.footer-link {
   transition: var(--main-transition);
-  @apply flex items-center gap-1 text-sm hover:text-gray-400 border p-2 rounded-2xl border-gray-300 cursor-pointer
+  @apply hover:text-gray-400 text-sm;
 }
-.footer-CR-wrapper{
-  @apply  flex flex-col md:flex-row justify-between items-center border-t border-gray-300 pt-4 gap-2 md:gap-0
+.footer-trust-container {
+  @apply w-3/12 max-mobile:w-full;
+}
+.footer-app-container {
+  @apply px-4 py-4 rounded-md mt-10 flex flex-col md:flex-row justify-between bg-[#313131] items-center gap-6 md:gap-0 text-white;
+}
+.footer-app_image-wrapper {
+  @apply flex flex-row gap-2 max-tablet:flex-wrap justify-center items-stretch;
+}
+.footer-up-wrapper {
+  @apply flex justify-end items-center py-4;
+}
+.footer-up-btn {
+  transition: var(--main-transition);
+  @apply flex items-center gap-1 text-sm hover:text-gray-400 border p-2 rounded-2xl border-gray-300 cursor-pointer;
+}
+.footer-CR-wrapper {
+  @apply flex flex-col md:flex-row justify-between items-center border-t border-gray-300 pt-4 gap-2 md:gap-0;
 }
 /* ========================
    ✅ FOOTER END
+======================== */
+
+/* ========================
+   ⏳ COUNTDOWN TIMER START
+======================== */
+
+.box-timer {
+  @apply mt-4;
+}
+
+.countdown-timer {
+  @apply flex items-center justify-center text-center gap-1 sm:gap-2;
+}
+
+.number {
+  @apply bg-[#353535] text-white px-1  rounded-md shadow-sm min-w-[35px] sm:min-w-[25px];
+}
+
+.timer-value {
+  @apply text-sm sm:text-sm tracking-wide;
+}
+
+.dot {
+  @apply text-gray-700 text-base sm:text-lg;
+}
+
+.timer-message {
+  @apply mt-2 text-center text-xs text-gray-500;
+}
+
+.timer-message-text {
+  @apply font-medium;
+}
+
+/* ========================
+   ⏳ COUNTDOWN TIMER END
+======================== */
+
+/* ========================
+   ✅ MAIN_PAGE SECTION END
+======================== */
+
+/* ========================
+  🔧 MAIN_PAGE SECTION START
 ======================== */
