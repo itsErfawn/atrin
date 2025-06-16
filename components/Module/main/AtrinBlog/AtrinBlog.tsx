@@ -1,5 +1,4 @@
 import React from "react";
-
 import { bestblogPosts, blogPosts } from "@/context/DatablogPosts";
 import { ArrowLeft } from "lucide-react";
 import Container from "../../container/Container";
@@ -10,8 +9,8 @@ function AtrinBlog() {
     <Container>
       <SectionDivider title="وبلاگ آترین" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-10">
-        <div className="space-y-6">
+      <div className="flex flex-col lg:flex-row gap-6 mt-10">
+        <div className="flex flex-col gap-6 lg:w-1/2">
           {bestblogPosts.map((post) => (
             <div
               key={post.id}
@@ -34,11 +33,11 @@ function AtrinBlog() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="flex flex-wrap gap-4 flex-1">
           {blogPosts.map((post) => (
             <div
               key={post.id}
-              className="bg-white  flex overflow-hidden shadow-sm p-2 rounded-2xl h-36"
+              className="bg-white flex overflow-hidden shadow-sm p-2 rounded-2xl h-36 w-full sm:w-[48%]"
             >
               <img
                 src={post.image}

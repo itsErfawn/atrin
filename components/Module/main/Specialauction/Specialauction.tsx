@@ -6,6 +6,7 @@ import "swiper/css/autoplay";
 import { Autoplay } from "swiper/modules";
 import { CLLogo, Cproductslogo } from "@/context/DataCproductslogo";
 import Container from "../../container/Container";
+
 function Specialauction() {
   return (
     <Container>
@@ -42,20 +43,24 @@ function Specialauction() {
         </Swiper>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center w-full sm:w-250 mx-auto">
+      <div className="flex flex-wrap justify-center gap-6 text-center w-full sm:w-250 mx-auto">
         {CLLogo.map((item, index) => (
-          <div key={index} className="flex  flex-col items-center">
+          <div
+            key={index}
+            className="flex flex-col items-center w-36 sm:w-40 md:w-44 lg:w-48"
+          >
             <img
               src={item.CLimageLogo}
               alt={item.title}
-              className="w-20 h-20 mb-2"
+              className="w-20 h-20 mb-2 object-contain"
             />
             <h2 className="text-sm font-bold">{item.title}</h2>
-            <p className="text-xs text-gray-600">{item.discription}</p>
+            <p className="text-xs text-gray-600 mt-1">{item.discription}</p>
           </div>
         ))}
       </div>
     </Container>
   );
 }
+
 export default Specialauction;

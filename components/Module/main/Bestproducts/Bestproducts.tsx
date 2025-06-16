@@ -9,8 +9,8 @@ function Bestproducts() {
     <Container>
       <SectionDivider title="پرفروش ترین محصولات" />
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
-        <div className="bg p-4 rounded-2xl shadow flex flex-col items-center">
+      <div className="flex flex-col lg:flex-row gap-4">
+        <div className="bg p-4 rounded-2xl shadow flex flex-col items-center lg:w-1/4">
           <div className="flex items-center gap-2 mb-4">
             <h2 className="text-base sm:text-lg font-bold text-white flex items-center gap-1">
               <Crown className="text-yellow-500 animate-bounce w-5 h-5 sm:w-6 sm:h-6" />
@@ -37,11 +37,11 @@ function Bestproducts() {
           ))}
         </div>
 
-        <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="flex-1 flex flex-wrap gap-4">
           {Specialauctiondata.map((item, index) => (
             <div
               key={index}
-              className="p-2 rounded shadow bg-white flex items-center gap-3"
+              className="p-2 rounded shadow bg-white flex items-center gap-3 w-full sm:w-[48%] md:w-[30%]"
             >
               <img
                 src={item.name}
