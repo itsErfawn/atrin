@@ -1,7 +1,7 @@
 "use server"
 
 import { PrismaClient } from "@prisma/client";
-// it's just a sample .don't use it now
+// یه نمونه تستیه برای اینکه ببینم کجاهاش مشکل داره . فلن داخل صفحات ازش استفاده نکن
 
 const prisma = new PrismaClient();
 export async function GetProductsByCategory(slug:string) {
