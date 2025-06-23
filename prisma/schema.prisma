@@ -6,9 +6,168 @@ datasource db {
   provider = "sqlite"
   url      = "file:../libs/database.db"
 }
+model Product {
+  id             Int                   @id @default(autoincrement())
+  title          String
+  description    String
+  price          Int
+  discount       Int?
+  rating         Int?
+  slug           String
+  thumbnail      String
+  date_added     DateTime              @default(now())
+  
+  images         ProductImage[]
+  comments       Comment[]
+  filters        ProductFilter[]
+  storyProducts  StoryProduct[]
+  meta_data      Product_meta[]
+  wishlists      WishList[]
+
+  productCategories Product_to_category[]
+}
+
+model Product_meta{
+  id        Int     @id @default(autoincrement())
+  name      String
+  value    String
+  product_id Int
+  product  Product @relation(fields: [product_id], references: [id])
+}
+model ProductImage {
+  id        Int     @id @default(autoincrement())
+  imageUrl  String
+  product   Product @relation(fields: [product_id], references: [id])
+  product_id Int
+}
+model Product_to_category {
+  id          Int      @id @default(autoincrement())
+  product     Product  @relation(fields: [product_id], references: [id])
+  product_id  Int
+  category    Category @relation(fields: [category_id], references: [id])
+  category_id Int
+  @@unique([product_id, category_id]) 
+}
+model Category {
+  id           Int           @id @default(autoincrement())
+  name         String
+  description  String
+  slug         String
+  parent_id    Int?
+  parent       Category?     @relation("CategoryHierarchy", fields: [parent_id], references: [id])
+  children     Category[]    @relation("CategoryHierarchy")
+  meta_data    Category_meta[]
+
+  productCategories Product_to_category[]
+}
+
+model Category_meta{
+  id        Int     @id @default(autoincrement())
+  name      String
+  value    String
+  category_id Int
+  category   Category @relation(fields: [category_id], references: [id])
+}
+model Comment {
+  id          Int      @id @default(autoincrement())
+  name        String
+  email       String
+  message     String
+  createdAt   DateTime @default(now())
+  adminReply  String?
+  product     Product  @relation(fields: [product_id], references: [id])
+  product_id   Int
+  user User? @relation("UserComments", fields: [user_id], references: [id])
+  user_id      Int?
+}
+
+model WishList {
+  id        Int     @id @default(autoincrement())
+  user      User    @relation(fields: [user_id], references: [id])
+  user_id    Int
+  product_id Int
+  product   Product @relation(fields: [product_id], references: [id])
+}
 
 model User {
-  id    Int    @id @default(autoincrement())
-  name  String
-  email String @unique
+  id         Int        @id @default(autoincrement())
+  name       String
+  email      String
+  profileImg String
+  number    String
+  WishList  WishList[]
+  comments Comment[] @relation("UserComments")
+  stories    Story[]
+}
+
+model Blog {
+  id         Int            @id @default(autoincrement())
+  title      String
+  content    String
+  role       String
+  createdAt  DateTime       @default(now())
+  imageUrl   String
+  comments   BlogComment[]
+  relatedTo  RelatedBlog[]  @relation("RelatedTo")
+  relatedFrom RelatedBlog[] @relation("RelatedFrom")
+}
+
+model BlogComment {
+  id        Int     @id @default(autoincrement())
+  name      String
+  message   String
+  createdAt DateTime @default(now())
+  blog      Blog    @relation(fields: [blog_id], references: [id])
+  blog_id    Int
+}
+
+model RelatedBlog {
+  id              Int   @id @default(autoincrement())
+  blog            Blog  @relation("RelatedTo", fields: [blog_id], references: [id])
+  blog_id          Int
+  relatedBlog     Blog  @relation("RelatedFrom", fields: [relatedBlog_id], references: [id])
+  relatedBlog_id   Int
+}
+
+model Filter {
+  id       Int             @id @default(autoincrement())
+  name     String
+  type     String
+  options  FilterOption[]
+}
+
+model FilterOption {
+  id       Int            @id @default(autoincrement())
+  value    String
+  filter   Filter         @relation(fields: [filter_id], references: [id])
+  filter_id Int
+  products ProductFilter[]
+}
+
+model ProductFilter {
+  id              Int           @id @default(autoincrement())
+  product         Product       @relation(fields: [product_id], references: [id])
+  product_id       Int
+  filterOption    FilterOption  @relation(fields: [filterOption_id], references: [id])
+  filterOption_id  Int
+}
+
+model Story {
+  id           Int           @id @default(autoincrement())
+  profileImage String
+  viewCount    Int
+  description  String
+  callMe       String
+  unknownImage String
+  user         User          @relation(fields: [user_id], references: [id])
+  user_id       Int
+  products     StoryProduct[]
+}
+
+model StoryProduct {
+  id        Int     @id @default(autoincrement())
+  story     Story   @relation(fields: [story_id], references: [id])
+  story_id   Int
+  product   Product @relation(fields: [product_id], references: [id])
+  product_id Int
 }

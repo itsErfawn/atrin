@@ -1,0 +1,1878 @@
+[
+    {
+        "id": 229,
+        "date": "2025-04-18T12:05:28",
+        "date_gmt": "2025-04-18T08:35:28",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=229"
+        },
+        "modified": "2025-06-06T11:30:49",
+        "modified_gmt": "2025-06-06T08:00:49",
+        "slug": "%d8%b3%d8%aa-%d9%88%db%8c%da%98%d9%87",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%b3%d8%aa-%d9%88%db%8c%da%98%d9%87/",
+        "title": {
+            "rendered": "ست ویژه"
+        },
+        "content": {
+            "rendered": "<p>این ست ویژه، ترکیبی از امکانات و عناصر منحصر‌به‌فرد است که ترکیبی بی‌نظیر برای کاربران خاص و خاص‌پسند فراهم می‌کند. طراحی مدرن و کیفیت بالا، این ست را به گزینه‌ای عالی برای هدیه، استفاده روزمره یا افزودن لمسی لوکس به زندگی شما تبدیل می‌کند.<br />\nدر این مجموعه، هر جزئیات با دقت و هنر طراحی شده تا بهترین تجربه را برای شما رقم بزند. مناسب برای کسانی که به جزئیات اهمیت می‌دهند و به دنبال محصولاتی خاص و متفاوت هستند.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 168,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-229",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-zara",
+            "7": "product_cat-17",
+            "9": "first",
+            "10": "instock",
+            "11": "shipping-taxable",
+            "12": "purchasable",
+            "13": "product-type-variable"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/229",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=229"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/168"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=229"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=229"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=229"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 204,
+        "date": "2025-04-17T21:54:34",
+        "date_gmt": "2025-04-17T18:24:34",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=204"
+        },
+        "modified": "2025-05-09T19:25:43",
+        "modified_gmt": "2025-05-09T15:55:43",
+        "slug": "%d8%b4%d9%84%d9%88%d8%a7%d8%b1-2",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%b4%d9%84%d9%88%d8%a7%d8%b1-2/",
+        "title": {
+            "rendered": "شلوار"
+        },
+        "content": {
+            "rendered": "<p>این شلوار با طراحی خاص و استایلی بی‌نظیر، ترکیبی از راحتی و زیبایی را برای شما به ارمغان می‌آورد. ساخته شده از بهترین جنس پارچه‌های اسپاندا، که حس نرمی و تنفس را در طول روز تضمین می‌کند. دوخت‌های مقاوم و دقیق این محصول، استحکام و دوام طولانی‌مدت را در کنار ظرافت در طراحی مدرن ارائه می‌دهد.</p>\n<p>طراحان ما با بهره‌گیری از طرح‌های خلاقانه و مدرن، این شلوار را با چاپ‌های منحصر به فردی تزئین کرده‌اند که شامل الگوهای هندسی و نقوش معاصر است، تا شما در هر موقعیتی بدرخشید. جزئیات مانند زیپ‌های مخفی و جیب‌های جادار، کارایی و استایل را در کنار هم قرار داده‌اند.</p>\n<p>برای راحتی بیشتر، قسمت کمربند با بند قابل تنظیم طراحی شده است، که فیت‌ کاملی را برای تمامی سایزها فراهم می‌کند. این محصول بهترین همراه برای استایل روزانه، فعالیت‌های ورزشی یا حتی مراسم‌های غیررسمی است</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 166,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            15,
+            19,
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-204",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-28",
+            "7": "product_cat-15",
+            "8": "product_cat-19",
+            "9": "product_cat-17",
+            "11": "",
+            "12": "instock",
+            "13": "shipping-taxable",
+            "14": "purchasable",
+            "15": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/204",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=204"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/166"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=204"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=204"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=204"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 201,
+        "date": "2025-04-17T21:49:22",
+        "date_gmt": "2025-04-17T18:19:22",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=201"
+        },
+        "modified": "2025-05-09T19:26:56",
+        "modified_gmt": "2025-05-09T15:56:56",
+        "slug": "%d8%b3%d8%aa-%d8%aa%db%8c%d8%b4%d8%b1%d8%aa-%d8%b4%d9%84%d9%88%d8%a7%d8%b1%da%a9",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%b3%d8%aa-%d8%aa%db%8c%d8%b4%d8%b1%d8%aa-%d8%b4%d9%84%d9%88%d8%a7%d8%b1%da%a9/",
+        "title": {
+            "rendered": "ست تیشرت شلوارک"
+        },
+        "content": {
+            "rendered": "<p>این ست فوق‌العاده، ترکیبی از طراحی جوان‌پسند و راحتی بی‌نظیر است که برای بچه‌ها و نوجوانان ساخته شده است. تیشرت نرم و لطیف از جنس نخ‌های باکیفیت، با دوخت‌های مقاوم و ظریف، حس راحتی و لطافت را در طول روز فراهم می‌کند. طرح چاپی جذاب و خلاقانه، شامل الگوهای هندسی مدرن یا شخصیت‌های فان، استایلی متفاوت و خاص به شما می‌دهد.</p>\n<p>شلوارک با طراحی آزاد و کش‌دار در قسمت کمربند، نیازهای فعالیت‌های روزمره و بازی را برآورده می‌کند و امکان حرکت آزاد را می‌دهد. جنس پارچه‌ی این ست ضد آلرژی و تنفس است، بنابراین پوست حساس را آرام می‌کند و مناسب فصول گرم و معتدل است.</p>\n<p>این ست چند منظوره، انتخابی عالی برای روزهای تابستان، سفر، پیاده‌روی یا حتی مراسم‌های دوستانه است. استایل راحت با حس نشاط و شادابی، همیشه در دسترس شماست!</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 169,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-201",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-26",
+            "7": "product_cat-17",
+            "9": "",
+            "10": "instock",
+            "11": "sale",
+            "12": "shipping-taxable",
+            "13": "purchasable",
+            "14": "product-type-variable"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/201",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=201"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/169"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=201"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=201"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=201"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 194,
+        "date": "2025-04-17T21:43:07",
+        "date_gmt": "2025-04-17T18:13:07",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=194"
+        },
+        "modified": "2025-05-09T19:27:54",
+        "modified_gmt": "2025-05-09T15:57:54",
+        "slug": "%d8%a8%d8%a7%d9%81%d8%aa",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%a8%d8%a7%d9%81%d8%aa/",
+        "title": {
+            "rendered": "بافت"
+        },
+        "content": {
+            "rendered": "<p>این ست بافت با بهترین تکنولوژی‌های روز، از نخ‌های باکیفیت و طبیعی ساخته شده است که نرمی و گرمای دلپذیر را به پوست شما هدیه می‌دهد. بافت ظریف و منسجم آن، در کنار طراحی مدرن، استایلی خاص و شیک ایجاد می‌کند که در عین حال بسیار راحت است، مناسب برای فعالیت‌های روزمره و روزهای خنک‌تر.</p>\n<p>ساختار بافت این محصول به گونه‌ای است که به خوبی گرما را نگه می‌دارد و در عین حال تنفس‌پذیر است، تا هیچ احساس ناراحتی نکنید. تکنیک‌های دوخت و پرس‌های حرفه‌ای در مرحله تولید، دوام بالا و ظاهری صاف و بدون چروک را تضمین می‌کند. طرح‌های چاپی خاص و متنوع روی بافت، جذابیت آن را بیشتر کرده و این ست را به گزینه‌ای بی‌نظیر برای استایل روزمره شما تبدیل می‌نماید.</p>\n<p>موادی که در بافت استفاده شده، ضد حساسیت و سازگار با پوست‌های حساس است، پس می‌توانید با اعتماد کامل در هر فصلی از آن استفاده کنید.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 80,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            15,
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-194",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-29",
+            "7": "product_cat-15",
+            "8": "product_cat-17",
+            "10": "last",
+            "11": "instock",
+            "12": "shipping-taxable",
+            "13": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/194",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=194"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/80"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=194"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=194"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=194"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 193,
+        "date": "2025-04-17T21:38:09",
+        "date_gmt": "2025-04-17T18:08:09",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=193"
+        },
+        "modified": "2025-05-09T19:29:03",
+        "modified_gmt": "2025-05-09T15:59:03",
+        "slug": "%d8%a8%d9%84%d9%88%d8%b2-%d8%b4%d9%84%d9%88%d8%a7%d8%b1-%d8%b2%d9%86%d8%a7%d9%86%d9%87",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%a8%d9%84%d9%88%d8%b2-%d8%b4%d9%84%d9%88%d8%a7%d8%b1-%d8%b2%d9%86%d8%a7%d9%86%d9%87/",
+        "title": {
+            "rendered": "بلوز شلوار زنانه"
+        },
+        "content": {
+            "rendered": "<p>ست بلوز و شلوار، ترکیبی از استایل شیک و راحتی بی‌نظیر است که مناسب خانم‌های مدرن و علاقمند به ظاهر élégant است. بلوز با برش آزاد و یقه‌های دلپذیر، از جنس نخ و پلی‌استر با بافت نرم ساخته شده است که حس آرامش و لطافت را در هر فصل فراهم می‌کند. طرح‌های چاپی مینیمال و مدرن، به همراه جزئیات ظریف در دوخت، استایل خاص و جوان‌پسندی به شما می‌دهد.</p>\n<p>شلوار با طراحی فیت‌ و کمربند قابل تنظیم، استحکام و راحتی را در کنار هم دارد، و امکان حرکت آزاد و احساس راحتی کامل را برای شما فراهم می‌کند. پارچه‌های این محصول از مواد ضد حساسیت و تنفس‌پذیر است، پس پوست حساس هم در امنیت است.</p>\n<p>این ست چندکاره، برای استفاده روزمره، موقعیت‌های غیررسمی، و حتی فضاهای کاری مناسب است، و استایلی زنانه و در عین حال اسپرت و راحت را در کنار هم دارد.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 81,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            15,
+            19,
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-193",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-dior",
+            "7": "product_cat-15",
+            "8": "product_cat-19",
+            "9": "product_cat-17",
+            "11": "first",
+            "12": "outofstock",
+            "13": "shipping-taxable",
+            "14": "purchasable",
+            "15": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/193",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=193"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/81"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=193"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=193"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=193"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 192,
+        "date": "2025-04-17T21:35:38",
+        "date_gmt": "2025-04-17T18:05:38",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=192"
+        },
+        "modified": "2025-05-09T19:30:08",
+        "modified_gmt": "2025-05-09T16:00:08",
+        "slug": "%da%86%d9%86%d8%af-%d8%aa%db%8c%da%a9%d9%87",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%da%86%d9%86%d8%af-%d8%aa%db%8c%da%a9%d9%87/",
+        "title": {
+            "rendered": "چند تیکه بچه گانه"
+        },
+        "content": {
+            "rendered": "<p>مجموعه چندتکه بچه‌گانه، شامل تیشرت‌های متنوع، شلوارک، شلوار و ژاکت‌های نرم و راحت است که با طراحی‌های بازیگوش و رنگ‌های جذاب، ایده‌آل برای کودکان شاد و فعال است. جنس پارچه‌های سبک و تنفس‌پذیر، حس راحتی بی‌نظیر در طول روز را فراهم می‌کند و به پوست حساس کودکان آسیبی نمی‌رساند.</p>\n<p>طرح‌های چاپی خشک و مقاوم، این مجموعه را هم در فضاهای داخلی و هم در فضای باز بسیار مناسب می‌سازد. قسمت‌های کش‌دار و دوخت‌های مقاوم، برای تحمل بازی و تحرک زیاد طراحی شده‌اند و دوام بالایی دارند. رنگ‌های زنده و طرح‌های هنری خاص، استایل شادی و نشاط بچه‌ها را تکمیل می‌کند و هر کدام امکانات زیادی برای ست‌سازی و تنوع در استایل روزمره دارند.</p>\n<p>این مجموعه چندتکه، گزینه‌ای کامل و کاربردی برای مادران و خانواده‌های پرمشغله است که می‌خواهند بچه‌هایشان استایل خوب و راحتی در طول روز داشته باشند.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 78,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            15,
+            16
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-192",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-24",
+            "7": "product_cat-15",
+            "8": "product_cat-16",
+            "10": "",
+            "11": "instock",
+            "12": "sale",
+            "13": "shipping-taxable",
+            "14": "purchasable",
+            "15": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/192",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=192"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/78"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=192"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=192"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=192"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 187,
+        "date": "2025-04-17T21:31:38",
+        "date_gmt": "2025-04-17T18:01:38",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=187"
+        },
+        "modified": "2025-06-08T10:58:45",
+        "modified_gmt": "2025-06-08T07:28:45",
+        "slug": "%d8%b3%d8%aa-%d8%a8%d9%84%d9%88%d8%b2-%d8%b4%d9%84%d9%88%d8%a7%d8%b1",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%b3%d8%aa-%d8%a8%d9%84%d9%88%d8%b2-%d8%b4%d9%84%d9%88%d8%a7%d8%b1/",
+        "title": {
+            "rendered": "ست بلوز شلوار"
+        },
+        "content": {
+            "rendered": "<p>این ست بلوز و شلوار، جذاب، راحت و چندمنظوره است، طراحی شده برای کودکان فعال و پرانرژی. بلوز با برش آزاد، دوخت‌های مقاوم و جزئیات دلپذیر، با جنس نرم و تنفس‌پذیر از پنبه‌های باکیفیت ساخته شده است تا حس راحتی کامل در طول روز داشته باشند. طرح چاپ‌آمیزی‌های فانتزی، شخصیت‌های کارتونی یا الگوهای هندسی، استایل جالب و بانشاطی به بچه‌ها می‌دهد.</p>\n<p>شلوار با برش اصلاح شده و کش‌دار در قسمت کمر، امکان حرکت آزاد و راحتی بی‌نظیر را فراهم می‌کند. جنس پارچه طوری است که ضد حساسیت و مقاوم در برابر پشت‌پریدن‌ها و بازی‌های فعال است. این ست در رنگ‌های زنده و متنوع عرضه می‌شود، که می‌تواند به راحتی با سایر لباس‌های بچه‌گانه ست شود.</p>\n<p>طراحی فیت و ارگونومیک آن، مناسب برای روزهای مدرسه، بازی، پیاده‌روی یا سفرهای خانوادگی است و استایلی اسپرت، مدرن و شاداب را برای کودکانتان به ارمغان می‌آورد.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 167,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            16
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-187",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-zara",
+            "7": "product_cat-16",
+            "9": "",
+            "10": "instock",
+            "11": "sale",
+            "12": "shipping-taxable",
+            "13": "purchasable",
+            "14": "product-type-variable"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/187",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=187"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/167"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=187"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=187"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=187"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 178,
+        "date": "2025-04-17T21:23:42",
+        "date_gmt": "2025-04-17T17:53:42",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=178"
+        },
+        "modified": "2025-05-09T19:33:29",
+        "modified_gmt": "2025-05-09T16:03:29",
+        "slug": "%d8%b2%d9%85%d8%b3%d8%aa%d8%a7%d9%86%db%8c",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%b2%d9%85%d8%b3%d8%aa%d8%a7%d9%86%db%8c/",
+        "title": {
+            "rendered": "ست زمستانی"
+        },
+        "content": {
+            "rendered": "<p>این ست زمستانی، ترکیبی از گرما، راحتی و استایل است که مخصوص روزهای سرد و برفی بچه‌ها طراحی شده است. شامل یک سوئیشرت نرم و بغل‌دار، با الگوهای فانتزی و رنگ‌های جذاب، و شلوار گرم و مقاوم است که به خوبی بدن کودکان را در برابر سرما محافظت می‌کند. جنس تمامی قسمت‌ها از پارچه‌های ضد حساسیت و با خاصیت گرمایشی بالا، ساخته شده است تا در طول روزهای سرد، احساس راحتی و امنیت کامل داشته باشند.</p>\n<p>بلندای قسمت‌های سرآستین و کمر، کشسان و قابل تنظیم است که در برابر حرکت و بازی‌های پر انرژی مقاوم است و از ورود سرما جلوگیری می‌کند. رنگ‌های متنوع و طرح‌های جالب، این ست را به یکی از گزینه‌های محبوب برای فصل زمستان تبدیل کرده است. مناسب برای بیرون رفتن، سفرهای برفی، بازی در حیاط و مراکز تفریحی، این ست شیک و گرم، یک انتخاب عالی برای خانواده‌های دغدغه‌مند نسبت به راحتی و شیک بودن کودکان است</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 45,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-178",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-29",
+            "7": "product_cat-17",
+            "9": "last",
+            "10": "instock",
+            "11": "sale",
+            "12": "shipping-taxable",
+            "13": "purchasable",
+            "14": "product-type-variable"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/178",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=178"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/45"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=178"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=178"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=178"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 93,
+        "date": "2025-04-16T13:18:01",
+        "date_gmt": "2025-04-16T09:48:01",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=93"
+        },
+        "modified": "2025-06-08T10:58:07",
+        "modified_gmt": "2025-06-08T07:28:07",
+        "slug": "%d8%aa%db%8c%d8%b4%d8%b1%d8%aa-%d8%b4%d9%84%d9%88%d8%a7%d8%b1%da%a9",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%aa%db%8c%d8%b4%d8%b1%d8%aa-%d8%b4%d9%84%d9%88%d8%a7%d8%b1%da%a9/",
+        "title": {
+            "rendered": "تیشرت شلوارک"
+        },
+        "content": {
+            "rendered": "<p>ست تابستانی شاد و جذاب، ترکیبی از راحتی و جذابیت است که طراحی شده تا کودکان در گرما و فصل گرم احساس خنکی و آزادی کنند. تیشرت با برش آزاد و نخ‌های تنفس‌پذیر، طرح‌های عروسکی، شخصیت‌های کارتونی یا الگوهای هنری رنگارنگ دارد که حواس بچه‌ها را پرت انرژی مثبت می‌کند. جنس پارچه این ست کاملاً ضدحساسیت و با خاصیت جذب رطوبت است، تا در روزهای گرم، احساس خنکی و راحتی بی‌نظیری داشته باشند.</p>\n<p>شلوارک با برش آزاد، کشسان و مقاوم در برابر سایش و کشیدگی است، تا کودکان بدون محدودیت بازی کنند و لذت ببرند. رنگ‌های تابستانی زنده و طراحی‌های سرگرم‌کننده، این ست را به گزینه‌ای ایده‌آل برای سفر، پیک‌نیک، بیرون‌نشینی یا بازی در حیاط می‌کند.</p>\n<p>در عین حال، ساختار این مجموعه به گونه‌ای است که علاوه بر راحتی، استایل جذاب و جوان‌پسندی دارد، و می‌تواند بهترین همراه در روزهای گرم تابستان باشد.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 24,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            16,
+            22
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-93",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-zara",
+            "7": "product_cat-16",
+            "8": "product_cat-22",
+            "10": "first",
+            "11": "instock",
+            "12": "sale",
+            "13": "shipping-taxable",
+            "14": "purchasable",
+            "15": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/93",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=93"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/24"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=93"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=93"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=93"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 92,
+        "date": "2025-04-16T13:16:08",
+        "date_gmt": "2025-04-16T09:46:08",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=92"
+        },
+        "modified": "2025-05-09T19:35:41",
+        "modified_gmt": "2025-05-09T16:05:41",
+        "slug": "%d8%a8%da%86%d9%87-%da%af%d8%a7%d9%86%d9%87",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%a8%da%86%d9%87-%da%af%d8%a7%d9%86%d9%87/",
+        "title": {
+            "rendered": "لباس راحتی بچه گانه"
+        },
+        "content": {
+            "rendered": "<p>این مجموعه لباس راحتی، مخصوص لحظات آرام و خانگی کودکان طراحی شده است. با پارچه‌های نرم و در عین حال مستحکم که حس لطافت را به پوست حساس بچه‌ها منتقل می‌کند، ساخته شده است. طراحی ساده و در عین حال مدرن، با برش‌هایی آزاد و راحت، این لباس‌ها اجازه می‌دهند بچه‌ها در طول روز بدون محدودیت حرکت کرده و از بازی و استراحت لذت ببرند.</p>\n<p>جزئیات ظریف و دوخت مقاوم، تضمین کننده دوام بالا و مقاومت در برابر تعداد زیادی شستشو است. رنگ‌های ملایم و طرح‌های دوستانه، احساس آرامش و خوشبختی را در کودکانتان تقویت می‌کند و به راحتی با لباس‌های دیگر ست می‌شود. این لباس‌های آروم، مناسب برای لحظات بازی داخل خانه، خوابیدن، یا استراحت‌های کوتاه و بلند است و همواره استایل راحت و بدون زحمت را برای فرزند دلبندتان فراهم می‌کند</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 76,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            16
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-92",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-dior",
+            "7": "product_cat-16",
+            "9": "",
+            "10": "instock",
+            "11": "shipping-taxable",
+            "12": "purchasable",
+            "13": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/92",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=92"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/76"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=92"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=92"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=92"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 91,
+        "date": "2025-04-16T13:04:16",
+        "date_gmt": "2025-04-16T09:34:16",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=91"
+        },
+        "modified": "2025-05-09T19:37:35",
+        "modified_gmt": "2025-05-09T16:07:35",
+        "slug": "%d8%a8%d9%84%d9%88%d8%b2-%d8%af%d8%b1%d8%b3",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%a8%d9%84%d9%88%d8%b2-%d8%af%d8%b1%d8%b3/",
+        "title": {
+            "rendered": "بلوز درس"
+        },
+        "content": {
+            "rendered": "<p>این بلوز یا تی‌شرت طراحی شده است تا همراه همیشگی کودکان در محیط‌های آموزشی باشد. با برش‌های راحت و پارچه‌های نرم و باکیفیت، این لباس‌ها حس آرامش و آزادی در طول کلاس و فعالیت‌های روزانه را به بچه‌ها هدیه می‌دهد. طرح‌های ساده و در عین حال زیبا، با رنگ‌های ملایم و جذاب، بر زیبایی استایل بچه‌گانه افزوده و اعتماد به نفس او را بالا می‌برد.</p>\n<p>تکنولوژی پارچه مقاوم در برابر شستشوهای مکرر و دوخت محکم، تضمین کننده طول عمر بالا و حفظ رنگ و فرم لباس است. این بلوز یا تی‌شرت برای راحت‌تر بودن کودکان در حین درس، بازی و فعالیت‌های خارج از منزل طراحی شده است، و به راحتی قابلیت ست‌سازی با شلوار، جین یا دامن‌های مختلف را دارد.</p>\n<p>در هر محیط آموزشی و غیررسمی، این لباس، بهترین همراه برای کودکانتان است که هم راحتی و هم استایل مناسب را برای آنها فراهم می‌کند.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 77,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-91",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-24",
+            "7": "product_cat-17",
+            "9": "",
+            "10": "instock",
+            "11": "shipping-taxable",
+            "12": "purchasable",
+            "13": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/91",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=91"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/77"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=91"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=91"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=91"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 90,
+        "date": "2025-04-16T13:02:25",
+        "date_gmt": "2025-04-16T09:32:25",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=90"
+        },
+        "modified": "2025-05-09T19:37:53",
+        "modified_gmt": "2025-05-09T16:07:53",
+        "slug": "%da%a9%d8%b1%d8%a7%d9%be",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%da%a9%d8%b1%d8%a7%d9%be/",
+        "title": {
+            "rendered": "کراپ"
+        },
+        "content": {
+            "rendered": "<p>این بلوز یا تی‌شرت طراحی شده است تا همراه همیشگی کودکان در محیط‌های آموزشی باشد. با برش‌های راحت و پارچه‌های نرم و باکیفیت، این لباس‌ها حس آرامش و آزادی در طول کلاس و فعالیت‌های روزانه را به بچه‌ها هدیه می‌دهد. طرح‌های ساده و در عین حال زیبا، با رنگ‌های ملایم و جذاب، بر زیبایی استایل بچه‌گانه افزوده و اعتماد به نفس او را بالا می‌برد.</p>\n<p>تکنولوژی پارچه مقاوم در برابر شستشوهای مکرر و دوخت محکم، تضمین کننده طول عمر بالا و حفظ رنگ و فرم لباس است. این بلوز یا تی‌شرت برای راحت‌تر بودن کودکان در حین درس، بازی و فعالیت‌های خارج از منزل طراحی شده است، و به راحتی قابلیت ست‌سازی با شلوار، جین یا دامن‌های مختلف را دارد.</p>\n<p>در هر محیط آموزشی و غیررسمی، این لباس، بهترین همراه برای کودکانتان است که هم راحتی و هم استایل مناسب را برای آنها فراهم می‌کند.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 77,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-90",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-26",
+            "7": "product_cat-17",
+            "9": "last",
+            "10": "instock",
+            "11": "shipping-taxable",
+            "12": "purchasable",
+            "13": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/90",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=90"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/77"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=90"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=90"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=90"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 74,
+        "date": "2025-04-16T12:59:17",
+        "date_gmt": "2025-04-16T09:29:17",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=74"
+        },
+        "modified": "2025-06-08T10:57:34",
+        "modified_gmt": "2025-06-08T07:27:34",
+        "slug": "%d8%b2%d9%86%d8%a7%d9%86%d9%87",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%b2%d9%86%d8%a7%d9%86%d9%87/",
+        "title": {
+            "rendered": "زنانه"
+        },
+        "content": {
+            "rendered": "",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 75,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-74",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_brand-28",
+            "7": "product_cat-17",
+            "9": "first",
+            "10": "instock",
+            "11": "sale",
+            "12": "shipping-taxable",
+            "13": "purchasable",
+            "14": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/74",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=74"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/75"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=74"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=74"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=74"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 68,
+        "date": "2025-04-14T11:34:42",
+        "date_gmt": "2025-04-14T08:04:42",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=68"
+        },
+        "modified": "2025-05-10T08:46:42",
+        "modified_gmt": "2025-05-10T05:16:42",
+        "slug": "%d8%aa%db%8c%d8%b4%d8%b1%d8%aa",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%aa%db%8c%d8%b4%d8%b1%d8%aa/",
+        "title": {
+            "rendered": "تیشرت"
+        },
+        "content": {
+            "rendered": "<p>این ست ویژه، ترکیبی از امکانات و عناصر منحصر‌به‌فرد است که ترکیبی بی‌نظیر برای کاربران خاص و خاص‌پسند فراهم می‌کند. طراحی مدرن و کیفیت بالا، این ست را به گزینه‌ای عالی برای هدیه، استفاده روزمره یا افزودن لمسی لوکس به زندگی شما تبدیل می‌کند.<br />\nدر این مجموعه، هر جزئیات با دقت و هنر طراحی شده تا بهترین تجربه را برای شما رقم بزند. مناسب برای کسانی که به جزئیات اهمیت می‌دهند و به دنبال محصولاتی خاص و متفاوت هستند.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 48,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            15,
+            19,
+            16,
+            17
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-68",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_cat-15",
+            "7": "product_cat-19",
+            "8": "product_cat-16",
+            "9": "product_cat-17",
+            "11": "",
+            "12": "instock",
+            "13": "sale",
+            "14": "shipping-taxable",
+            "15": "purchasable",
+            "16": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/68",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=68"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/48"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=68"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=68"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=68"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 64,
+        "date": "2025-04-14T11:33:47",
+        "date_gmt": "2025-04-14T08:03:47",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=64"
+        },
+        "modified": "2025-05-16T14:03:57",
+        "modified_gmt": "2025-05-16T10:33:57",
+        "slug": "%d8%a8%d9%84%d9%88%d8%b2",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%a8%d9%84%d9%88%d8%b2/",
+        "title": {
+            "rendered": "بلوز"
+        },
+        "content": {
+            "rendered": "<p>این ست ویژه، ترکیبی از امکانات و عناصر منحصر‌به‌فرد است که ترکیبی بی‌نظیر برای کاربران خاص و خاص‌پسند فراهم می‌کند. طراحی مدرن و کیفیت بالا، این ست را به گزینه‌ای عالی برای هدیه، استفاده روزمره یا افزودن لمسی لوکس به زندگی شما تبدیل می‌کند.<br />\nدر این مجموعه، هر جزئیات با دقت و هنر طراحی شده تا بهترین تجربه را برای شما رقم بزند. مناسب برای کسانی که به جزئیات اهمیت می‌دهند و به دنبال محصولاتی خاص و متفاوت هستند.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 49,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            15
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-64",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_cat-15",
+            "8": "",
+            "9": "instock",
+            "10": "shipping-taxable",
+            "11": "purchasable",
+            "12": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/64",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=64"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/49"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=64"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=64"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=64"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 62,
+        "date": "2025-04-14T11:29:56",
+        "date_gmt": "2025-04-14T07:59:56",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=62"
+        },
+        "modified": "2025-05-09T19:39:20",
+        "modified_gmt": "2025-05-09T16:09:20",
+        "slug": "%d8%b4%d9%84%d9%88%d8%a7%d8%b1",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d8%b4%d9%84%d9%88%d8%a7%d8%b1/",
+        "title": {
+            "rendered": "شلوار"
+        },
+        "content": {
+            "rendered": "<p>این ست ویژه، ترکیبی از امکانات و عناصر منحصر‌به‌فرد است که ترکیبی بی‌نظیر برای کاربران خاص و خاص‌پسند فراهم می‌کند. طراحی مدرن و کیفیت بالا، این ست را به گزینه‌ای عالی برای هدیه، استفاده روزمره یا افزودن لمسی لوکس به زندگی شما تبدیل می‌کند.<br />\nدر این مجموعه، هر جزئیات با دقت و هنر طراحی شده تا بهترین تجربه را برای شما رقم بزند. مناسب برای کسانی که به جزئیات اهمیت می‌دهند و به دنبال محصولاتی خاص و متفاوت هستند.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>در اینجا توضیحات کوتاه محصول را قرار دهید</p>\n",
+            "protected": false
+        },
+        "featured_media": 46,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            15
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-62",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_cat-15",
+            "8": "last",
+            "9": "instock",
+            "10": "sale",
+            "11": "shipping-taxable",
+            "12": "purchasable",
+            "13": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/62",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=62"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/46"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=62"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=62"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=62"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 34,
+        "date": "2025-04-14T11:11:42",
+        "date_gmt": "2025-04-14T07:41:42",
+        "guid": {
+            "rendered": "http://d1.siteroze.ir/?post_type=product&#038;p=34"
+        },
+        "modified": "2025-05-09T19:39:36",
+        "modified_gmt": "2025-05-09T16:09:36",
+        "slug": "%d9%87%d9%88%d8%af%db%8c",
+        "status": "publish",
+        "type": "product",
+        "link": "https://d1.siteroze.ir/product/%d9%87%d9%88%d8%af%db%8c/",
+        "title": {
+            "rendered": "هودی"
+        },
+        "content": {
+            "rendered": "<p>این ست ویژه، ترکیبی از امکانات و عناصر منحصر‌به‌فرد است که ترکیبی بی‌نظیر برای کاربران خاص و خاص‌پسند فراهم می‌کند. طراحی مدرن و کیفیت بالا، این ست را به گزینه‌ای عالی برای هدیه، استفاده روزمره یا افزودن لمسی لوکس به زندگی شما تبدیل می‌کند.<br />\nدر این مجموعه، هر جزئیات با دقت و هنر طراحی شده تا بهترین تجربه را برای شما رقم بزند. مناسب برای کسانی که به جزئیات اهمیت می‌دهند و به دنبال محصولاتی خاص و متفاوت هستند.د</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>محل قرار دادن توضیحات کوتاه محصول</p>\n",
+            "protected": false
+        },
+        "featured_media": 35,
+        "comment_status": "open",
+        "ping_status": "closed",
+        "template": "",
+        "meta": {
+            "_acf_changed": false
+        },
+        "product_cat": [
+            15
+        ],
+        "product_tag": [],
+        "class_list": {
+            "0": "post-34",
+            "1": "product",
+            "2": "type-product",
+            "3": "status-publish",
+            "4": "has-post-thumbnail",
+            "6": "product_cat-15",
+            "8": "first",
+            "9": "instock",
+            "10": "shipping-taxable",
+            "11": "purchasable",
+            "12": "product-type-simple"
+        },
+        "acf": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product/34",
+                    "targetHints": {
+                        "allow": [
+                            "GET"
+                        ]
+                    }
+                }
+            ],
+            "collection": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product"
+                }
+            ],
+            "about": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/types/product"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/comments?post=34"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media/35"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/media?parent=34"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "product_cat",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_cat?post=34"
+                },
+                {
+                    "taxonomy": "product_tag",
+                    "embeddable": true,
+                    "href": "https://d1.siteroze.ir/wp-json/wp/v2/product_tag?post=34"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]
