@@ -1,6 +1,7 @@
 "use server"
 
 import { PrismaClient } from "@prisma/client";
+// it's just a sample .don't use it now
 
 const prisma = new PrismaClient();
 export async function GetProductsByCategory(slug:string) {
