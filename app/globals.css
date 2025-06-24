@@ -164,11 +164,7 @@ footer {
    🔧 BLOG START
 ======================== */
 .bg-blog {
-  background-color: #ffffff;
-  border-width: 2px;
-  border-radius: 8px;
-  border-color: #f8f8f7de;
-  padding: 16px;
+  @apply bg-white border rounded-lg border-[#f8f8f7de] p-4;
 }
 
 /* ========================

@@ -13,7 +13,7 @@ export default function Breadcrumb() {
       product: "لباس",
       2: "لباس زیر",
     };
-    return map[slug] || slug;
+    return map[slug] || decodeURIComponent(slug);
   };
 
   return (
