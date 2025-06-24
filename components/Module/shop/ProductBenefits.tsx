@@ -24,7 +24,7 @@ function ProductBenefits() {
       ].map((item, idx) => (
         <div
           key={idx}
-          className="flex flex-col items-center gap-1 p-3 border rounded-md shadow-sm hover:shadow-md transition"
+          className="flex flex-col items-center gap-1 p-3 border border-stone-300 rounded-md shadow-sm hover:shadow-md transition"
         >
           {item.icon}
           <span className="text-sm font-medium">{item.label}</span>

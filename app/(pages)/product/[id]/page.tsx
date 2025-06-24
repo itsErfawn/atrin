@@ -9,7 +9,6 @@ import SimilarProducts from "@/components/Module/shop/SimilarProducts";
 
 type Props = {
   params: { slug: string };
-  searchParams: { [key: string]: string | string[] | undefined };
 };
 
 export default async function ProductPage({ params }: Props) {
