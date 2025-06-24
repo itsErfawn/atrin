@@ -10,6 +10,8 @@ export default function Breadcrumb() {
   const convertSlugToName = (slug: string) => {
     const map: Record<string, string> = {
       shop: "فروشگاه",
+      product: "لباس",
+      2: "لباس زیر",
     };
     return map[slug] || slug;
   };

@@ -7,6 +7,7 @@ import Specialauction from "@/components/Module/main/Specialauction/Specialaucti
 import StoryList from "@/components/Module/main/StoryList/StoryList";
 import VIPproducts from "@/components/Module/main/VIPproducts/VIPproducts";
 import Womenclothing from "@/components/Module/main/Womenclothing/Womenclothing";
+
 import { Toaster } from "react-hot-toast";
 
 export default function Home() {

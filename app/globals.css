@@ -10,7 +10,7 @@
 }
 @theme inline {
   --color-primary: #353535;
-  --color-bg-color: ##fefefe;
+  --color-bgcolor: ##fefefe;
   --color-secondary: #1bd2a3;
   --font-yekanBakh: var(--font-yekan);
   --breakpoint-wide: 1400px;
@@ -34,10 +34,6 @@ body,
 .container {
   max-width: min(100%, 1328px, 1440px, 1600px);
   @apply w-full px-4 my-0 mx-auto;
-}
-
-.bg {
-  background-color: var(--color-primary);
 }
 
 /* ========================

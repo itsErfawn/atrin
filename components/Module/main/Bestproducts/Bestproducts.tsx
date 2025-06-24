@@ -10,7 +10,7 @@ function Bestproducts() {
       <SectionDivider title="پرفروش ترین محصولات" />
 
       <div className="flex flex-col lg:flex-row gap-4">
-        <div className="bg p-4 rounded-2xl shadow flex flex-col items-center lg:w-1/4">
+        <div className="bg-primary p-4 rounded-2xl shadow flex flex-col items-center lg:w-1/4">
           <div className="flex items-center gap-2 mb-4">
             <h2 className="text-base sm:text-lg font-bold text-white flex items-center gap-1">
               <Crown className="text-yellow-500 animate-bounce w-5 h-5 sm:w-6 sm:h-6" />

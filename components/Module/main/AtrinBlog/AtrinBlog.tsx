@@ -24,7 +24,7 @@ function AtrinBlog() {
               <div className="absolute inset-0 flex flex-col justify-end p-6 text-white bg-black/30">
                 <button className="text-right text-black px-6 py-3 bg-white rounded-xl flex justify-between items-center transition w-full">
                   <h3 className="text-sm font-semibold">{post.title}</h3>
-                  <div className="p-2 bg rounded-md">
+                  <div className="p-2 bg-primary rounded-md">
                     <ArrowLeft className="w-5 h-5 text-white" />
                   </div>
                 </button>

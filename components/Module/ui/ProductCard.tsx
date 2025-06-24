@@ -1,17 +1,20 @@
 import { useRef, useState } from "react";
 import LikeProductCard from "./LikeProductCard";
 import ProductModal from "./ProductModal";
+import Link from "next/link";
 
 type TProducrCard = {
   src: string;
   price: string;
   isVideo: boolean;
+  id: number;
 };
 
 export default function ProductCard({
   src,
   price,
   isVideo = false,
+  id,
 }: TProducrCard) {
   const [duration, setDuration] = useState<string>("");
   const [durationSet, setDurationSet] = useState(false);
@@ -36,20 +39,24 @@ export default function ProductCard({
       <div className="relative overflow-hidden group rounded-2xl">
         {isVideo ? (
           <>
-            <video
-              ref={videoRef}
-              src={src}
-              controls={false}
-              autoPlay
-              muted
-              loop
-              className="w-full max-h-[440px] rounded-2xl object-cover group-hover:scale-105 transition-transform duration-300"
-              onLoadedMetadata={handleLoadedMetadata}
-            />
+            <Link href={`product/${id}`}>
+              <video
+                ref={videoRef}
+                src={src}
+                controls={false}
+                autoPlay
+                muted
+                loop
+                className="w-full max-h-[440px] rounded-2xl object-cover group-hover:scale-105 transition-transform duration-300"
+                onLoadedMetadata={handleLoadedMetadata}
+              />
+            </Link>
             {duration && (
-              <span className="absolute top-2 left-2 bg-black/70 text-white px-2 py-1 rounded text-xs">
-                {duration}
-              </span>
+              <Link href={`product/${id}`}>
+                <span className="absolute top-2 left-2 bg-black/70 text-white px-2 py-1 rounded text-xs">
+                  {duration}
+                </span>
+              </Link>
             )}
           </>
         ) : (

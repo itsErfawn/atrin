@@ -7,15 +7,35 @@ import SectionDivider from "../../ui/SectionDivider";
 import ProductCard from "../../ui/ProductCard";
 
 const videos = [
-  { name: "/video/videomainpage/VID1.mp4", isVideo: true, price: "۹۸۰,۰۰۰" },
+  {
+    name: "/video/videomainpage/VID1.mp4",
+    isVideo: true,
+    price: "۹۸۰,۰۰۰",
+    id: 1,
+  },
   {
     name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/2321138f25dff33d1fa7d661eb3bf6d2.jpg",
     isVideo: false,
     price: "۴۷۰,۰۰۰",
   },
-  { name: "/video/videomainpage/VID1.mp4", isVideo: true, price: "۵۶۰,۰۰۰" },
-  { name: "/video/videomainpage/IMG1.jpg", isVideo: false, price: "۵۹۵,۰۰۰" },
-  { name: "/video/videomainpage/IMG1.jpg", isVideo: false, price: "۵۹۵,۰۰۰" },
+  {
+    name: "/video/videomainpage/VID1.mp4",
+    isVideo: true,
+    price: "۵۶۰,۰۰۰",
+    id: 2,
+  },
+  {
+    name: "/video/videomainpage/IMG1.jpg",
+    isVideo: false,
+    price: "۵۹۵,۰۰۰",
+    id: 3,
+  },
+  {
+    name: "/video/videomainpage/IMG1.jpg",
+    isVideo: false,
+    price: "۵۹۵,۰۰۰",
+    id: 4,
+  },
 ];
 
 function VIPproducts() {
@@ -56,6 +76,7 @@ function VIPproducts() {
               src={item.name}
               price={item.price}
               isVideo={item.isVideo}
+              id={item.id}
             />
           </SwiperSlide>
         ))}

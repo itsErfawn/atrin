@@ -22,7 +22,6 @@ function shuffleArray(array: VideoItem[]): VideoItem[] {
 
 function LatestAtrinProducts() {
   const shuffledVideos = shuffleArray(videosrandomaimpage);
-  console.log(shuffledVideos);
 
   return (
     <Container>
