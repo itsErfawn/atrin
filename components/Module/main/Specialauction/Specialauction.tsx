@@ -43,11 +43,11 @@ function Specialauction() {
         </Swiper>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-6 text-center w-full sm:w-250 mx-auto">
+      <div className="flex flex-wrap justify-center gap-6 text-center w-full sm:w-300 mx-auto mb-10">
         {CLLogo.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col items-center w-36 sm:w-40 md:w-44 lg:w-48"
+            className="flex flex-col items-center w-26 sm:w-40 md:w-44 lg:w-48"
           >
             <img
               src={item.CLimageLogo}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Heart, Send, MessageCircle } from "lucide-react";
+import { toast } from "react-hot-toast";
 
 type Cols = {
   Col?: "col" | "row";
@@ -7,6 +8,11 @@ type Cols = {
 
 function LikeLatestAtrinProducts({ Col = "col" }: Cols) {
   const [liked, setLiked] = useState(false);
+
+  const handleLike = () => {
+    setLiked(true);
+    toast.success("محصول با موفقیت به علاقه‌مندی‌ها اضافه شد");
+  };
 
   return (
     <div className={`flex flex-${Col} gap-2 text-black`}>
@@ -18,11 +24,7 @@ function LikeLatestAtrinProducts({ Col = "col" }: Cols) {
           size={24}
         />
       ) : (
-        <Heart
-          className="cursor-pointer"
-          onClick={() => setLiked(true)}
-          size={24}
-        />
+        <Heart className="cursor-pointer" onClick={handleLike} size={24} />
       )}
 
       <Send />

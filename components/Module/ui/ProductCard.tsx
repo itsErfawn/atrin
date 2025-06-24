@@ -1,5 +1,6 @@
 import { useRef, useState } from "react";
 import LikeProductCard from "./LikeProductCard";
+import ProductModal from "./ProductModal";
 
 type TProducrCard = {
   src: string;
@@ -15,6 +16,7 @@ export default function ProductCard({
   const [duration, setDuration] = useState<string>("");
   const [durationSet, setDurationSet] = useState(false);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const [sendlinkpost, setsendlinkpost] = useState(false);
 
   const handleLoadedMetadata = () => {
     if (videoRef.current && !durationSet) {
@@ -26,6 +28,9 @@ export default function ProductCard({
     }
   };
 
+  function handelsendlinkpost() {
+    setsendlinkpost(!sendlinkpost);
+  }
   return (
     <div className="rounded-2xl w-full sm:max-w-sm bg-white transition-all duration-300 overflow-hidden relative">
       <div className="relative overflow-hidden group rounded-2xl">
@@ -63,9 +68,13 @@ export default function ProductCard({
           />
           <span>atrin</span>
         </div>
-        <LikeProductCard />
+        <LikeProductCard handelsendlinkpost={handelsendlinkpost} />
       </div>
-
+      <ProductModal
+        open={sendlinkpost}
+        onClose={() => setsendlinkpost(false)}
+        shortLink="https://short.link/example"
+      />
       <p className="text-center text-sm mt-2">{price} تومان</p>
     </div>
   );

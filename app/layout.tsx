@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="fa" dir="rtl">
       <body className={`${yekanBakh.variable}`}>
         <Header />
-        <main>{children}</main>
+        <main className="bg-body">{children}</main>
         <Footer />
       </body>
     </html>

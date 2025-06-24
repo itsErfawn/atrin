@@ -4,7 +4,7 @@ import { IconsListHeader } from "./IconsListHeader/IconsListHeader";
 
 function Header() {
   return (
-    <header className=" shadow-sm">
+    <header className="shadow-sm">
       <IconsListHeader />
       <ItemListHeader />
     </header>

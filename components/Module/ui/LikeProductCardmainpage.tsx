@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import { Heart } from "lucide-react";
+import { toast } from "react-hot-toast";
+
 function LikeProductCardmainpage() {
   const [liked, setLiked] = useState(false);
+
+  const handleLike = () => {
+    setLiked(true);
+    toast.success("محصول با موفقیت به علاقه‌مندی‌ها اضافه شد");
+  };
 
   return (
     <div>
@@ -13,11 +20,7 @@ function LikeProductCardmainpage() {
           size={20}
         />
       ) : (
-        <Heart
-          className="cursor-pointer"
-          onClick={() => setLiked(true)}
-          size={20}
-        />
+        <Heart className="cursor-pointer" onClick={handleLike} size={20} />
       )}
     </div>
   );

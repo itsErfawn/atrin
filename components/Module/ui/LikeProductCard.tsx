@@ -1,10 +1,17 @@
 import React, { useState } from "react";
 import { Heart, Send, MessageCircle } from "lucide-react";
-function LikeProductCard() {
+import { toast } from "react-hot-toast";
+
+function LikeProductCard({ handelsendlinkpost }: any) {
   const [liked, setLiked] = useState(false);
 
+  const handleLike = () => {
+    setLiked(true);
+    toast.success("محصول با موفقیت به علاقه‌مندی‌ها اضافه شد");
+  };
+
   return (
-    <div className="absolute bottom-0 mb-5 right-4 flex flex-col  gap-2 text-black">
+    <div className="absolute bottom-0 mb-5 right-4 flex flex-col gap-2 text-black">
       {liked ? (
         <Heart
           className="cursor-pointer text-red-600"
@@ -13,14 +20,10 @@ function LikeProductCard() {
           size={24}
         />
       ) : (
-        <Heart
-          className="cursor-pointer"
-          onClick={() => setLiked(true)}
-          size={24}
-        />
+        <Heart className="cursor-pointer" onClick={handleLike} size={24} />
       )}
 
-      <Send />
+      <Send onClick={() => handelsendlinkpost()} />
       <MessageCircle />
     </div>
   );
