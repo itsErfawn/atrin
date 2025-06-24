@@ -1,21 +1,15 @@
-"use server";
+"use server"
 
-import { PrismaClient } from "@prisma/client";
-// یه نمونه تستیه برای اینکه ببینم کجاهاش مشکل داره . فلن داخل صفحات ازش استفاده نکن
+import CategoriesModel from "@/models/CategoriesModel";
+import ProductsModel from "@/models/ProductsModel";
 
-const prisma = new PrismaClient();
-export async function GetProductsByCategory(slug: string) {
-  const category = await prisma.category.findFirst({
-    where: { slug },
-    include: { children: true },
-  });
-  return category;
+export async function GetProductsByCategory(slug:string) {
+    const category=await CategoriesModel.get(slug)
+    const products=await ProductsModel.getByCategory(category?.id)
+    return {category,products}
 }
-export async function GetCategoryMetaData(slug: string) {
-  const category = await prisma.category.findFirst({
-    where: { slug },
-    include: { meta_data: true },
-  });
-  if (!category) return null;
-  return category.meta_data;
+export async function GetCategoryMetaData(slug:string) {
+    const category=await CategoriesModel.getMeta(slug)
+    if(!category) return null;
+    return category.meta_data;
 }

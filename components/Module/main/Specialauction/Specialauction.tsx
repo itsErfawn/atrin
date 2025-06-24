@@ -10,7 +10,7 @@ import Container from "../../container/Container";
 function Specialauction() {
   return (
     <Container>
-      <div className="text-center mb-10 w-full sm:w-200 mx-auto">
+      <div className="text-center mb-10 w-full  mx-auto">
         <h1 className="text-xl font-bold bg-black text-white inline-block px-4 py-2 rounded mt-10">
           محبوب ترین برند ها
         </h1>
@@ -43,7 +43,7 @@ function Specialauction() {
         </Swiper>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-6 text-center w-full sm:w-300 mx-auto mb-10">
+      <div className="flex flex-wrap justify-center gap-6 text-center w-full mx-auto mb-10">
         {CLLogo.map((item, index) => (
           <div
             key={index}

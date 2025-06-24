@@ -7,7 +7,7 @@ function CategoryProducts() {
   return (
     <Container>
       <SectionDivider title="دسته بندی محصولات" />
-      <div className="flex flex-wrap justify-center mt-10 mx-auto gap-5 w-full sm:w-250">
+      <div className="flex flex-wrap justify-center mt-10 mx-auto gap-5 w-full">
         {Cproducts.map((item) => (
           <div
             key={item.srcimage}
