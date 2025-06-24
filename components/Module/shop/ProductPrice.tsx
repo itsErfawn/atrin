@@ -9,7 +9,7 @@ function ProductPrice() {
   return (
     <p className="text-lg font-semibold text-primary flex items-center gap-3 bg-gray-100 rounded px-3 py-1 whitespace-nowrap">
       <span className="flex">
-        {discountedPrice.toLocaleString()} <p>تومان</p>
+        {discountedPrice.toLocaleString()} <span>تومان</span>
       </span>
       <span className="line-through text-gray-400 mx-2">
         {originalPrice.toLocaleString()}
