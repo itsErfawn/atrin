@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { User, Search, Heart, ShoppingCart, Menu } from "lucide-react";
+import { Search, Heart, ShoppingCart, Menu } from "lucide-react";
 import { Button } from "@/components/Module/ui/button";
 import { Input } from "@/components/Module/ui/input";
 import { Badge } from "@/components/Module/ui/badge";
@@ -9,6 +9,7 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/Module/ui/dropdown-menu";
+import BtmLogin from "./BtmLogin";
 
 export function IconsListHeader() {
   const cartItems = [
@@ -23,9 +24,7 @@ export function IconsListHeader() {
         <div className="hidden md:flex items-center gap-4">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <User className="h-8 w-8" />
-              </Button>
+              <BtmLogin />
             </DropdownMenuTrigger>
             <DropdownMenuContent align="start" className="w-48">
               <div className="p-2">
