@@ -35,7 +35,13 @@ body,
   max-width: min(100%, 1328px, 1440px, 1600px);
   @apply w-full px-4 my-0 mx-auto;
 }
-
+.bg-overlay{
+  @apply fixed top-0 left-0 right-0 bottom-0 bg-black opacity-60 z-30 invisible;
+  transition: var(--main-transition);
+  &.active{
+    @apply visible opacity-50
+  }
+}
 /* ========================
    ✅ SYSTEM SECTION END
 ======================== */
@@ -144,7 +150,6 @@ footer {
 .timer-message-text {
   @apply font-medium;
 }
-
 /* ========================
    ⏳ COUNTDOWN TIMER END
 ======================== */
@@ -184,4 +189,45 @@ footer {
 
 /* ========================
    ✅ wishlist END
+======================== */
+
+
+/* ========================
+   🔧 login START
+======================== */
+.login-container{
+  @apply fixed top-0 left-0 right-0 bottom-0 z-40 flex items-center justify-center opacity-0 invisible ;
+  transition: var(--main-transition);
+  &.active{
+    @apply visible opacity-100;
+  }
+}
+.login-wrapper{
+@apply bg-white rounded-2xl w-6/12 h-9/12 flex items-stretch max-laptop:w-8/12 max-tablet:hidden
+}
+.login-image{
+  @apply w-full h-full object-center rounded-tl-2xl rounded-bl-2xl
+}
+.login-header{
+@apply flex items-center justify-center
+}
+.login-header--logo{
+@apply w-20 h-16
+}
+.login-body{
+  @apply py-5
+}
+.login-title{
+@apply mb-5
+}
+.login-input{
+  transition: var(--main-transition);
+@apply mb-8 border border-[#dddddd] outline-none px-3 py-2 w-full rounded-lg text-[#9D9EA2] focus:border-primary focus:text-primary;
+}
+.login-btn{
+  transition: var(--main-transition);
+  @apply bg-primary text-white cursor-pointer block w-6/12 py-3 rounded-xl active:scale-[0.96] active:bg-black hover:bg-black disabled:active:scale-[1] disabled:bg-gray-400 disabled:cursor-not-allowed;
+}
+/* ========================
+   ✅ login END
 ======================== */

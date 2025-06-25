@@ -1,52 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
-import { User, Search, Heart, ShoppingCart, Menu } from "lucide-react";
-import { Button } from "@/components/Module/ui/button";
-import { Input } from "@/components/Module/ui/input";
-import { Badge } from "@/components/Module/ui/badge";
+import { User, Search, Heart, ShoppingCart } from "lucide-react";
+import { Button } from "@/components/module/ui/button";
+import { Input } from "@/components/module/ui/input";
+import { Badge } from "@/components/module/ui/badge";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from "@/components/Module/ui/dropdown-menu";
+} from "@/components/module/ui/dropdown-menu";
+import CookieStore from "@/libs/cookies/CookieStore";
+import LoginPopUp from "../../login/LoginPopUp";
 
-export function IconsListHeader() {
+export async function IconsListHeader() {
   const cartItems = [
     { name: "آیفون ۱۵ پرو", price: 999, image: "/products/iphone.jpg" },
     { name: "مک‌بوک ایر", price: 1299, image: "/products/macbook.jpg" },
   ];
   const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0);
-
+  const cookie=await CookieStore.get("user_token")
   return (
     <section className="flex justify-center">
       <div className="container flex h-16 items-center justify-between">
         <div className="hidden md:flex items-center gap-4">
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <User className="h-8 w-8" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="w-48">
-              <div className="p-2">
-                <Button
-                  variant="ghost"
-                  className="w-full justify-start"
-                  asChild
-                >
-                  <Link href="/account">پروفایل</Link>
-                </Button>
-                <Button
-                  variant="ghost"
-                  className="w-full justify-start"
-                  asChild
-                >
-                  <Link href="/orders">سفارش‌های من</Link>
-                </Button>
-              </div>
-            </DropdownMenuContent>
-          </DropdownMenu>
+          <div>
+            {cookie?
 
+            <Link href={'/account'} >
+                <User className="h-8 w-8" />
+            </Link>
+            :
+            <LoginPopUp/>
+            }
+          </div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon">

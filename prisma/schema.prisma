@@ -77,27 +77,23 @@ model Comment {
   adminReply  String?
   product     Product  @relation(fields: [product_id], references: [id])
   product_id   Int
-  user User? @relation("UserComments", fields: [user_id], references: [id])
   user_id      Int?
 }
 
 model WishList {
   id        Int     @id @default(autoincrement())
-  user      User    @relation(fields: [user_id], references: [id])
   user_id    Int
   product_id Int
   product   Product @relation(fields: [product_id], references: [id])
 }
 
-model User {
-  id         Int        @id @default(autoincrement())
-  name       String
-  email      String
-  profileImg String
-  number    String
-  WishList  WishList[]
-  comments Comment[] @relation("UserComments")
-  stories    Story[]
+model Customer {
+  id         String        @id 
+  name       String?
+  email      String?
+  image String?
+  number    String?
+  geust Boolean
 }
 
 model Blog {
@@ -159,7 +155,6 @@ model Story {
   description  String
   callMe       String
   unknownImage String
-  user         User          @relation(fields: [user_id], references: [id])
   user_id       Int
   products     StoryProduct[]
 }
