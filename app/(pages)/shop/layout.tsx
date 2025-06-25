@@ -1,4 +1,5 @@
 import Container from "@/components/Module/container/Container";
+import ShopFilter from "@/components/Module/shop/pageshop/ShopFilter/ShopFilter";
 import Sidebarshop from "@/components/Module/shop/Sidebarshop";
 import Breadcrumb from "@/components/Module/ui/Breadcrumb";
 
@@ -9,17 +10,21 @@ export default function ShopLayout({
 }) {
   return (
     <Container>
-      <section className="flex flex-col">
+      <section className="flex flex-col ">
         <div>
           <Breadcrumb />
         </div>
-        <div className="flex">
-          <div className="w-[34%]">
+
+        <div className="flex flex-col md:flex-row">
+          <div className="w-full md:w-[30%] md:sticky md:top-4 md:self-start">
             <Sidebarshop />
           </div>
-          <div className="flex flex-col w-full">
-            <div className="bg-amber-100">filter</div>
-            {children}
+
+          <div className="flex flex-col w-full  mt-5">
+            <div className="md:sticky md:top-4 ">
+              <ShopFilter />
+            </div>
+            <div className=" mt-5">{children}</div>
           </div>
         </div>
       </section>

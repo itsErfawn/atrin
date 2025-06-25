@@ -1,4 +1,5 @@
 "use client";
+import { X } from "lucide-react";
 import React, { useState } from "react";
 import Stories from "react-insta-stories";
 
@@ -49,7 +50,7 @@ function StoryHeaderSidebarshop() {
             className="absolute top-4 right-4 text-white text-2xl"
             onClick={() => setShowStory(false)}
           >
-            بستن
+            <X size={24} />
           </button>
         </div>
       )}

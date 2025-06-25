@@ -17,7 +17,6 @@ export async function generateMetadata({
   if (!metas) {
     return { title: "آترین" };
   }
-  console.log(metas);
   return {
     title: metas[1].value,
     description: metas[0].value,
@@ -35,7 +34,7 @@ async function CategoriesPage(
     </Suspense>
   );
 }
-async function Gsasdsadk({ slug }: { slug: string }) {
+export async function Gsasdsadk({ slug }: { slug: string }) {
   const { category, products } = await GetProductsByCategory(slug);
   return (
     <>

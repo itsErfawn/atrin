@@ -9,6 +9,7 @@ import {
   DialogFooter,
   DialogClose,
 } from "@/components/Module/ui/dialog";
+import { X } from "lucide-react";
 
 type Props = {
   open: boolean;
@@ -133,7 +134,7 @@ export default function ProductModal({ open, onClose, shortLink }: Props) {
         <DialogFooter className="mt-6 flex justify-center">
           <DialogClose asChild>
             <button className="bg text-white px-6 py-2 rounded hover:bg-gray-800 transition">
-              بستن
+              <X size={24} />
             </button>
           </DialogClose>
         </DialogFooter>

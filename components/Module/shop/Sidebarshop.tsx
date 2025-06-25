@@ -3,14 +3,17 @@ import Container from "../container/Container";
 import HeaderSidebarshop from "./pageshop/Sidebarshop/HeaderSidebarshop";
 import DescripationSidebarshop from "./pageshop/DescripationSidebarshop/DescripationSidebarshop";
 import HighlightSidebarshop from "./pageshop/HighlightSidebarshop/HighlightSidebarshop";
+import FilterSidebarshop from "./pageshop/FilterSidebarshop/FilterSidebarshop";
 
 function Sidebarshop() {
   return (
     <Container>
-      <HeaderSidebarshop />
-      <DescripationSidebarshop />
-      <HighlightSidebarshop />
-      <div className="bg-amber-700">Sidebarshop</div>
+      <section className="space-y-4 shadow-sm p-2 rounded-2xl">
+        <HeaderSidebarshop />
+        <DescripationSidebarshop />
+        <HighlightSidebarshop />
+        <FilterSidebarshop />
+      </section>
     </Container>
   );
 }

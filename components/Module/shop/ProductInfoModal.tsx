@@ -27,7 +27,6 @@ export default function ProductInfoModal({
         <button
           onClick={onClose}
           className="absolute top-4 left-4 text-gray-500 hover:text-gray-900"
-          aria-label="بستن مدال"
         >
           <X className="w-6 h-6" />
         </button>

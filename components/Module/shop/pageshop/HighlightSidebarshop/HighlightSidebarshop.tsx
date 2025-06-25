@@ -16,7 +16,7 @@ function HighlightSidebarshop() {
         breakpoints={{
           640: { slidesPerView: 4 },
           768: { slidesPerView: 5 },
-          1024: { slidesPerView: 4.5 },
+          1024: { slidesPerView: 4.3 },
         }}
       >
         {highlights.map((highlight, index) => (
@@ -28,7 +28,7 @@ function HighlightSidebarshop() {
               <img
                 src={highlight.stories[0].url}
                 alt={highlight.title}
-                className="w-16 h-16 rounded-full object-cover border-2 border-primary"
+                className="w-19 h-16 rounded-full object-cover border-2 border-primary"
               />
               <span className="mt-2 text-xs text-center text-gray-800">
                 {highlight.title}
