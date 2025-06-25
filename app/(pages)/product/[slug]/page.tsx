@@ -40,7 +40,7 @@ export default async function ProductPage({ params }: Props) {
         <div>
           <Breadcrumb />
         </div>
-        <ProductDetail />
+        <ProductDetail product={product} />
         <SimilarProducts />
       </section>
     </Container>

@@ -1,16 +1,19 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+interface ProductImageProps {
+  images: { imageUrl: string }[];
+  thumbnail: string;
+}
 
-function ProductImage() {
-  const images = ["/1.jpg", "/1.jpg", "/1.jpg"];
-  const [Images, setImage] = useState(images[0]);
+function ProductImage({ images, thumbnail }: ProductImageProps) {
+  const [selectedImage, setSelectedImage] = useState<string>(thumbnail);
 
   return (
     <div className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
       <div className="rounded-2xl overflow-hidden w-full sm:w-[400px]">
         <Image
-          src={Images}
+          src={selectedImage}
           alt="تصویر محصول"
           width={400}
           height={400}
@@ -23,14 +26,16 @@ function ProductImage() {
         {images.map((img, idx) => (
           <div
             key={idx}
-            onClick={() => setImage(img)}
-            className={`border-1 rounded-md overflow-hidden cursor-pointer ${
-              Images === img ? "border-primary" : "border-transparent"
+            onClick={() => setSelectedImage(img.imageUrl)}
+            className={`border-2 rounded-md overflow-hidden cursor-pointer p-1 ${
+              selectedImage === img.imageUrl
+                ? "border-primary"
+                : "border-gray-300"
             }`}
           >
             <Image
-              src={img}
-              alt="عکس"
+              src={img.imageUrl}
+              alt={`تصویر کوچک ${idx + 1}`}
               width={70}
               height={70}
               className="object-cover"
