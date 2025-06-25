@@ -14,7 +14,7 @@ export default function ShopLayout({
           <Breadcrumb />
         </div>
         <div className="flex">
-          <div className="w-[24%]">
+          <div className="w-[34%]">
             <Sidebarshop />
           </div>
           <div className="flex flex-col w-full">

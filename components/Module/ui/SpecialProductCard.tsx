@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import CountdownTimer from "./CountdownTimer";
 import LikeProductCardmainpage from "./LikeProductCardmainpage";
+import SpecialProductCardVideo from "./SpecialProductCardVideo";
+import SpecialProductCardImage from "./SpecialProductCardImage";
 
 type TProductCard = {
   src: string;
@@ -40,29 +42,14 @@ export default function SpecialProductCard({
     <div className="rounded-2xl  w-full sm:max-w-sm bg-white hover:shadow-xl transition-all duration-300 border border-gray-200 overflow-hidden">
       <div className="relative  overflow-hidden group">
         {isVideo ? (
-          <>
-            <video
-              ref={videoRef}
-              src={src}
-              controls={false}
-              autoPlay
-              muted
-              loop
-              className="w-full h-[360px] object-cover group-hover:scale-105 transition-transform duration-300"
-              onLoadedMetadata={handleLoadedMetadata}
-            />
-            {duration && (
-              <span className="absolute top-2 left-2 text-xs bg-white/90 text-black px-2 py-0.5 rounded-full shadow-sm">
-                {duration}
-              </span>
-            )}
-          </>
-        ) : (
-          <img
+          <SpecialProductCardVideo
             src={src}
-            alt="product"
-            className="w-full h-70 object-cover group-hover:scale-105 transition-transform duration-300"
+            videoRef={videoRef}
+            handleLoadedMetadata={handleLoadedMetadata}
+            duration={duration}
           />
+        ) : (
+          <SpecialProductCardImage src={src} />
         )}
 
         <div className="absolute flex items-center gap-1 bottom-2 left-2 text-sm font-medium text-white bg-black/60 px-2 py-1 rounded-full backdrop-blur-sm">
