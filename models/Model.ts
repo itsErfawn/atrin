@@ -1,8 +1,11 @@
 import { PrismaClient } from "@prisma/client";
-
-const prisma=new PrismaClient();
-class Model{
-protected db=prisma;
+import { v4 as uuid } from "uuid"
+const prisma = new PrismaClient();
+class Model {
+    protected CreateId() {
+        return uuid()
+    }
+    protected db = prisma;
 
 }
 export default Model;
