@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+
 interface ProductImageProps {
   images: { imageUrl: string }[];
   thumbnail: string;
@@ -10,7 +11,7 @@ function ProductImage({ images, thumbnail }: ProductImageProps) {
   const [selectedImage, setSelectedImage] = useState<string>(thumbnail);
 
   return (
-    <div className="max-w-md mx-auto flex flex-col sm:flex-row gap-4">
+    <div className="max-w-4xl mx-auto flex flex-col sm:flex-row gap-4">
       <div className="rounded-2xl overflow-hidden w-full sm:w-[400px]">
         <Image
           src={selectedImage}
@@ -18,19 +19,19 @@ function ProductImage({ images, thumbnail }: ProductImageProps) {
           width={400}
           height={400}
           priority
-          className="rounded-2xl object-cover"
+          className="rounded-2xl object-cover w-full h-auto"
         />
       </div>
 
-      <div className="flex flex-row sm:flex-col gap-4 justify-center sm:justify-start">
+      <div className="flex sm:flex-col flex-row gap-3 sm:max-h-[500px] max-w-full sm:overflow-y-auto overflow-x-auto scrollbar-hide">
         {images.map((img, idx) => (
-          <div
+          <button
             key={idx}
             onClick={() => setSelectedImage(img.imageUrl)}
-            className={`border-2 rounded-md overflow-hidden cursor-pointer p-1 ${
+            className={`border-2 rounded-md overflow-hidden p-1 flex-shrink-0 transition-all duration-300 ${
               selectedImage === img.imageUrl
-                ? "border-primary"
-                : "border-gray-300"
+                ? "border-primary scale-105"
+                : "border-gray-300 hover:scale-105"
             }`}
           >
             <Image
@@ -38,9 +39,9 @@ function ProductImage({ images, thumbnail }: ProductImageProps) {
               alt={`تصویر کوچک ${idx + 1}`}
               width={70}
               height={70}
-              className="object-cover"
+              className="object-cover rounded"
             />
-          </div>
+          </button>
         ))}
       </div>
     </div>

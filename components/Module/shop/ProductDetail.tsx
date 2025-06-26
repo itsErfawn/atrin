@@ -8,7 +8,8 @@ import ProductBenefits from "./ProductBenefits";
 import ProductCommunication from "./ProductCommunication";
 import ProductImage from "./ProductImage";
 import ProductTitle from "./ProductTitle";
-interface Product {
+export interface Product {
+  id: number;
   discount?: number;
   price?: number;
   description?: string;
@@ -28,26 +29,27 @@ export default function ProductDetail({ product }: ProductDetailProps) {
     thumbnail = "",
     title = "",
     images = [],
+    id = 0,
   } = product || {};
   return (
     <div className="flex flex-col md:flex-row shadow-sm p-2 gap-4 rounded-2xl justify-between">
-      <div className="flex-1 space-y-4">
+      <div className="order-1 md:order-2 flex justify-center items-center relative w-full md:w-1/2 bg-stone-50 p-2 rounded-2xl">
+        <ProductImage thumbnail={thumbnail} images={images} />
+        <ProductCommunication />
+      </div>
+
+      <div className="order-2 md:order-1 flex-1 space-y-4">
         <ProductTitle title={title} />
         <ProductInfo />
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 justify-between items-center">
-          <ProductQuantity />
+          <ProductQuantity productId={id} />
           <ProductPrice price={price} discount={discount} />
         </div>
-        <BtnAddCard />
+        <BtnAddCard product={product} />
         <ProductBenefits />
         <div>
           <ProductDescriptionWithModal description={description} />
         </div>
-      </div>
-      <div className="flex justify-center items-center relative w-full md:w-1/2 bg-stone-50 p-2 rounded-2xl mt-6 md:mt-0">
-        <ProductImage thumbnail={thumbnail} images={images} />
-
-        <ProductCommunication />
       </div>
     </div>
   );

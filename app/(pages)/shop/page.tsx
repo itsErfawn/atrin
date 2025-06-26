@@ -1,7 +1,9 @@
+import ImageWithSkeleton from "@/components/Module/ui/ImageWithLoading";
 import {
   GetCategoryMetaData,
   GetProductsByCategory,
 } from "@/controllers/CategoryController";
+import Image from "next/image";
 import Link from "next/link";
 import React, { Suspense } from "react";
 
@@ -45,7 +47,13 @@ export async function Gsasdsadk({ slug }: { slug: string }) {
             key={product.id}
             href={`/product/${product.slug}`}
           >
-            <img src={product.thumbnail} />
+            <ImageWithSkeleton
+              src={product.thumbnail}
+              alt={product.title}
+              width={200}
+              height={200}
+              className="object-contain"
+            />
           </Link>
         ))}
       </div>

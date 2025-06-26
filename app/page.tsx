@@ -1,3 +1,4 @@
+"use client";
 import AtrinBlog from "@/components/Module/main/AtrinBlog/AtrinBlog";
 import Bestproducts from "@/components/Module/main/Bestproducts/Bestproducts";
 import CategoryProducts from "@/components/Module/main/CategoryProducts/CategoryProducts";
