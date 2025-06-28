@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { User, Search, Heart, ShoppingCart } from "lucide-react";
 
@@ -14,11 +13,6 @@ import { Input } from "@/components/Module/ui/input";
 import { Badge } from "@/components/Module/ui/badge";
 
 export async function IconsListHeader() {
-  const cartItems = [
-    { name: "آیفون ۱۵ پرو", price: 999, image: "/products/iphone.jpg" },
-    { name: "مک‌بوک ایر", price: 1299, image: "/products/macbook.jpg" },
-  ];
-  const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0);
   const cookie = await CookieStore.get("user_token");
   return (
     <section className="flex justify-center">
@@ -68,28 +62,25 @@ export async function IconsListHeader() {
               <Heart className="h-5 w-5" />
               <Badge
                 variant="destructive"
-                className="absolute -right-1 -top-1 h-5 w-5 rounded-full p-0 flex items-center justify-center"
+                className="absolute -right-1 -top-1 h-5 w-5 rounded-full p-0 flex items-center justify-center bg-primary"
               >
                 ۳
               </Badge>
               <span className="sr-only">علاقه‌مندی‌ها</span>
             </Link>
           </Button>
-
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon" className="relative">
-                <ShoppingCart className="h-5 w-5" />
-                <Badge
-                  variant="destructive"
-                  className="absolute -right-1 -top-1 h-5 w-5 rounded-full p-0 flex items-center justify-center"
-                >
-                  {cartItems.length}
-                </Badge>
-                <span className="sr-only">سبد خرید</span>
-              </Button>
-            </DropdownMenuTrigger>
-          </DropdownMenu>
+          <Link href={"/shopcard"}>
+            <Button variant="ghost" size="icon" className="relative">
+              <ShoppingCart className="h-5 w-5" />
+              <Badge
+                variant="destructive"
+                className="absolute -right-1 -top-1 h-5 w-5 rounded-full p-0 flex items-center justify-center bg-primary"
+              >
+                2
+              </Badge>
+              <span className="sr-only">سبد خرید</span>
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

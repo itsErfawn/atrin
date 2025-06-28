@@ -1,5 +1,5 @@
-import BlogContent from "@/components/Module/Blog/BlogContent";
-import RelatedPostsSection from "@/components/Module/Blog/RelatedPostsSection";
+import BlogContent from "@/components/Module/blog/BlogContent";
+import RelatedPostsSection from "@/components/Module/blog/RelatedPostsSection";
 
 type Props = {
   params: { slug: string };
