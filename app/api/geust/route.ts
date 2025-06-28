@@ -4,21 +4,21 @@ import tokenGenerator from "@/libs/token/Token";
 import CustomerModel from "@/models/CustomerModel";
 
 export async function GET(request: Request) {
-  if (await CookieStore.get('token')) {
+  if (await CookieStore.get("token")) {
     return NextResponse.json({ success: true }, { status: 200 });
   }
-  if (await CookieStore.get('guest_token')) {
+  if (await CookieStore.get("guest_token")) {
     return NextResponse.json({ success: true }, { status: 200 });
   }
   const data = await CustomerModel.addGeust();
-  const userToken = tokenGenerator({id:data.id});
+  const userToken = tokenGenerator({ id: data.id });
 
   const response = NextResponse.json({ success: true }, { status: 200 });
 
-  response.cookies.set('geust_token', userToken, {
-    path: '/',
+  response.cookies.set("geust_token", userToken, {
+    path: "/",
     httpOnly: true,
-    secure: process.env.NODE_ENV === 'production',
+    secure: process.env.NODE_ENV === "production",
     maxAge: 60 * 60 * 24 * 30 * 3,
   });
 

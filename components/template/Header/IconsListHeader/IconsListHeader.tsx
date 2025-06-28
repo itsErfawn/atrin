@@ -1,16 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { User, Search, Heart, ShoppingCart } from "lucide-react";
-import { Button } from "@/components/module/ui/button";
-import { Input } from "@/components/module/ui/input";
-import { Badge } from "@/components/module/ui/badge";
+
+import CookieStore from "@/libs/cookies/CookieStore";
+import LoginPopUp from "../../login/LoginPopUp";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuTrigger,
-} from "@/components/module/ui/dropdown-menu";
-import CookieStore from "@/libs/cookies/CookieStore";
-import LoginPopUp from "../../login/LoginPopUp";
+} from "@radix-ui/react-dropdown-menu";
+import { Button } from "@/components/Module/ui/button";
+import { Input } from "@/components/Module/ui/input";
+import { Badge } from "@/components/Module/ui/badge";
 
 export async function IconsListHeader() {
   const cartItems = [
@@ -18,20 +19,19 @@ export async function IconsListHeader() {
     { name: "مک‌بوک ایر", price: 1299, image: "/products/macbook.jpg" },
   ];
   const totalPrice = cartItems.reduce((sum, item) => sum + item.price, 0);
-  const cookie=await CookieStore.get("user_token")
+  const cookie = await CookieStore.get("user_token");
   return (
     <section className="flex justify-center">
       <div className="container flex h-16 items-center justify-between">
         <div className="hidden md:flex items-center gap-4">
           <div>
-            {cookie?
-
-            <Link href={'/account'} >
+            {cookie ? (
+              <Link href={"/account"}>
                 <User className="h-8 w-8" />
-            </Link>
-            :
-            <LoginPopUp/>
-            }
+              </Link>
+            ) : (
+              <LoginPopUp />
+            )}
           </div>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -89,39 +89,6 @@ export async function IconsListHeader() {
                 <span className="sr-only">سبد خرید</span>
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent align="end" className="w-[350px] p-4">
-              <h3 className="font-semibold text-lg mb-3">سبد خرید شما</h3>
-              <div className="space-y-4">
-                {cartItems.map((item) => (
-                  <div key={item.name} className="flex items-center gap-3">
-                    <div className="w-12 h-12 bg-muted rounded-md flex items-center justify-center">
-                      <Image
-                        src={item.image}
-                        width={40}
-                        height={40}
-                        alt={item.name}
-                        className="rounded-md object-cover"
-                      />
-                    </div>
-                    <div className="flex-1">
-                      <p className="font-medium">{item.name}</p>
-                      <p className="text-sm text-muted-foreground">
-                        ${item.price}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="mt-4 pt-3 border-t">
-                <div className="flex justify-between font-semibold mb-3">
-                  <span>جمع کل:</span>
-                  <span>${totalPrice}</span>
-                </div>
-                <Button className="w-full" asChild>
-                  <Link href="/cart">ادامه به پرداخت</Link>
-                </Button>
-              </div>
-            </DropdownMenuContent>
           </DropdownMenu>
         </div>
       </div>

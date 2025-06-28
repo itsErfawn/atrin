@@ -29,11 +29,8 @@
     "react-insta-stories": "^2.8.0",
     "swiper": "^11.2.8",
     "tailwind-merge": "^3.3.0",
-<<<<<<< HEAD
+    "uuid": "^11.1.0",
     "zustand": "^5.0.5"
-=======
-    "uuid": "^11.1.0"
->>>>>>> 33040316f688f02fc7359e17f15e14a962287764
   },
   "devDependencies": {
     "@prisma/client": "^6.9.0",
