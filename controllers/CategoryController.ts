@@ -1,5 +1,3 @@
-"use server"
-
 import CategoriesModel from "@/models/CategoriesModel";
 import ProductsModel from "@/models/ProductsModel";
 
