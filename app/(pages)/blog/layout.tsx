@@ -1,5 +1,5 @@
-import BlogHeader from "@/components/Module/Blog/BlogHeader";
-import BlogSidebar from "@/components/Module/Blog/BlogSidebar";
+import BlogHeader from "@/components/module/Blog/BlogHeader";
+import BlogSidebar from "@/components/module/Blog/BlogSidebar";
 import Container from "@/components/Module/container/Container";
 import "../../../app/globals.css";
 

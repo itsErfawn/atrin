@@ -99,13 +99,12 @@ model Customer {
 model Blog {
   id         Int            @id @default(autoincrement())
   title      String
+  description String
   content    String
-  role       String
+  thumbnail  String
+  slug       String
   createdAt  DateTime       @default(now())
-  imageUrl   String
   comments   BlogComment[]
-  relatedTo  RelatedBlog[]  @relation("RelatedTo")
-  relatedFrom RelatedBlog[] @relation("RelatedFrom")
 }
 
 model BlogComment {
@@ -115,14 +114,6 @@ model BlogComment {
   createdAt DateTime @default(now())
   blog      Blog    @relation(fields: [blog_id], references: [id])
   blog_id    Int
-}
-
-model RelatedBlog {
-  id              Int   @id @default(autoincrement())
-  blog            Blog  @relation("RelatedTo", fields: [blog_id], references: [id])
-  blog_id          Int
-  relatedBlog     Blog  @relation("RelatedFrom", fields: [relatedBlog_id], references: [id])
-  relatedBlog_id   Int
 }
 
 model Filter {

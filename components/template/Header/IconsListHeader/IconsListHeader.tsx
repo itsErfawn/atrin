@@ -9,9 +9,9 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@radix-ui/react-dropdown-menu";
-import { Button } from "@/components/Module/ui/button";
-import { Input } from "@/components/Module/ui/input";
-import { Badge } from "@/components/Module/ui/badge";
+import { Button } from "@/components/module/ui/button";
+import { Input } from "@/components/module/ui/input";
+import { Badge } from "@/components/module/ui/badge";
 
 export async function IconsListHeader() {
   const cartItems = [
