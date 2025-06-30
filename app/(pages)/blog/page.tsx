@@ -2,10 +2,16 @@ import { getBlogs } from "@/controllers/BlogsController";
 import Link from "next/link";
 import React from "react";
 
-async function Blog({searchParams}:{searchParams:Promise<{page:number|undefined}>}) {
-  const {page}=await searchParams
-  const {blogs,pages}=await getBlogs(page)
-  // pages for pagination
+async function Blog({
+  searchParams,
+}: {
+  searchParams: Promise<{ page: number | undefined }>;
+}) {
+  const { page } = await searchParams;
+  const { blogs, pages } = await getBlogs(page);
+  console.log(blogs);
+  console.log(pages);
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       {blogs.map((blog) => (
