@@ -1,5 +1,5 @@
-import BlogContent from "@/components/module/Blog/BlogContent";
-import RelatedPostsSection from "@/components/module/Blog/RelatedPostsSection";
+import BlogContent from "@/components/Module/blog/BlogContent";
+import RelatedPostsSection from "@/components/Module/blog/RelatedPostsSection";
 import { getBlog, GetBlogMeta } from "@/controllers/BlogsController";
 
 type Props = {
@@ -50,8 +50,10 @@ export async function generateMetadata({
   };
 }
 export default async function BlogPage({ params }: Props) {
-  const {slug}=await params;
-  const data=await getBlog(slug)
+  const { slug } = await params;
+  const data = await getBlog(slug);
+  console.log(data);
+
   return (
     <div className="max-w-4xl mx-auto p-6 space-y-10">
       <BlogContent {...data} />

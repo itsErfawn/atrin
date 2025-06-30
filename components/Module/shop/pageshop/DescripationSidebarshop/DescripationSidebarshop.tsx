@@ -10,12 +10,13 @@ function DescripationSidebarshop() {
         عزیزان تأسیس شده است. ما در آترین به دنبال آن هستیم که نیازهای روزمره
         شما را برطرف کنیم.
       </h4>
+
       <div className="flex gap-2">
-        <button className="flex items-center justify-center gap-2 border text-white border-primary rounded-md bg-primary hover:bg-white hover:text-primary w-1/2 p-1">
+        <button className="btn btn-md btn-primary w-1/2 flex items-center justify-center gap-2">
           <PackageCheck size={18} />
           پیگیری سفارش
         </button>
-        <button className="flex items-center justify-center gap-2 border border-primary rounded-md bg-white hover:bg-primary hover:text-white w-1/2 p-1">
+        <button className="btn btn-md btn-outline w-1/2 flex items-center justify-center gap-2">
           <Phone size={18} />
           تماس با ما
         </button>
