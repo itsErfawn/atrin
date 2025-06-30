@@ -22,9 +22,16 @@ export default function BlogContent({
         </div>
       </div>
 
-      <img src={thumbnail} alt={title} className="w-full rounded-xl shadow-md" />
+      <img
+        src={thumbnail}
+        alt={title}
+        className="w-full rounded-xl shadow-md"
+      />
 
-      <div className="text-gray-700 leading-relaxed whitespace-pre-line" dangerouslySetInnerHTML={{ __html: content }}></div>
+      <div
+        className="prose prose-custom prose-lg max-w-none text-gray-800"
+        dangerouslySetInnerHTML={{ __html: content }}
+      ></div>
     </div>
   );
 }

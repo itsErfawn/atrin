@@ -6,9 +6,9 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 
 const steps = [
-  { name: "سبد خرید", path: "/shopcard" },
-  { name: "اطلاعات ارسال", path: "/shopcard/checkout" },
-  { name: "پرداخت", path: "/shopcard/payment" },
+  { name: "سبد خرید", path: "/checkout" },
+  { name: "اطلاعات ارسال", path: "/checkout/payment" },
+  { name: "پرداخت", path: "/checkout/zarinpallpayment" },
 ];
 
 export default function CartStepper() {

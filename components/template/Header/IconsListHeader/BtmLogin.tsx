@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/Module/ui/button";
 import { LogIn, User } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -14,7 +13,7 @@ function BtmLogin() {
   }, []);
 
   return (
-    <Button variant="ghost" size="icon">
+    <button>
       {isLogin ? (
         <User className="h-8 w-8" />
       ) : (
@@ -22,7 +21,7 @@ function BtmLogin() {
           <LogIn className="h-8 w-8" />
         </Link>
       )}
-    </Button>
+    </button>
   );
 }
 

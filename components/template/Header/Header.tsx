@@ -1,17 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import ItemListHeader from "./ItemListHeader/ItemListHeader";
 import { IconsListHeader } from "./IconsListHeader/IconsListHeader";
 import MobileNavbar from "./MobileNavbar/MobileNavbar";
 
 function Header() {
+  const [cookie, setCookie] = useState(false);
+
+  useEffect(() => {
+    const cookieValue = localStorage.getItem("cookie") === "true";
+    setCookie(cookieValue);
+  }, []);
+
   return (
     <header className="shadow-sm">
       <div className="hidden md:block">
-        <IconsListHeader />
+        <IconsListHeader cookie={cookie} />
         <ItemListHeader />
       </div>
       <div className="block md:hidden">
-        <MobileNavbar />
+        <MobileNavbar cookie={cookie} />
       </div>
     </header>
   );

@@ -1,14 +1,6 @@
 "use client";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-  DialogFooter,
-  DialogClose,
-} from "@/components/Module/ui/dialog";
+import React, { useEffect } from "react";
 import { X } from "lucide-react";
 
 type Props = {
@@ -70,75 +62,103 @@ function FacebookIcon(props: React.SVGProps<SVGSVGElement>) {
 }
 
 export default function ProductModal({ open, onClose, shortLink }: Props) {
+  useEffect(() => {
+    function onEsc(e: KeyboardEvent) {
+      if (e.key === "Escape") onClose();
+    }
+    if (open) {
+      document.body.style.overflow = "hidden"; // جلوگیری از اسکرول پشت مودال
+      window.addEventListener("keydown", onEsc);
+    } else {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onEsc);
+    }
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onEsc);
+    };
+  }, [open, onClose]);
+
+  if (!open) return null;
+
   return (
-    <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md rounded-lg bg-white p-6 shadow-lg">
-        <DialogHeader>
-          <DialogTitle className="text-lg font-bold text-center">
-            لینک ارسال شد!
-          </DialogTitle>
-          <DialogDescription className="text-center mt-2 text-gray-600">
+    <>
+      {/* بک‌دراپ */}
+      <div
+        className="fixed inset-0 bg-black bg-opacity-50 z-40"
+        onClick={onClose}
+      ></div>
+
+      {/* مودال */}
+      <div className="fixed inset-0 flex items-center justify-center z-50 p-4">
+        <div className="bg-white rounded-lg shadow-lg max-w-md w-full p-6 relative">
+          {/* دکمه بستن */}
+          <button
+            onClick={onClose}
+            aria-label="Close"
+            className="absolute top-4 right-4 text-gray-700 hover:text-gray-900 transition"
+          >
+            <X size={24} />
+          </button>
+
+          {/* عنوان */}
+          <h2 className="text-lg font-bold text-center">لینک ارسال شد!</h2>
+          <p className="text-center mt-2 text-gray-600">
             این لینک با موفقیت ارسال شد به کاربر.
-          </DialogDescription>
-        </DialogHeader>
+          </p>
 
-        <div className="mt-6 bg-gray-100 rounded-md p-3 text-center select-all cursor-pointer text-blue-600 font-semibold break-all">
-          {shortLink}
+          {/* لینک کوتاه */}
+          <div className="mt-6 bg-gray-100 rounded-md p-3 text-center select-all cursor-pointer text-blue-600 font-semibold break-all">
+            {shortLink}
+          </div>
+
+          {/* آیکون‌های اشتراک‌گذاری */}
+          <div className="flex justify-center gap-8 mt-6">
+            <a
+              href={`https://telegram.me/share/url?url=${encodeURIComponent(
+                shortLink
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share on Telegram"
+              className="text-blue-500 hover:text-blue-700 transition"
+            >
+              <TelegramIcon className="w-8 h-8" />
+            </a>
+            <a
+              href={`https://wa.me/?text=${encodeURIComponent(shortLink)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share on WhatsApp"
+              className="text-green-500 hover:text-green-700 transition"
+            >
+              <WhatsappIcon className="w-8 h-8" />
+            </a>
+            <a
+              href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
+                shortLink
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share on Twitter"
+              className="text-sky-500 hover:text-sky-700 transition"
+            >
+              <TwitterIcon className="w-8 h-8" />
+            </a>
+            <a
+              href={`https://facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+                shortLink
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Share on Facebook"
+              className="text-blue-800 hover:text-blue-900 transition"
+            >
+              <FacebookIcon className="w-8 h-8" />
+            </a>
+          </div>
         </div>
-
-        <div className="flex justify-center gap-8 mt-6">
-          <a
-            href={`https://telegram.me/share/url?url=${encodeURIComponent(
-              shortLink
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Share on Telegram"
-            className="text-blue-500 hover:text-blue-700 transition"
-          >
-            <TelegramIcon className="w-8 h-8" />
-          </a>
-          <a
-            href={`https://wa.me/?text=${encodeURIComponent(shortLink)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Share on WhatsApp"
-            className="text-green-500 hover:text-green-700 transition"
-          >
-            <WhatsappIcon className="w-8 h-8" />
-          </a>
-          <a
-            href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
-              shortLink
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Share on Twitter"
-            className="text-sky-500 hover:text-sky-700 transition"
-          >
-            <TwitterIcon className="w-8 h-8" />
-          </a>
-          <a
-            href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
-              shortLink
-            )}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Share on Facebook"
-            className="text-blue-700 hover:text-blue-900 transition"
-          >
-            <FacebookIcon className="w-8 h-8" />
-          </a>
-        </div>
-
-        <DialogFooter className="mt-6 flex justify-center">
-          <DialogClose asChild>
-            <button className="bg text-white px-6 py-2 rounded hover:bg-gray-800 transition">
-              <X size={24} />
-            </button>
-          </DialogClose>
-        </DialogFooter>
-      </DialogContent>
-    </Dialog>
+      </div>
+    </>
   );
 }

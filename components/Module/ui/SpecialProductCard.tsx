@@ -1,8 +1,8 @@
 import { useRef, useState } from "react";
-import CountdownTimer from "./CountdownTimer";
 import LikeProductCardmainpage from "./LikeProductCardmainpage";
 import SpecialProductCardVideo from "./SpecialProductCardVideo";
 import SpecialProductCardImage from "./SpecialProductCardImage";
+import CountdownTimer from "./CountdownTimer";
 
 type TProductCard = {
   src: string;
