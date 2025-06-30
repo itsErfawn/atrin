@@ -35,7 +35,6 @@ const ColorFilter = ({ selectedColors, setSelectedColors }: Props) => {
                 isSelected ? "border-primary scale-110" : "border-transparent"
               } shadow-md transition-transform`}
               style={{ backgroundColor: "transparent" }}
-              aria-label={`رنگ ${name}`}
             >
               <span
                 className={`${className} block w-full h-full rounded-full`}

@@ -2,14 +2,18 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { sortOptions } from "@/context/DatasortOptions";
+
 type Tchange = {
   label: string;
 };
+
 export default function ShopFilter() {
   const [active, setactive] = useState("پیش فرض");
+
   function handelchange({ label }: Tchange) {
     setactive(label);
   }
+
   return (
     <div className="p-2 sm:p-4 bg-white rounded-2xl shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
       <form>
@@ -19,18 +23,15 @@ export default function ShopFilter() {
           </li>
 
           {sortOptions.map(({ label, href, value }) => (
-            <li
-              key={value}
-              className={`cursor-pointer rounded-md text-sm sm:text-base
-                ${
-                  label === active
-                    ? "font-bold text-white bg-primary px-2 py-1"
-                    : "text-primary hover:bg-primary hover:text-white px-2 py-1"
-                }`}
-              onClick={() => handelchange({ label })}
-            >
-              <Link href={href} className="block whitespace-nowrap">
-                <span>{label}</span>
+            <li key={value} onClick={() => handelchange({ label })}>
+              <Link href={href}>
+                <span
+                  className={`btn btn-sm ${
+                    label === active ? "btn-primary" : "btn-outline"
+                  }`}
+                >
+                  {label}
+                </span>
               </Link>
             </li>
           ))}

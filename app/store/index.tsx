@@ -1,3 +1,3 @@
-import { UseStore } from "./AddToFavorites";
+import { UseStore } from "./Addproduct";
 
 export { UseStore };
