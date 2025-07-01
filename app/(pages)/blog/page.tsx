@@ -1,4 +1,4 @@
-import PaginationBlog from "@/components/Module/blog/PaginationBlog";
+import PaginationBlog from "@/components/module/blog/PaginationBlog";
 import { getBlogs } from "@/controllers/BlogsController";
 import Link from "next/link";
 import React from "react";
@@ -6,12 +6,10 @@ import React from "react";
 async function Blog({
   searchParams,
 }: {
-  searchParams: Promise<{ page: number | undefined }>;
+  searchParams: Promise<{ page: number | undefined,search:string|undefined }>;
 }) {
-  const { page } = await searchParams;
-  const { blogs, pages } = await getBlogs(page);
-  console.log(blogs);
-  console.log(pages);
+  const { page,search } = await searchParams;
+  const { blogs, pages } = await getBlogs(page,search);
   const currentPage = page ?? 1;
   return (
     <>
@@ -39,7 +37,7 @@ async function Blog({
           </div>
         ))}
       </div>
-      <PaginationBlog currentPage={currentPage} pages={pages} />
+      <PaginationBlog search={search} currentPage={currentPage} pages={pages} />
     </>
   );
 }

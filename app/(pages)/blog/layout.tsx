@@ -1,13 +1,16 @@
-import BlogHeader from "@/components/Module/blog/BlogHeader";
-import BlogSidebar from "@/components/Module/blog/BlogSidebar";
+import BlogHeader from "@/components/module/blog/BlogHeader";
+import BlogSidebar from "@/components/module/blog/BlogSidebar";
 import Container from "@/components/Module/container/Container";
 import "../../../app/globals.css";
+import BlogsModel from "@/models/BlogsModel";
+import { BlogCardCollection } from "@/types/blogs";
 
-export default function BlogLayout({
+export default async function BlogLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const latestBlog=await BlogsModel.getLatestBlog() as BlogCardCollection
   return (
     <Container>
       <div className="flex flex-col lg:flex-row gap-6 mt-10">
@@ -17,7 +20,7 @@ export default function BlogLayout({
         </div>
 
         <aside className="w-full lg:w-[30%] hidden lg:block">
-          <BlogSidebar />
+          <BlogSidebar latestBlog={latestBlog} />
         </aside>
       </div>
     </Container>

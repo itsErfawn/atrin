@@ -4,15 +4,17 @@ import React from "react";
 function PaginationBlog({
   currentPage,
   pages,
+  search
 }: {
   currentPage: number;
   pages: number;
+  search:string|undefined
 }) {
   return (
     <div className="flex justify-center items-center gap-2 mt-10">
       {currentPage > 1 && (
         <Link
-          href={`?page=${currentPage - 1}`}
+          href={`?page=${currentPage - 1}${search?`&search=${search}`:''}`}
           className="px-3 py-2 bg-stone-200 rounded-lg hover:bg-stone-300 transition"
         >
           قبلی
@@ -27,7 +29,7 @@ function PaginationBlog({
             <React.Fragment key={p}>
               {prev && p - prev > 1 && <span className="px-2">...</span>}
               <Link
-                href={`?page=${p}`}
+                href={`?page=${p}${search?`&search=${search}`:''}`}
                 className={`px-3 py-2 rounded-lg ${
                   currentPage === p
                     ? "bg-primary text-white"
@@ -42,7 +44,7 @@ function PaginationBlog({
 
       {currentPage < pages && (
         <Link
-          href={`?page=${currentPage + 1}`}
+          href={`?page=${currentPage + 1}${search?`&search=${search}`:''}`}
           className="px-3 py-2 bg-stone-200 rounded-lg hover:bg-stone-300 transition"
         >
           بعدی
