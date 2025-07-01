@@ -5,8 +5,6 @@ type TProductDescription = {
 export default function ProductDescription({
   description,
 }: TProductDescription) {
-  console.log(description);
-
   return (
     <>
       <div className="bg-gray-50 rounded-md p-5 mt-6 shadow-sm mx-auto max-w-3xl">

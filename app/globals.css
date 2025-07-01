@@ -363,3 +363,10 @@ footer {
    ✅ login END
 ======================== */
 
+.product-gallery-wrapper{
+  @apply flex sm:flex-col flex-row gap-3 sm:max-h-[500px] max-w-full sm:overflow-y-auto overflow-x-auto ;
+  scrollbar-width: 0px;
+  &::-webkit-scrollbar{
+    display: none;
+  }
+}

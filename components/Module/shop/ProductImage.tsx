@@ -23,7 +23,7 @@ function ProductImage({ images, thumbnail }: ProductImageProps) {
         />
       </div>
 
-      <div className="flex sm:flex-col flex-row gap-3 sm:max-h-[500px] max-w-full sm:overflow-y-auto overflow-x-auto scrollbar-hide">
+      <div className="product-gallery-wrapper ">
         {images.map((img, idx) => (
           <button
             key={idx}

@@ -63,7 +63,7 @@ export function IconsListHeader({ cookie }: { cookie: boolean }) {
 
         <div className="hidden md:flex items-center gap-4">
           <Link
-            href="/favorites"
+            href="/wishlist"
             className="relative inline-flex items-center p-2 rounded-md hover:bg-gray-100"
           >
             <Heart className="h-5 w-5 text-gray-700" />
