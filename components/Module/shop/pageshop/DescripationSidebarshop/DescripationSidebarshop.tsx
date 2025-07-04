@@ -1,4 +1,3 @@
-import React from "react";
 import { PackageCheck, Phone } from "lucide-react";
 
 function DescripationSidebarshop() {
@@ -11,12 +10,12 @@ function DescripationSidebarshop() {
         شما را برطرف کنیم.
       </h4>
 
-      <div className="flex gap-2">
-        <button className="btn btn-md btn-primary w-1/2 flex items-center justify-center gap-2">
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <button className="btn btn-md btn-primary w-full sm:w-1/2 flex items-center justify-center gap-2">
           <PackageCheck size={18} />
           پیگیری سفارش
         </button>
-        <button className="btn btn-md btn-outline w-1/2 flex items-center justify-center gap-2">
+        <button className="btn btn-md btn-outline w-full sm:w-1/2 flex items-center justify-center gap-2">
           <Phone size={18} />
           تماس با ما
         </button>
@@ -24,5 +23,4 @@ function DescripationSidebarshop() {
     </>
   );
 }
-
 export default DescripationSidebarshop;

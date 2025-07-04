@@ -28,7 +28,7 @@ function HighlightSidebarshop() {
               <img
                 src={highlight.stories[0].url}
                 alt={highlight.title}
-                className="w-19 h-16 rounded-full object-cover border-2 border-primary"
+                className="w-16 h-14 rounded-full object-cover border-2 border-primary"
               />
               <span className="mt-2 text-xs text-center text-gray-800">
                 {highlight.title}

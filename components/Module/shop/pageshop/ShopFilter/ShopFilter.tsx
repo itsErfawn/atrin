@@ -15,7 +15,7 @@ export default function ShopFilter() {
   }
 
   return (
-    <div className="p-2 sm:p-4 bg-white rounded-2xl shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
+    <div className="p-2 sm:p-4  bg-white rounded-2xl shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
       <form>
         <ul className="flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-4">
           <li className="text-primary text-sm sm:text-base font-semibold">

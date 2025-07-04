@@ -2,8 +2,6 @@
 
 import React, { useState } from "react";
 import { X } from "lucide-react";
-import SizeFilter from "./SizeFilter";
-import ColorFilter from "./ColorFilter";
 import PriceFilter from "./PriceFilter";
 
 interface Props {
@@ -29,7 +27,7 @@ function FilterModal({ isOpen, onClose }: Props) {
   }
 
   return (
-    <div className="fixed inset-0 z-60 bg-black/60 flex items-center justify-center px-4">
+    <div className="fixed inset-0 z-[1000]   bg-black/60 flex items-center justify-center px-4">
       <div className="bg-white rounded-lg  w-full max-w-lg p-6 relative">
         <button
           onClick={onClose}
@@ -43,16 +41,6 @@ function FilterModal({ isOpen, onClose }: Props) {
         </h2>
 
         <PriceFilter price={price} setPrice={setPrice} />
-
-        <ColorFilter
-          selectedColors={selectedColors}
-          setSelectedColors={setSelectedColors}
-        />
-
-        <SizeFilter
-          selectedSizes={selectedSizes}
-          setSelectedSizes={setSelectedSizes}
-        />
 
         <div className="flex justify-between gap-4">
           <button

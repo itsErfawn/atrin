@@ -38,16 +38,21 @@ async function CategoriesPage(
 }
 export async function Gsasdsadk({ slug }: { slug: string }) {
   const { category, products } = await GetProductsByCategory(slug);
+  console.log(products);
+
   return (
     <>
-      <div className="flex items-center flex-wrap m-2">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-3 p-2">
         {products.map((product) => (
           <Link
-            className="md:w-3/12 w-4/12 p-4 flex flex-col  items-center justify-center shadow-sm "
             key={product.id}
             href={`/product/${product.slug}`}
+            className="flex flex-col items-center justify-center shadow-sm rounded-md p-3 bg-white"
           >
             <ImageWithSkeleton
+              discount={product.discount}
+              title={product.title}
+              price={product.price}
               src={product.thumbnail}
               alt={product.title}
               width={200}

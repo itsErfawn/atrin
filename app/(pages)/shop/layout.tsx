@@ -21,9 +21,8 @@ export default function ShopLayout({
           </div>
 
           <div className="flex flex-col w-full  mt-5">
-            <div className="md:sticky md:top-4 z-40 bg-white ">
-              <ShopFilter />
-            </div>
+            <ShopFilter />
+
             <div className=" mt-5">{children}</div>
           </div>
         </div>
