@@ -8,20 +8,10 @@ import ProductBenefits from "./ProductBenefits";
 import ProductCommunication from "./ProductCommunication";
 import ProductImage from "./ProductImage";
 import ProductTitle from "./ProductTitle";
-export interface Product {
-  id: number;
-  discount?: number;
-  price?: number;
-  description?: string;
-  thumbnail?: string;
-  title?: string;
-  images?: string[];
-}
+import { ProductType } from "@/types/products";
 
-export interface ProductDetailProps {
-  product: Product;
-}
-export default function ProductDetail({ product }: ProductDetailProps) {
+
+export default function ProductDetail({ product }:{product:ProductType}) {
   const {
     discount = 0,
     price = 0,

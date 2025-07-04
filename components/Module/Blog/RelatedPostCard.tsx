@@ -1,20 +1,23 @@
 import { CalendarDays, User } from "lucide-react";
+import Link from "next/link";
 
 type RelatedPostProps = {
   title: string;
   image: string;
-  author: string;
-  date: string;
+  author?: string;
+  createdAt: Date;
+  slug:string
 };
 
 export default function RelatedPostCard({
   title,
   image,
   author,
-  date,
+  createdAt,
+  slug
 }: RelatedPostProps) {
   return (
-    <div className="rounded-xl shadow hover:shadow-lg transition p-3 bg-white">
+    <Link href={`/blog/${slug}`} className="rounded-xl shadow hover:shadow-lg transition p-3 bg-white">
       <img
         src={image}
         alt={title}
@@ -30,9 +33,9 @@ export default function RelatedPostCard({
         </div>
         <div className="flex items-center gap-2 text-gray-500 text-xs mt-1">
           <CalendarDays className="w-3 h-3" />
-          <span>{date}</span>
+          <span>{createdAt.toLocaleDateString()}</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛍️ Atrin Project
 
-## Getting Started
+*A modern multi-vendor e-commerce platform with admin panel, automation system, and accounting logic.*
 
-First, run the development server:
+---
+
+## 📁 Architecture
+
+This project is fully built using the **MVC architecture pattern** in **Next.js App Router** with a clear separation of concerns:
+
+```
+src/
+├── app/                  # Next.js pages (routes)
+│   └── ...               # Route handlers (Controllers + UI binding)
+├── components/           # View components (UI)
+│   └── ...
+├── controllers/          # Controllers (Business flow logic)
+│   └── usersController.ts
+├── models/               # Prisma-based Models (Data layer)
+│   └── userModel.ts
+├── lib/
+│   └── db.ts             # Prisma client instance
+└── prisma/
+    └── schema.prisma     # Database schema (SQLite)
+```
+
+> All data access logic lives in the `models`,
+> business flow logic (e.g., form handlers) live in `controllers`,
+> and UI is cleanly separated in `components`.
+
+---
+
+## 🧠 Features
+
+* 🔐 Admin Panel with role-based access
+* 🧾 Invoice and Quotation (Pre-invoice) generation
+* 🛍️ Multi-vendor product listing and seller management
+* 📊 Accounting-related logic
+* 📨 Office automation workflows
+* 🗃️ SQLite database (dev) via Prisma ORM
+* 🧩 Clean, maintainable, and scalable MVC codebase
+
+---
+
+## 🚀 Tech Stack
+
+* **Framework:** Next.js (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **ORM:** Prisma
+* **Database:** SQLite (can be switched to PostgreSQL/MySQL)
+
+---
+
+## 🛠️ How to Run the Project
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/atrin.git
+cd atrin
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Generate Prisma Client
+
+```bash
+npx prisma generate
+```
+
+### 4. Run migrations (and create SQLite DB)
+
+```bash
+npx prisma migrate dev --name init
+```
+
+### 5. Start the dev server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000) to view the project.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📌 Notes
 
-## Learn More
+* For production, switch from SQLite to PostgreSQL or MySQL.
+* Environment configs are handled via `.env`.
+* Prisma schema is located in `prisma/schema.prisma`.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📬 Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+For any issues or contributions, please open an issue or submit a PR.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> Made with ❤️ by [ErFaN](https://github.com/itsErfawn), [Mahdi](https://github.com/Mahdi-Devm)

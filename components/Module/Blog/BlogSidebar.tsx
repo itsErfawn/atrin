@@ -1,31 +1,22 @@
 import React from "react";
 import SearchBar from "./SearchBar";
+import { BlogCardCollection } from "@/types/blogs";
+import Link from "next/link";
 
-function BlogSidebar() {
+function BlogSidebar({latestBlog}:{latestBlog:BlogCardCollection}) {
   return (
-    <div className="flex flex-col  gap-8">
+    <div className="flex flex-col  gap-8 sticky top-[50px]">
       <SearchBar />
 
       <aside className="bg-white border border-stone-100 rounded-md p-4">
         <h3 className="font-bold text-base mb-4">آخرین مقالات</h3>
         <ul className="text-sm space-y-3">
-          <li>
-            راهنمای کامل برای انتخاب لباس مناسب در هر فصل
+          {latestBlog.map(blog=>(
+            <li key={blog.id}>
+            <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
             <hr className="my-2 border-stone-200" />
           </li>
-          <li>
-            ترندهای لباس مردانه و زنانه در سال 2025
-            <hr className="my-2 border-stone-200" />
-          </li>
-          <li>
-            بهترین راه‌های نگه‌داری و افزایش عمر لباس‌ها
-            <hr className="my-2 border-stone-200" />
-          </li>
-          <li>
-            نکات مهم در خرید لباس برای استایل راحت و شیک روزمره
-            <hr className="my-2 border-stone-200" />
-          </li>
-          <li>برندهای معتبر لباس کدامند و چه چیزی آن‌ها را خاص می‌کند؟</li>
+          ))}
         </ul>
       </aside>
     </div>

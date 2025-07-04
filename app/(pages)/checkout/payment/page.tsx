@@ -2,7 +2,7 @@ import Container from "@/components/Module/container/Container";
 
 import CartSummary from "@/components/Module/shopcard/CartSummary";
 
-function checkout() {
+function payment() {
   return (
     <Container>
       <main className="px-4 md:px-8 py-6">
@@ -11,7 +11,6 @@ function checkout() {
             <h2 className="text-lg font-semibold mb-2">جزئیات پرداخت</h2>
 
             <form className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* نام */}
               <div className="flex flex-col">
                 <label htmlFor="firstName" className="mb-1 text-sm font-medium">
                   نام *
@@ -24,7 +23,6 @@ function checkout() {
                 />
               </div>
 
-              {/* نام خانوادگی */}
               <div className="flex flex-col">
                 <label htmlFor="lastName" className="mb-1 text-sm font-medium">
                   نام خانوادگی *
@@ -37,7 +35,6 @@ function checkout() {
                 />
               </div>
 
-              {/* کشور / منطقه */}
               <div className="flex flex-col md:col-span-2">
                 <label htmlFor="country" className="mb-1 text-sm font-medium">
                   کشور / منطقه *
@@ -54,7 +51,6 @@ function checkout() {
                 </select>
               </div>
 
-              {/* خیابان */}
               <div className="flex flex-col md:col-span-2">
                 <label htmlFor="street" className="mb-1 text-sm font-medium">
                   خیابان *
@@ -67,7 +63,6 @@ function checkout() {
                 />
               </div>
 
-              {/* آپارتمان (اختیاری) */}
               <div className="flex flex-col md:col-span-2">
                 <label htmlFor="apartment" className="mb-1 text-sm font-medium">
                   آپارتمان، مجتمع، واحد و... (اختیاری)
@@ -79,7 +74,6 @@ function checkout() {
                 />
               </div>
 
-              {/* شهر */}
               <div className="flex flex-col">
                 <label htmlFor="city" className="mb-1 text-sm font-medium">
                   شهر *
@@ -92,7 +86,6 @@ function checkout() {
                 />
               </div>
 
-              {/* استان */}
               <div className="flex flex-col">
                 <label htmlFor="province" className="mb-1 text-sm font-medium">
                   استان *
@@ -105,7 +98,6 @@ function checkout() {
                 />
               </div>
 
-              {/* کد پستی */}
               <div className="flex flex-col">
                 <label
                   htmlFor="postalCode"
@@ -121,7 +113,6 @@ function checkout() {
                 />
               </div>
 
-              {/* تلفن (اختیاری) */}
               <div className="flex flex-col">
                 <label htmlFor="phone" className="mb-1 text-sm font-medium">
                   تلفن (اختیاری)
@@ -133,7 +124,6 @@ function checkout() {
                 />
               </div>
 
-              {/* ایمیل */}
               <div className="flex flex-col md:col-span-2">
                 <label htmlFor="email" className="mb-1 text-sm font-medium">
                   آدرس ایمیل *
@@ -146,7 +136,6 @@ function checkout() {
                 />
               </div>
 
-              {/* دکمه ارسال (اختیاری برای تست) */}
               <div className="md:col-span-2 mt-4">
                 <button
                   type="submit"
@@ -173,7 +162,6 @@ function checkout() {
           />
         </div>
 
-        {/* دکمه ارسال */}
         <div className="md:col-span-2 mt-4 m-3">
           <button
             type="submit"
@@ -186,4 +174,4 @@ function checkout() {
     </Container>
   );
 }
-export default checkout;
+export default payment;

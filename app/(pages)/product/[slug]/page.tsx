@@ -1,11 +1,8 @@
 import Container from "@/components/Module/container/Container";
-// @ts-ignore
-import Breadcrumb from "@/components/Module/ui/Breadcrumb";
-// @ts-ignore
-import ProductDetail from "@/components/Module/shop/ProductDetail";
+import Breadcrumb from "@/components/module/ui/Breadcrumb";
+import ProductDetail from "@/components/module/shop/ProductDetail";
 import React from "react";
-// @ts-ignore
-import SimilarProducts from "@/components/Module/shop/SimilarProducts";
+import SimilarProducts from "@/components/module/shop/SimilarProducts";
 import {
   getProduct,
   getProductMetaData,
@@ -31,8 +28,7 @@ export async function generateMetadata({
 }
 export default async function ProductPage({ params }: Props) {
   const { slug } = await params;
-  const product = await getProduct(slug);
-  console.log(product);
+  const {product,relatedProducts} = await getProduct(slug);
 
   return (
     <Container>
@@ -41,7 +37,7 @@ export default async function ProductPage({ params }: Props) {
           <Breadcrumb />
         </div>
         <ProductDetail product={product} />
-        <SimilarProducts />
+        <SimilarProducts relatedProducts={relatedProducts} />
       </section>
     </Container>
   );
