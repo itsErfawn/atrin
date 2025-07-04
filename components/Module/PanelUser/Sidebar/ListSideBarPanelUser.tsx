@@ -17,11 +17,7 @@ const ListPanelUser = [
     href: "/account/orders",
     icon: <ShoppingCart size={20} />,
   },
-  {
-    name: "دانلودها",
-    href: "/account/downloads",
-    icon: <Download size={20} />,
-  },
+
   { name: "آدرس‌ها", href: "/account/address", icon: <MapPin size={20} /> },
   {
     name: "اطلاعات حساب کاربری",

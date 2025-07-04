@@ -1,7 +1,8 @@
+import Container from "@/components/Module/container/Container";
 import React from "react";
 
 function page() {
-  return <div>page</div>;
+  return <Container>هیچ علاقه مندی نیست </Container>;
 }
 
 export default page;
