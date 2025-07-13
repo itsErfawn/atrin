@@ -1,45 +1,33 @@
-import ImageWithSkeleton from "@/components/Module/ui/ImageWithLoading";
-import {
-  GetCategoryMetaData,
-  GetProductsByCategory,
-} from "@/controllers/CategoryController";
-import Image from "next/image";
+import ImageWithSkeleton from "@/components/module/ui/ImageWithLoading";
+import { GETShopData } from "@/controllers/ShopController";
 import Link from "next/link";
 import React, { Suspense } from "react";
-
-export async function generateMetadata({
-  params,
-  searchParams,
-}: {
-  params: Promise<{ slug: string }>;
-  searchParams: Promise<any>;
-}) {
-  const slug = "men";
-  const metas = await GetCategoryMetaData(slug);
-  if (!metas) {
-    return { title: "آترین" };
-  }
-  return {
-    title: metas[1].value,
-    description: metas[0].value,
-    canonical: metas[2].value,
+interface Props {
+  searchParams?: {
+    category?: string;
+    page?: number;
+    orderby?: string;
   };
 }
-async function CategoriesPage(
-  props: { params: Promise<{ slug: string }> },
-  searchParams: Promise<any>
-) {
-  const slug = "men";
+async function ShopPage({ searchParams }: Props) {
+  const params=await searchParams
+  const category_id = Number(params?.category || 0);
+  const page = Number(params?.page || 1);
+  const orderBy = params?.orderby || "default";
+
+
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <Gsasdsadk slug={slug} />
+      <Gsasdsadk
+        category_id={category_id}
+        page={page}
+        orderBy={orderBy}
+      />
     </Suspense>
   );
 }
-export async function Gsasdsadk({ slug }: { slug: string }) {
-  const { category, products } = await GetProductsByCategory(slug);
-  console.log(products);
-
+async function Gsasdsadk({ category_id,page,orderBy }: { category_id?: number,page?:number,orderBy?:string }) {
+  const {  products } = await GETShopData(category_id,page,orderBy);
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-3 p-2">
@@ -65,4 +53,4 @@ export async function Gsasdsadk({ slug }: { slug: string }) {
     </>
   );
 }
-export default CategoriesPage;
+export default ShopPage;
