@@ -5,8 +5,8 @@ type RelatedPostProps = {
   title: string;
   image: string;
   author?: string;
-  createdAt: Date;
-  slug:string
+  createdAt: string | Date;
+  slug: string;
 };
 
 export default function RelatedPostCard({
@@ -14,10 +14,13 @@ export default function RelatedPostCard({
   image,
   author,
   createdAt,
-  slug
+  slug,
 }: RelatedPostProps) {
   return (
-    <Link href={`/blog/${slug}`} className="rounded-xl shadow hover:shadow-lg transition p-3 bg-white">
+    <Link
+      href={`/blog/${slug}`}
+      className="rounded-xl shadow hover:shadow-lg transition p-3 bg-white block"
+    >
       <img
         src={image}
         alt={title}
@@ -33,7 +36,9 @@ export default function RelatedPostCard({
         </div>
         <div className="flex items-center gap-2 text-gray-500 text-xs mt-1">
           <CalendarDays className="w-3 h-3" />
-          <span>{createdAt.toLocaleDateString()}</span>
+          <span>
+            {createdAt ? new Date(createdAt).toLocaleDateString() : ""}
+          </span>
         </div>
       </div>
     </Link>

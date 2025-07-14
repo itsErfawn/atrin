@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { X } from "lucide-react";
 import PriceFilter from "./PriceFilter";
+import CategoryFilter from "./CategoryFilter";
 
 interface Props {
   isOpen: boolean;
@@ -41,7 +42,7 @@ function FilterModal({ isOpen, onClose }: Props) {
         </h2>
 
         <PriceFilter price={price} setPrice={setPrice} />
-
+        <CategoryFilter />
         <div className="flex justify-between gap-4">
           <button
             type="button"

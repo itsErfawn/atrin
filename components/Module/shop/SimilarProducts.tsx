@@ -1,32 +1,51 @@
+"use client";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import Image from "next/image";
-import React from "react";
-import Container from "../container/Container";
-import { relatedProductsCollection } from "@/types/products";
-import Link from "next/link";
 
-function SimilarProducts({relatedProducts}:{relatedProducts:relatedProductsCollection}) {
+type RelatedPost = {
+  id: number;
+  title: string;
+  thumbnail: string;
+  createdAt: string;
+  slug: string;
+};
+
+type Props = {
+  relatedProducts: RelatedPost[];
+};
+
+export default function SimilarProducts({ relatedProducts }: Props) {
   return (
-    <Container>
-      <div className="mt-10 mb-5">
-        <h2 className="text-center text-2xl m-5 text-primary">محصولات مشابه</h2>
+    <div className="my-12 space-y-4 flex justify-center flex-col items-center">
+      <h2 className="text-2xl font-semibold text-gray-800">مطالب مرتبط</h2>
+      <Swiper
+        slidesPerView={2}
+        breakpoints={{
+          640: { slidesPerView: 4 },
+          1024: { slidesPerView: 4 },
+        }}
+        className="px-4"
+      >
+        {relatedProducts.map((post, index) => {
+          const isLarge = index % 2 === 0;
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center px-4">
-          {relatedProducts.map((product, index) => (
-            <Link key={index} href={`/product/${product.slug}`}>
-            <Image
-              src={product.thumbnail}
-              alt={product.title}
-              width={index % 2 === 0 ? 200 : 250}
-              height={200}
-              className="rounded-2xl"
-              priority
+          return (
+            <SwiperSlide
+              key={post.id}
+              className="flex justify-center items-center"
+            >
+              <Image
+                src={post.thumbnail}
+                alt="محصول مرتبط"
+                width={isLarge ? 300 : 210}
+                height={isLarge ? 300 : 210}
+                className="object-cover rounded-2xl p-5"
               />
-              </Link>
-          ))}
-        </div>
-      </div>
-    </Container>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </div>
   );
 }
-
-export default SimilarProducts;

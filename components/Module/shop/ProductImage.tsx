@@ -36,7 +36,7 @@ function ProductImage({ images, thumbnail }: ProductImageProps) {
           >
             <Image
               src={img.imageUrl}
-              alt={`تصویر کوچک ${idx + 1}`}
+              alt={"img"}
               width={70}
               height={70}
               className="object-cover rounded"

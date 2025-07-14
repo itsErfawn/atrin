@@ -1,5 +1,5 @@
-import BlogContent from "@/components/module/blog/BlogContent";
-import RelatedPostsSection from "@/components/module/blog/RelatedPostsSection";
+import BlogContent from "@/components/Module/blog/BlogContent";
+import RelatedPostsSection from "@/components/module/shop/SimilarProducts";
 import { getBlog, GetBlogMeta } from "@/controllers/BlogsController";
 
 type Props = {
@@ -52,14 +52,16 @@ export async function generateMetadata({
 export default async function BlogPage({ params }: Props) {
   const { slug } = await params;
   const data = await getBlog(slug);
-  const {relatedBlog}=data
+  const { relatedBlog } = data;
+  console.log(relatedBlog);
+
   return (
     <>
       <div className="blog-content-container">
         <BlogContent {...data} />
       </div>
       <div className="container">
-      <RelatedPostsSection posts={relatedBlog} />
+        <RelatedPostsSection posts={relatedBlog} />
       </div>
     </>
   );

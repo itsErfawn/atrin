@@ -1,4 +1,4 @@
-import ProductDescriptionWithModal from "./ProductDescriptionWithModal";
+import ProductDescription from "./ProductDescriptionWithModal";
 import React from "react";
 import ProductInfo from "./ProductInfo";
 import ProductPrice from "./ProductPrice";
@@ -10,8 +10,7 @@ import ProductImage from "./ProductImage";
 import ProductTitle from "./ProductTitle";
 import { ProductType } from "@/types/products";
 
-
-export default function ProductDetail({ product }:{product:ProductType}) {
+export default function ProductDetail({ product }: { product: ProductType }) {
   const {
     discount = 0,
     price = 0,
@@ -38,7 +37,7 @@ export default function ProductDetail({ product }:{product:ProductType}) {
         <BtnAddCard product={product} />
         <ProductBenefits />
         <div>
-          <ProductDescriptionWithModal description={description} />
+          <ProductDescription description={description} />
         </div>
       </div>
     </div>

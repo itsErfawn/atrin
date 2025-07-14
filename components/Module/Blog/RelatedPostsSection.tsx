@@ -1,34 +1,46 @@
-import RelatedPostCard from "./RelatedPostCard";
+import { CalendarDays, User } from "lucide-react";
+import Link from "next/link";
 
-type RelatedPost = {
-  id: number;
+type RelatedPostProps = {
   title: string;
-  thumbnail: string;
-  createdAt: Date;
-  slug:string;
+  image: string;
+  author?: string;
+  createdAt: string;
+  slug: string;
 };
 
-type Props = {
-  posts: RelatedPost[];
-};
-
-export default function RelatedPostsSection({ posts }: Props) {
+export default function RelatedPostCard({
+  title,
+  image,
+  author,
+  createdAt,
+  slug,
+}: RelatedPostProps) {
   return (
-    <div className="my-12 space-y-4">
-      <h2 className="text-2xl font-semibold text-gray-800">مطالب مرتبط</h2>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {posts.map((post) => (
-          <RelatedPostCard
-            key={post.id}
-            title={post.title}
-            image={post.thumbnail}
-            author={"admin"}
-            createdAt={post.createdAt}
-            slug={post.slug}
-          />
-        ))}
+    <Link
+      href={`/blog/${slug}`}
+      className="rounded-xl shadow hover:shadow-lg transition p-3 bg-white"
+    >
+      <img
+        src={image}
+        alt={title}
+        className="w-full h-40 object-cover rounded-lg mb-3"
+      />
+      <h3 className="font-bold text-sm text-gray-800 mb-1 line-clamp-2">
+        {title}
+      </h3>
+      <div className="flex justify-between">
+        <div className="flex items-center gap-2 text-gray-500 text-xs">
+          <User className="w-3 h-3" />
+          <span>{author}</span>
+        </div>
+        <div className="flex items-center gap-2 text-gray-500 text-xs mt-1">
+          <CalendarDays className="w-3 h-3" />
+          <span>
+            {createdAt ? new Date(createdAt).toLocaleDateString() : ""}
+          </span>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
