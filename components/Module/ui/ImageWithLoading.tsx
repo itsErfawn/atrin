@@ -9,8 +9,8 @@ interface Props {
   width: number;
   height: number;
   className?: string;
-  discount?: number;
-  price?: number;
+  discount: number|null;
+  price: number;
   title?: string;
 }
 
@@ -20,7 +20,7 @@ export default function ImageWithSkeleton({
   width,
   height,
   className = "",
-  discount,
+  discount=0,
   price,
   title,
 }: Props) {
@@ -61,10 +61,10 @@ export default function ImageWithSkeleton({
                 {title}
               </h4>
             )}
-            {(price !== undefined ||
-              (discount !== undefined && discount > 0)) && (
+            {(price ||
+              (discount && discount > 0)) && (
               <div className="flex items-center space-x-2 ">
-                {price !== undefined && (
+                {price  && (
                   <p className="text-md font-bold text-gray-900">
                     {price.toLocaleString()}{" "}
                     <span className="text-sm font-normal text-gray-600">
@@ -72,9 +72,9 @@ export default function ImageWithSkeleton({
                     </span>
                   </p>
                 )}
-                {discount !== undefined && discount > 0 && (
+                {discount && discount > 0 && (
                   <span className="bg-primary text-white text-xs px-2 py-1 rounded-md shadow-md font-semibold">
-                    {Math.min(Math.round(discount), 100)}% تخفیف
+                    {Math.round(((price - discount) / price) * 100)}% تخفیف
                   </span>
                 )}
               </div>

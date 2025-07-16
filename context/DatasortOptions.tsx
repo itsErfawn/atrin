@@ -3,7 +3,6 @@ export const sortOptions = [
   { label: "هزینه: کم به زیاد", value: "price", href: "/shop/?orderby=price" },
   {
     label: "هزینه: زیاد به کم",
-    value: "price-desc",
-    href: "/shop/?orderby=price-desc",
+    value: "expensive",
   },
 ];
