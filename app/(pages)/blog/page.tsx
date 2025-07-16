@@ -5,15 +5,18 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: 'وبلاگ',
-}
+  title: "وبلاگ",
+};
 async function Blog({
   searchParams,
 }: {
-  searchParams: Promise<{ page: number | undefined,search:string|undefined }>;
+  searchParams: Promise<{
+    page: number | undefined;
+    search: string | undefined;
+  }>;
 }) {
-  const { page,search } = await searchParams;
-  const { blogs, pages } = await getBlogs(page,search);
+  const { page, search } = await searchParams;
+  const { blogs, pages } = await getBlogs(page, search);
   const currentPage = page ?? 1;
   return (
     <>

@@ -1,30 +1,48 @@
-import React, { useState, useRef, useEffect } from "react";
+import { categoriesshop } from "@/context/Datacategoriesshop";
+import { useUpdateQueryParams } from "@/hook/useUpdateQueryParams";
+import { X } from "lucide-react";
+import React, { useState } from "react";
+
+type CategoryType = {
+  label: string;
+  id: number;
+};
 
 function CategoryFilter() {
-  const categories = [];
-  const [isOpen, setIsOpen] = useState(false);
-  const dropdownRef = useRef(null);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selectedCategory, setSelectedCategory] = useState<number>(0);
 
-  function handleSelect() {
-    console.log("asd");
+  const updateQuery = useUpdateQueryParams();
+
+  function handleSelect(val: number): void {
+    setSelectedCategory(val);
+    updateQuery({ category: val.toString() });
+    setIsOpen(false);
   }
+
   return (
-    <div className="relative w-64" ref={dropdownRef}>
-      <input
-        readOnly
+    <div className="relative w-64 mb-5">
+      <button
         onClick={() => setIsOpen(!isOpen)}
         className="w-full px-4 py-2 border border-gray-300 rounded-md cursor-pointer focus:outline-none"
-      />
+      >
+        {isOpen === true ? (
+          <X className="mx-auto hover:size-6.5 transition duration-300" />
+        ) : (
+          categoriesshop.find((c: CategoryType) => c.id === selectedCategory)
+            ?.label || "فیلتر را انتخاب کنید"
+        )}
+      </button>
 
       {isOpen && (
         <ul className="absolute z-10 mt-2 w-full bg-white border border-gray-300 rounded-md shadow-lg">
-          {categories.map((category) => (
+          {categoriesshop.map((category: CategoryType) => (
             <li
-              key={category}
-              onClick={() => handleSelect}
-              className="px-4 py-2 hover:bg-orange-100 cursor-pointer"
+              key={category.id}
+              onClick={() => handleSelect(category.id)}
+              className="px-4 py-2 hover:bg-primary hover:text-white cursor-pointer transition duration-300"
             >
-              {category}
+              {category.label}
             </li>
           ))}
         </ul>

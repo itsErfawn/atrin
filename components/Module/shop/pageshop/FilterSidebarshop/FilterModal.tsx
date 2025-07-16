@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { X } from "lucide-react";
 import PriceFilter from "./PriceFilter";
 import CategoryFilter from "./CategoryFilter";
+import { useRouter } from "next/navigation";
 
 interface Props {
   isOpen: boolean;
@@ -15,16 +16,16 @@ function FilterModal({ isOpen, onClose }: Props) {
   const [selectedColors, setSelectedColors] = useState<string[]>([]);
   const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
 
-  if (!isOpen) return null;
+  const route = useRouter();
 
-  function handleApply() {
-    onClose();
-  }
+  if (!isOpen) return null;
 
   function handleReset() {
     setPrice(1000000);
     setSelectedColors([]);
     setSelectedSizes([]);
+
+    route.push("/shop");
   }
 
   return (
@@ -50,13 +51,6 @@ function FilterModal({ isOpen, onClose }: Props) {
             className="flex-1 py-2 border border-gray-300 rounded-md hover:bg-gray-100 transition"
           >
             بازنشانی
-          </button>
-          <button
-            type="button"
-            onClick={handleApply}
-            className="flex-1 py-2 bg-primary text-white rounded-md hover:bg-primary-dark transition"
-          >
-            اعمال فیلتر
           </button>
         </div>
       </div>

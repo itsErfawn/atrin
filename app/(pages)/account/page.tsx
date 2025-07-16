@@ -11,7 +11,7 @@ function Account() {
       <h1 className="text-2xl font-bold text-primary mb-4">پنل کاربری</h1>
 
       <CardBoxSection title="اطلاعات حساب کاربری" items={userInfo} />
-      <CardBoxSection title="وضعیت سفارش‌ها" items={orderStatus} />
+      <CardBoxSection title="وضعیت سفارش‌ ها" items={orderStatus} />
       <ChartsSection />
     </div>
   );

@@ -18,33 +18,31 @@ type Props = {
 export default function SimilarProducts({ relatedProducts }: Props) {
   return (
     <div className="my-12 space-y-4 flex justify-center flex-col items-center">
-      <h2 className="text-2xl font-semibold text-gray-800">مطالب مرتبط</h2>
+      <h2 className="text-2xl font-semibold text-gray-800">محصولات مرتبط</h2>
       <Swiper
-        slidesPerView={2}
+        spaceBetween={16}
+        slidesPerView={1.5}
         breakpoints={{
-          640: { slidesPerView: 4 },
+          640: { slidesPerView: 2 },
+          768: { slidesPerView: 3 },
           1024: { slidesPerView: 4 },
         }}
-        className="px-4"
+        scrollbar={{ draggable: true }}
+        style={{ width: "100%" }}
       >
-        {relatedProducts.map((post, index) => {
-          const isLarge = index % 2 === 0;
-
-          return (
-            <SwiperSlide
-              key={post.id}
-              className="flex justify-center items-center"
-            >
+        {relatedProducts.map((post) => (
+          <SwiperSlide key={post.id}>
+            <div className="flex flex-col items-center space-y-2">
               <Image
                 src={post.thumbnail}
-                alt="محصول مرتبط"
-                width={isLarge ? 300 : 210}
-                height={isLarge ? 300 : 210}
-                className="object-cover rounded-2xl p-5"
+                alt={post.title}
+                width={200}
+                height={200}
+                className="rounded-md"
               />
-            </SwiperSlide>
-          );
-        })}
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

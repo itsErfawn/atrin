@@ -9,7 +9,7 @@ interface Props {
   width: number;
   height: number;
   className?: string;
-  discount: number|null;
+  discount: number | null;
   price: number;
   title?: string;
 }
@@ -20,7 +20,7 @@ export default function ImageWithSkeleton({
   width,
   height,
   className = "",
-  discount=0,
+  discount = 0,
   price,
   title,
 }: Props) {
@@ -61,10 +61,9 @@ export default function ImageWithSkeleton({
                 {title}
               </h4>
             )}
-            {(price ||
-              (discount && discount > 0)) && (
+            {(price || (discount && discount > 0)) && (
               <div className="flex items-center space-x-2 ">
-                {price  && (
+                {price && (
                   <p className="text-md font-bold text-gray-900">
                     {price.toLocaleString()}{" "}
                     <span className="text-sm font-normal text-gray-600">

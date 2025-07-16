@@ -2,21 +2,23 @@
 import React, { useState } from "react";
 import { sortOptions } from "@/context/DatasortOptions";
 import { useRouter } from "next/navigation";
+import { useUpdateQueryParams } from "@/hook/useUpdateQueryParams";
 
 type Tchange = {
   label: string;
 };
 
 export default function ShopFilter() {
-  const router=useRouter()
+  const router = useRouter();
   const [active, setactive] = useState("پیش فرض");
 
-  function handelchange({ label }: Tchange) {
+  const updateQuery = useUpdateQueryParams();
 
+  function handelchange({ label }: Tchange) {
     setactive(label);
   }
-  function handleRoute(value:string){
-    router.push(`?orderby=${value}`)
+  function handleRoute(value: string) {
+    updateQuery({ orderby: value });
   }
   return (
     <div className="p-2 sm:p-4  bg-white rounded-2xl shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 sm:gap-4">
@@ -28,7 +30,7 @@ export default function ShopFilter() {
 
           {sortOptions.map(({ label, value }) => (
             <li key={value} onClick={() => handelchange({ label })}>
-              <button onClick={()=>handleRoute(value)} >
+              <button onClick={() => handleRoute(value)}>
                 <span
                   className={`btn btn-sm ${
                     label === active ? "btn-primary" : "btn-outline"

@@ -1,41 +1,11 @@
 import BlogContent from "@/components/Module/blog/BlogContent";
-import RelatedPostsSection from "@/components/module/shop/SimilarProducts";
+import RelatedPostsSectionblog from "@/components/Module/blog/RelatedPostsSectionblog";
 import { getBlog, GetBlogMeta } from "@/controllers/BlogsController";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-const relatedPosts = [
-  {
-    id: 1,
-    title: "مزایای استفاده از Next.js",
-    image: "/testiamgeblog.jpg",
-    date: "۱۴۰۳/۰۳/۲۸",
-    author: "ادمین",
-  },
-  {
-    id: 2,
-    title: "آشنایی با Vite و مزایای آن",
-    image: "/testiamgeblog.jpg",
-    date: "۱۴۰۳/۰۲/۱۵",
-    author: "ادمین",
-  },
-  {
-    id: 3,
-    title: "چرا TypeScript محبوب شده؟",
-    image: "/testiamgeblog.jpg",
-    date: "۱۴۰۳/۰۱/۰۵",
-    author: "ادمین",
-  },
-  {
-    id: 4,
-    title: "بهترین کتابخانه‌های UI در سال ۲۰۲۵",
-    image: "/testiamgeblog.jpg",
-    date: "۱۴۰۳/۰۳/۰۹",
-    author: "ادمین",
-  },
-];
 export async function generateMetadata({
   params,
   searchParams,
@@ -53,7 +23,6 @@ export default async function BlogPage({ params }: Props) {
   const { slug } = await params;
   const data = await getBlog(slug);
   const { relatedBlog } = data;
-  console.log(relatedBlog);
 
   return (
     <>
@@ -61,7 +30,7 @@ export default async function BlogPage({ params }: Props) {
         <BlogContent {...data} />
       </div>
       <div className="container">
-        <RelatedPostsSection posts={relatedBlog} />
+        <RelatedPostsSectionblog posts={relatedBlog} />
       </div>
     </>
   );
