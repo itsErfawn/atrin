@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "@/components/Module/container/Container";
-import CartSummary from "@/components/Module/shopcard/CartSummary";
-import PaymentForm from "@/components/Module/shopcard/PaymentForm";
+import Container from "@/components/module/container/Container";
+import CartSummary from "@/components/module/shopcard/CartSummary";
+import PaymentForm from "@/components/module/shopcard/PaymentForm";
 
 const Payment: React.FC = () => {
   return (

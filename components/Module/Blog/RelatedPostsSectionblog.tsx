@@ -2,19 +2,9 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
+import { relatedBlogs } from "@/types/blogs";
 
-type RelatedPost = {
-  id: number;
-  title: string;
-  thumbnail: string;
-  createdAt: string;
-  slug: string;
-};
-
-type Props = {
-  posts: RelatedPost[];
-};
-function RelatedPostsSectionblog({ posts }: Props) {
+function RelatedPostsSectionblog({ posts }: {posts:relatedBlogs}) {
   return (
     <div className="my-12 space-y-4 flex justify-center flex-col items-center">
       <h2 className="text-2xl font-semibold text-gray-800">مطالب مرتبط</h2>

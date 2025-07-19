@@ -63,7 +63,7 @@ class ProductsModel extends Model {
       related.map((item) =>
         this.db.product.findFirst({ where: { id: item.product_id }, select: { id: true, thumbnail: true, slug: true, title: true } })
       )
-    );
+    ) as relatedProductsCollection;
     return products as relatedProductsCollection;
   }
 

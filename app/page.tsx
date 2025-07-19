@@ -1,12 +1,12 @@
-import AtrinBlog from "@/components/Module/main/AtrinBlog/AtrinBlog";
-import Bestproducts from "@/components/Module/main/Bestproducts/Bestproducts";
-import CategoryProducts from "@/components/Module/main/CategoryProducts/CategoryProducts";
-import LatestAtrinProducts from "@/components/Module/main/LatestAtrinProducts/LatestAtrinProducts";
-import Mostpopularbrands from "@/components/Module/main/Mostpopularbrands/Mostpopularbrands";
-import Specialauction from "@/components/Module/main/Specialauction/Specialauction";
-import StoryList from "@/components/Module/main/StoryList/StoryList";
-import VIPproducts from "@/components/Module/main/VIPproducts/VIPproducts";
-import Womenclothing from "@/components/Module/main/Womenclothing/Womenclothing";
+import AtrinBlog from "@/components/module/main/AtrinBlog/AtrinBlog";
+import Bestproducts from "@/components/module/main/Bestproducts/Bestproducts";
+import CategoryProducts from "@/components/module/main/CategoryProducts/CategoryProducts";
+import LatestAtrinProducts from "@/components/module/main/LatestAtrinProducts/LatestAtrinProducts";
+import Mostpopularbrands from "@/components/module/main/Mostpopularbrands/Mostpopularbrands";
+import Specialauction from "@/components/module/main/Specialauction/Specialauction";
+import StoryList from "@/components/module/main/StoryList/StoryList";
+import VIPproducts from "@/components/module/main/VIPproducts/VIPproducts";
+import Womenclothing from "@/components/module/main/Womenclothing/Womenclothing";
 
 import { Toaster } from "react-hot-toast";
 

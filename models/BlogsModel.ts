@@ -1,4 +1,4 @@
-import { BlogCardCollection, BlogType } from "@/types/blogs";
+import { BlogCardCollection, BlogType, relatedBlogs } from "@/types/blogs";
 import Model from "./Model";
 
 class BlogsModel extends Model {
@@ -59,7 +59,7 @@ class BlogsModel extends Model {
     // we dont have category in blog so we should get random blogs
     const total=await this.db.blog.count()
     const skip = Math.max(0, Math.floor(Math.random() * (total - 4)));
-    return await this.db.blog.findMany({
+    const relatedBlog= await this.db.blog.findMany({
       skip,
       take:4,
       orderBy:{
@@ -72,7 +72,8 @@ class BlogsModel extends Model {
         createdAt:true,
         slug:true
       }
-    })
+    }) as relatedBlogs
+    return relatedBlog
   }
 }
 export default new BlogsModel();

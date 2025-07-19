@@ -1,7 +1,7 @@
-import Container from "@/components/Module/container/Container";
-import ShopFilter from "@/components/Module/shop/pageshop/ShopFilter/ShopFilter";
-import Sidebarshop from "@/components/Module/shop/Sidebarshop";
-import Breadcrumb from "@/components/Module/ui/Breadcrumb";
+import Container from "@/components/module/container/Container";
+import ShopFilter from "@/components/module/shop/pageshop/ShopFilter/ShopFilter";
+import Sidebarshop from "@/components/module/shop/Sidebarshop";
+import Breadcrumb from "@/components/module/ui/Breadcrumb";
 
 export default function ShopLayout({
   children,

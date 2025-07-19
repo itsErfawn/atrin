@@ -1,9 +1,9 @@
 import React from "react";
 
-import CardBoxSection from "@/components/Module/account/CardBoxSection";
+import CardBoxSection from "@/components/module/account/CardBoxSection";
 import { userInfo } from "@/context/DatauserInfo";
 import { orderStatus } from "@/context/DatauserInfo";
-import ChartsSection from "@/components/Module/ui/chart/ChartsSection";
+import ChartsSection from "@/components/module/ui/chart/ChartsSection";
 
 function Account() {
   return (

@@ -1,13 +1,13 @@
 "use client";
 import React, { useState } from "react";
-import OrderNotes from "./OrderNotesProps";
-import PaymentForminformation from "./PaymentForminformation";
 import {
   FormData,
   initialFormData,
   PlayerSchema,
 } from "@/types/zodfrom/zodtype";
 import z from "zod";
+import OrderNotes from "./OrderNotesProps";
+import PaymentForminformation from "./PaymentForminformation";
 
 const PaymentForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>(initialFormData);

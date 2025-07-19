@@ -1,4 +1,4 @@
-import Container from "@/components/Module/container/Container";
+import Container from "@/components/module/container/Container";
 import CartStepper from "@/components/module/shopcard/CartStepper";
 
 export default function CartLayout({

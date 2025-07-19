@@ -2,8 +2,8 @@
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import Container from "../../container/Container";
 import SectionDivider from "../../ui/SectionDivider";
+import Container from "../../container/Container";
 import ProductCard from "../../ui/ProductCard";
 
 const videos = [
@@ -17,6 +17,7 @@ const videos = [
     name: "https://d1.siteroze.ir/wp-content/uploads/2025/04/2321138f25dff33d1fa7d661eb3bf6d2.jpg",
     isVideo: false,
     price: "۴۷۰,۰۰۰",
+    id:21065864
   },
   {
     name: "/video/videomainpage/VID1.mp4",

@@ -1,6 +1,6 @@
 import BlogHeader from "@/components/module/blog/BlogHeader";
 import BlogSidebar from "@/components/module/blog/BlogSidebar";
-import Container from "@/components/Module/container/Container";
+import Container from "@/components/module/container/Container";
 import "../../../app/globals.css";
 import BlogsModel from "@/models/BlogsModel";
 import { BlogCardCollection } from "@/types/blogs";

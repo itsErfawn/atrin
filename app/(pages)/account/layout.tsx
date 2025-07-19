@@ -1,5 +1,5 @@
-import Container from "@/components/Module/container/Container";
-import SidebarPanelUser from "@/components/Module/PanelUser/Sidebar/SidebarPanelUser";
+import Container from "@/components/module/container/Container";
+import SidebarPanelUser from "@/components/module/PanelUser/Sidebar/SidebarPanelUser";
 import React from "react";
 
 function layout({ children }: { children: React.ReactNode }) {

@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Container from "@/components/Module/container/Container";
-import WishlistItem from "@/components/Module/wishlist/WishlistItem";
+import Container from "@/components/module/container/Container";
+import WishlistItem from "@/components/module/wishlist/WishlistItem";
 import { wishlistItems as data } from "@/context/DatawishlistItems";
 import { Heart } from "lucide-react";
 import { toast } from "react-hot-toast";

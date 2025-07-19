@@ -1,14 +1,14 @@
-import PaginationShop from "@/components/Module/shop/PaginationShop";
+import PaginationShop from "@/components/module/shop/PaginationShop";
 import ImageWithSkeleton from "@/components/module/ui/ImageWithLoading";
 import { GETShopData } from "@/controllers/ShopController";
 import Link from "next/link";
 import React, { Suspense } from "react";
 interface Props {
-  searchParams?: {
+  searchParams?: Promise<{
     category?: string;
     page?: number;
     orderby?: string;
-  };
+  }>
 }
 async function ShopPage({ searchParams }: Props) {
   const params = await searchParams;

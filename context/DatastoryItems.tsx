@@ -1,4 +1,4 @@
-import { StoryItem } from "@/components/Module/main/StoryList/StoryList";
+import { StoryItem } from "@/components/module/main/StoryList/StoryList";
 
 export const storyItems: StoryItem[] = [
   { image: "/image/story/story1.jpg", name: "شارژ شد" },

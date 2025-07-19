@@ -1,7 +1,7 @@
-import Container from "@/components/Module/container/Container";
-import CartActions from "@/components/Module/shopcard/CartActions";
-import CartList from "@/components/Module/shopcard/CartList";
-import CartSummary from "@/components/Module/shopcard/CartSummary";
+import Container from "@/components/module/container/Container";
+import CartActions from "@/components/module/shopcard/CartActions";
+import CartList from "@/components/module/shopcard/CartList";
+import CartSummary from "@/components/module/shopcard/CartSummary";
 import { unstable_ViewTransition as ViewTransition } from "react";
 export default function CartPage() {
   return (

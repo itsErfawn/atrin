@@ -1,5 +1,5 @@
-import AccountInformation from "@/components/Module/account/AccountInformation";
-import Container from "@/components/Module/container/Container";
+import AccountInformation from "@/components/module/account/AccountInformation";
+import Container from "@/components/module/container/Container";
 
 export interface InputFieldProps {
   id: string;

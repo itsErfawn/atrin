@@ -1,5 +1,5 @@
-import BlogContent from "@/components/Module/blog/BlogContent";
-import RelatedPostsSectionblog from "@/components/Module/blog/RelatedPostsSectionblog";
+import BlogContent from "@/components/module/blog/BlogContent";
+import RelatedPostsSectionblog from "@/components/module/blog/RelatedPostsSectionblog";
 import { getBlog, GetBlogMeta } from "@/controllers/BlogsController";
 
 type Props = {

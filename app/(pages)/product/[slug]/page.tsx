@@ -1,4 +1,4 @@
-import Container from "@/components/Module/container/Container";
+import Container from "@/components/module/container/Container";
 import Breadcrumb from "@/components/module/ui/Breadcrumb";
 import ProductDetail from "@/components/module/shop/ProductDetail";
 import React from "react";
@@ -9,7 +9,7 @@ import {
 } from "@/controllers/ProductController";
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 export async function generateMetadata({
   params,
