@@ -2,9 +2,10 @@ import Container from "@/components/Module/container/Container";
 import CartActions from "@/components/Module/shopcard/CartActions";
 import CartList from "@/components/Module/shopcard/CartList";
 import CartSummary from "@/components/Module/shopcard/CartSummary";
-
+import { unstable_ViewTransition as ViewTransition } from "react";
 export default function CartPage() {
   return (
+    <ViewTransition enter={"slide-in"} >
     <Container>
       <main className="px-4 md:px-8 py-6">
         <section className="flex flex-col lg:flex-row justify-between gap-4">
@@ -18,5 +19,6 @@ export default function CartPage() {
         </section>
       </main>
     </Container>
+    </ViewTransition>
   );
 }
