@@ -8,10 +8,11 @@ export interface ProductType{
     discount:number;
     description:string;
     date_added:Date;
+    quantity:number,
     images?:{
     id:number,
     imageUrl:string,
-    product_id:number
+    product_id:number,
     }[]
 }
 export type relatedProductsType=Pick<ProductType,"id"|"title"|"thumbnail"|"slug">

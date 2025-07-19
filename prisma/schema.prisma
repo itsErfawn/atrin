@@ -17,7 +17,7 @@ model Product {
   slug           String
   thumbnail      String
   date_added     DateTime              @default(now())
-  
+  quantity      Int @default(0)
   images         ProductImage[]
   comments       Comment[]
   filters        ProductFilter[]

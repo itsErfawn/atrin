@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
 import { relatedProductsCollection } from "@/types/products";
+import Link from "next/link";
 
 export default function SimilarProducts({ relatedProducts }: {relatedProducts:relatedProductsCollection}) {
   return (
@@ -21,7 +22,7 @@ export default function SimilarProducts({ relatedProducts }: {relatedProducts:re
       >
         {relatedProducts.map((post) => (
           <SwiperSlide key={post.id}>
-            <div className="flex flex-col items-center space-y-2">
+            <Link href={`/product/${post.slug}`} className="flex flex-col items-center space-y-2">
               <Image
                 src={post.thumbnail}
                 alt={post.title}
@@ -29,7 +30,7 @@ export default function SimilarProducts({ relatedProducts }: {relatedProducts:re
                 height={200}
                 className="rounded-md"
               />
-            </div>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

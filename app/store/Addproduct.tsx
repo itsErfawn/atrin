@@ -1,16 +1,10 @@
+import { ProductType } from "@/types/products";
 import { create } from "zustand";
 
-interface TProduct {
-  id: number;
-  title: string;
-  price: number;
-  quantity: number;
-}
-
 interface TStore {
-  cart: TProduct[];
+  cart: ProductType[];
   totalQuantity: number;
-  addToCart: (product: TProduct) => void;
+  addToCart: (product: ProductType) => void;
   increment: (id: number) => void;
   decrement: (id: number) => void;
 }

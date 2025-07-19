@@ -56,9 +56,8 @@ class ProductsModel extends Model {
       select: {
         product_id: true
       },
-      take: 4
+      take: 8
     });
-
     const products = await Promise.all(
       related.map((item) =>
         this.db.product.findFirst({ where: { id: item.product_id }, select: { id: true, thumbnail: true, slug: true, title: true } })
