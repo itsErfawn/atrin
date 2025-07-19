@@ -1,39 +1,17 @@
 "use client";
 import React, { useState } from "react";
-import InputField from "./InputField";
 import OrderNotes from "./OrderNotesProps";
 import PaymentForminformation from "./PaymentForminformation";
-
-interface FormData {
-  firstName: string;
-  lastName: string;
-  country: string;
-  street: string;
-  apartment: string;
-  city: string;
-  province: string;
-  postalCode: string;
-  phone: string;
-  email: string;
-  orderNotes: string;
-}
-
-const initialFormData: FormData = {
-  firstName: "",
-  lastName: "",
-  country: "",
-  street: "",
-  apartment: "",
-  city: "",
-  province: "",
-  postalCode: "",
-  phone: "",
-  email: "",
-  orderNotes: "",
-};
+import {
+  FormData,
+  initialFormData,
+  PlayerSchema,
+} from "@/types/zodfrom/zodtype";
+import z from "zod";
 
 const PaymentForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>(initialFormData);
+  const [errors, setErrors] = useState<Record<string, string>>({});
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -46,18 +24,33 @@ const PaymentForm: React.FC = () => {
       [name]: value,
     }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("فرم پرداخت ارسال شد:", formData);
+    try {
+      PlayerSchema.parse(formData);
+      setErrors({});
+    } catch (error) {
+      const newErrors: Record<string, string> = {};
+      if (error instanceof z.ZodError) {
+        error.issues.forEach((err: any) => {
+          if (err.path.length > 0) {
+            newErrors[err.path[0].toString()] = err.message;
+          }
+        });
+      }
+      setErrors(newErrors);
+    }
   };
-
   return (
     <form
       className="grid grid-cols-1 md:grid-cols-2 gap-4"
       onSubmit={handleSubmit}
     >
-      <PaymentForminformation formData={formData} handleChange={handleChange} />
+      <PaymentForminformation
+        formData={formData}
+        handleChange={handleChange}
+        errors={errors}
+      />
 
       <OrderNotes
         value={formData.orderNotes}

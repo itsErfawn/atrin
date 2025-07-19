@@ -15,6 +15,7 @@ export interface InputFieldProps {
     label: string;
     value: string;
   }[];
+  error?: string;
 }
 export default function ProfileEditPage() {
   return (

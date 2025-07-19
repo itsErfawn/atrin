@@ -1,29 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import InputField from "../account/InputField";
-
-interface PaymentForminformationProps {
-  formData: {
-    firstName: string;
-    lastName: string;
-    country: string;
-    street: string;
-    apartment: string;
-    city: string;
-    province: string;
-    postalCode: string;
-    phone: string;
-    email: string;
-  };
-  handleChange: (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
-  ) => void;
-}
+import { PaymentForminformationProps } from "@/types/zodfrom/zodtype";
 
 const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
   formData,
   handleChange,
+  errors,
 }) => {
   return (
     <>
@@ -34,6 +16,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
         value={formData.firstName}
         required
         onChange={handleChange}
+        error={errors?.firstName}
       />
       <InputField
         id="lastName"
@@ -42,6 +25,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
         value={formData.lastName}
         required
         onChange={handleChange}
+        error={errors?.lastName}
       />
       <InputField
         id="country"
@@ -55,6 +39,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
           { value: "uae", label: "امارات" },
           { value: "turkey", label: "ترکیه" },
         ]}
+        error={errors?.country}
       />
       <InputField
         id="street"
@@ -63,6 +48,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
         value={formData.street}
         required
         onChange={handleChange}
+        error={errors?.street}
       />
       <InputField
         id="apartment"
@@ -70,6 +56,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
         label="آپارتمان، مجتمع، واحد و..."
         value={formData.apartment}
         onChange={handleChange}
+        error={errors?.apartment}
       />
       <InputField
         id="city"
@@ -78,6 +65,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
         value={formData.city}
         required
         onChange={handleChange}
+        error={errors?.city}
       />
       <InputField
         id="province"
@@ -86,6 +74,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
         value={formData.province}
         required
         onChange={handleChange}
+        error={errors?.province}
       />
       <InputField
         id="postalCode"
@@ -94,6 +83,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
         value={formData.postalCode}
         required
         onChange={handleChange}
+        error={errors?.postalCode}
       />
       <InputField
         id="phone"
@@ -102,6 +92,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
         type="tel"
         value={formData.phone}
         onChange={handleChange}
+        error={errors?.phone}
       />
       <InputField
         id="email"
@@ -111,6 +102,7 @@ const PaymentForminformation: React.FC<PaymentForminformationProps> = ({
         value={formData.email}
         required
         onChange={handleChange}
+        error={errors?.email}
       />
     </>
   );

@@ -10,7 +10,7 @@ export default function InputField({
   onChange,
   description,
   autoComplete,
-  options,
+  error,
 }: InputFieldProps) {
   return (
     <div>
@@ -30,6 +30,7 @@ export default function InputField({
       {description && (
         <p className="text-gray-500 text-sm mt-1">{description}</p>
       )}
+      {error && <div className="text-red-500 text-sm">{error}</div>}
     </div>
   );
 }
