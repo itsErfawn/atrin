@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import React, { useState } from "react";
 import Container from "@/components/module/container/Container";
@@ -6,15 +6,16 @@ import WishlistItem from "@/components/module/wishlist/WishlistItem";
 import { wishlistItems as data } from "@/context/DatawishlistItems";
 import { Heart } from "lucide-react";
 import { toast } from "react-hot-toast";
+import { GetWishLists } from "@/controllers/WishListController";
 
-export default function WishlistPage() {
-  const [wishlistItems, setWishlistItems] = useState(data);
+export default async function WishlistPage() {
+  // const [wishlistItems, setWishlistItems] = useState(data);
 
-  const handleDelete = (title: string) => {
-    setWishlistItems((prev) => prev.filter((item) => item.title !== title));
-    toast.success("آیتم با موفقیت حذف شد");
-  };
-
+  // const handleDelete = (title: string) => {
+  //   setWishlistItems((prev) => prev.filter((item) => item.title !== title));
+  //   toast.success("آیتم با موفقیت حذف شد");
+  // };
+  const wishlistItems=await GetWishLists()
   return (
     <Container>
       <div className="bg-white shadow-sm rounded-xl p-5 border border-gray-200 mb-8 mt-5">
@@ -25,7 +26,7 @@ export default function WishlistPage() {
           </h2>
         </div>
         <hr className="text-stone-200" />
-        {wishlistItems.length === 0 ? (
+        {!wishlistItems ? (
           <div className="text-center text-gray-500 py-12">
             لیست علاقه‌مندی‌ها خالی است!
           </div>
@@ -33,9 +34,8 @@ export default function WishlistPage() {
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5">
             {wishlistItems.map((item) => (
               <WishlistItem
-                key={item.title}
+                key={item.product.title}
                 item={item}
-                onDelete={handleDelete}
               />
             ))}
           </div>

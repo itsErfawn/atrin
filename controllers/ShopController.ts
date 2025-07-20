@@ -6,7 +6,7 @@ export async function GETShopData(
     page: number = 1,
     orderBy: string = "default"
 ) {
-    const products = await ProductsModel.GetShopProducts(category_id, page, orderBy);
+    const {products,pages} = await ProductsModel.GetShopProducts(category_id, page, orderBy);
 
-    return { products };
+    return { products,pages };
 }

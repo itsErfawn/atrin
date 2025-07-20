@@ -1,14 +1,12 @@
-import { Heart, MessageCircle, Send } from "lucide-react";
+import {  MessageCircle, Send } from "lucide-react";
 import React from "react";
+import WishListBtn from "./WishListBtn";
 
 function ProductCommunication() {
   return (
     <div className="absolute top-4 right-4 flex flex-col gap-3 bg-white bg-opacity-70 p-2 rounded-lg shadow">
+      <WishListBtn/>
       {[
-        {
-          icon: <Heart className="w-10 h-6" />,
-          tooltip: "افزودن به علاقه‌مندی",
-        },
         { icon: <Send className="w-10 h-6" />, tooltip: "ارسال محصول" },
         {
           icon: <MessageCircle className="w-10 h-6" />,

@@ -1,36 +1,23 @@
+import { WishListType } from "@/types/wishlist";
 import { Clock, PlayCircle, Trash2 } from "lucide-react";
 
-type TItem = {
-  image: string;
-  title: string;
-  price: string;
-  discount: string;
-  time: string;
-  isVideo: boolean;
-};
-
-type Props = {
-  item: TItem;
-  onDelete: (title: string) => void;
-};
-
-export default function WishlistItem({ item, onDelete }: Props) {
-  const { image, title, price, discount, time, isVideo } = item;
+export default function WishlistItem({ item}:{item:WishListType}) {
+  const { product:{thumbnail, title, price, discount}} = item;
 
   return (
     <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-200">
       <div className="relative w-full h-58">
         <img
-          src={image}
+          src={thumbnail}
           alt={title}
           className="w-full h-full object-cover"
           loading="lazy"
         />
-        {isVideo && (
+        {/* {isVideo && (
           <div className="absolute top-2 left-2 bg-black/60 p-1 rounded-full">
             <PlayCircle className="text-white w-6 h-6" />
           </div>
-        )}
+        )} */}
       </div>
 
       <div className="p-4 flex flex-col gap-2">
@@ -52,11 +39,10 @@ export default function WishlistItem({ item, onDelete }: Props) {
         <div className="flex items-center justify-between text-sm mt-2">
           <span className="text-gray-500 flex items-center gap-1">
             <Clock className="w-4 h-4 text-gray-400" />
-            {time}
+            {/* {time} */}
           </span>
 
           <button
-            onClick={() => onDelete(title)}
             className="text-stone-500 hover:text-red-600 transition-colors"
             title="حذف از علاقه‌مندی‌ها"
           >

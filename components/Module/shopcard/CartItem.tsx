@@ -1,30 +1,23 @@
 import Image from "next/image";
 import { Plus, Minus, Trash2 } from "lucide-react";
+import { CartItemType } from "@/types/cart";
 
-interface CartItemProps {
-  item: {
-    id: number;
-    title: string;
-    price: number;
-    image: string;
-  };
-}
 
-export default function CartItem({ item }: CartItemProps) {
+export default function CartItem({ item }:{item:CartItemType}) {
   return (
     <div className="flex flex-col items-center w-64 border border-stone-400 rounded-xl bg-white shadow-sm p-4">
       <Image
-        src={item.image}
-        alt={item.title}
+        src={item.product.thumbnail}
+        alt={item.product.title}
         width={200}
         height={120}
         className="rounded-md object-cover"
       />
       <div className="w-full mt-4">
         <div className="flex justify-between items-center mb-2 text-sm">
-          <h3 className="font-semibold">{item.title}</h3>
+          <h3 className="font-semibold">{item.product.title}</h3>
           <span className="text-primary font-bold">
-            {item.price.toLocaleString()} تومان
+            {item.product.price.toLocaleString()} تومان
           </span>
         </div>
 
@@ -33,7 +26,7 @@ export default function CartItem({ item }: CartItemProps) {
             <button className="bg-gray-200 p-1.5 rounded hover:bg-gray-300">
               <Plus size={16} />
             </button>
-            <span className="w-6 text-center">2</span>
+            <span className="w-6 text-center">{item.quantity}</span>
             <button className="bg-gray-200 p-1.5 rounded hover:bg-gray-300">
               <Minus size={16} />
             </button>

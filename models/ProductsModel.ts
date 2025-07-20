@@ -38,8 +38,12 @@ class ProductsModel extends Model {
       skip: (page - 1) * 16,
       take: 16,
     });
-  
-    return products;
+    const totalItems=await this.db.product.count({
+      where: whereCondition,
+      orderBy,
+    });
+    const pages= Math.ceil(totalItems / 16);
+    return {products,pages};
   }
   async get(slug: string) {
     const product = await this.db.product.findFirst({ where: { slug }, include: { images: true } })

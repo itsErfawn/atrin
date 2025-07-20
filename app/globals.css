@@ -7,6 +7,7 @@
 
 :root {
   --font-yekan: "yekanBakh";
+  --main-transition: all 0.2s ease-in-out;
 }
 @theme inline {
   --color-primary: #353535;
@@ -20,10 +21,9 @@
   --breakpoint-tablet: 768px;
   --breakpoint-mobile: 576px;
 }
-:root {
-  --main-transition: all 0.2s ease-in-out;
+button{
+cursor: pointer;
 }
-
 .bg-body {
   background-color: var(--color-bg-color);
 }

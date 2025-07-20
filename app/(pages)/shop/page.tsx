@@ -31,7 +31,8 @@ async function Gsasdsadk({
   page?: number;
   orderBy?: string;
 }) {
-  const { products } = await GETShopData(category, page, orderBy);
+  const { products,pages } = await GETShopData(category, page, orderBy);
+  console.log(`pages number for pagination : ${pages}`);
   const currentPage = page ?? 1;
   const totalPages = 5;
   return (
