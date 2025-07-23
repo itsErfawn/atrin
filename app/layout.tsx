@@ -5,7 +5,7 @@ import yekanBakh from "@/fonts/yekanBakh";
 import Header from "@/components/template/Header/Header";
 import Footer from "@/components/template/Footer/Footer";
 import CookieStore from "@/libs/cookies/CookieStore";
-import GeustAuth from "@/components/template/geust_auth/GeustAuth";
+import SessionAuth from "@/components/template/SessionAuth/SessionAuth";
 
 export const metadata: Metadata = {
   title: "فروشگاه اینترنتی آترین",
@@ -16,11 +16,11 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const cookie=await CookieStore.get('token')||await CookieStore.get('geust_token')
+  const cookie=await CookieStore.get('session')
   return (
     <html lang="fa" dir="rtl">
       <body className={`${yekanBakh.variable}`}>
-      {!cookie&&<GeustAuth/>}
+      {!cookie&&<SessionAuth/>}
         <Header />
         <main className="bg-body">{children}</main>
         <Footer />

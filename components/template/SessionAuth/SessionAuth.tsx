@@ -1,9 +1,9 @@
 "use client"
 import { useEffect } from "react"
 
-function GeustAuth() {
+function SessionAuth() {
   useEffect(() => {
-    fetch("/api/geust", {
+    fetch("/api/auth", {
       method: "GET",
       credentials: "include",
     });
@@ -12,4 +12,4 @@ function GeustAuth() {
   return null;
 }
 
-export default GeustAuth
+export default SessionAuth
