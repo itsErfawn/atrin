@@ -98,7 +98,7 @@ button{
     animation: rotation 1s linear infinite;
   }
   &:has(.loader){
-    @apply flex items-center justify-center aspect-square
+    @apply flex items-center justify-center 
   }
 }
 h1{
