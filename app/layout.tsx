@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import yekanBakh from "@/fonts/yekanBakh";
 import Header from "@/components/template/Header/Header";
 import Footer from "@/components/template/Footer/Footer";
 import CookieStore from "@/libs/cookies/CookieStore";
@@ -19,7 +18,7 @@ export default async function RootLayout({
   const cookie=await CookieStore.get('session')
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${yekanBakh.variable}`}>
+      <body>
       {!cookie&&<SessionAuth/>}
         <Header />
         <main className="bg-body">{children}</main>

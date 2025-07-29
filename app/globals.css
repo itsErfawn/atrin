@@ -4,37 +4,120 @@
 /* ==========================
    🔧 SYSTEM SECTION START
 ========================== */
-
-:root {
-  --font-yekan: "yekanBakh";
-  --main-transition: all 0.2s ease-in-out;
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanXFaNum-ExtraBlack.woff2");
+  font-weight: 800;
 }
-@theme inline {
-  --color-primary: #353535;
-  --color-bgcolor: ##fefefe;
-  --color-secondary: #1bd2a3;
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanXFaNum-ExtraBold.woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanXFaNum-DemiBold.woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanXFaNum-Medium.woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "IRANYekan";
+  src: url("/fonts/IRANYekanXFaNum-Regular.woff2");
+  font-weight: 400;
+}
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  }
+:root {
+  --font-yekan: "IRANYekan";
+  --main-transition:all 0.4s ease-in-out;
+}
+@theme {
+  --color-primary: #DD5C34;
+  --color-primary-75: #E76941;
+  --color-primary-50: #FCB093;
+  --color-primary-25: #FFF5F3;
+  --color-primary-hover:#CD4F28;
+
+  --color-secondary: #0C1B43;
+  --color-secondary-80: #959EB1;
+  --color-secondary-40: #C3D9ED;
+  --color-secondary-20: #D5E6F6;
+  --color-secondary-10: #F0F5FA;
+  --radius-xlarge: 48px;
+  --radius-large: 32px;
+  --radius-medium: 16px;
+  --radius-small: 12px;
+  --radius-extrasmall: 8px;
+  
+  --transition-delay: 0.4s;
+
   --color-bg-panel: #172b4d;
-  --font-yekanBakh: var(--font-yekan);
+
+  --font-IRANYekan: var(--font-yekan);
+
   --breakpoint-wide: 1400px;
   --breakpoint-desktop: 1200px;
   --breakpoint-laptop: 992px;
   --breakpoint-tablet: 768px;
   --breakpoint-mobile: 576px;
 }
-button{
-cursor: pointer;
-}
-.bg-body {
-  background-color: var(--color-bg-color);
-}
+
+
 
 body,
 * {
-  @apply font-yekanBakh;
+  @apply font-IRANYekan font-medium;
 }
+
 .container {
   max-width: min(100%, 1328px, 1440px, 1600px);
   @apply w-full px-4 my-0 mx-auto;
+}
+
+
+button{
+  @apply cursor-pointer p-2 rounded-extrasmall active:scale-95 transition-[var(--main-transition)] disabled:active:scale-none  disabled:opacity-50 disabled:cursor-not-allowed;
+  &[data-variant="primary"]{
+    @apply bg-primary-75 text-white hover:bg-primary-hover active:bg-primary-hover  disabled:hover:bg-primary-75 focus:bg-primary;
+  }
+  &[data-variant="secondary"]{
+    @apply bg-secondary-20 text-secondary hover:bg-secondary-40 disabled:hover:bg-secondary-20 focus:bg-secondary-40
+  }
+  >.loader {
+    @apply w-5 h-5 border-[0.3125rem] border-white border-b-transparent inline-block rounded-full;
+    animation: rotation 1s linear infinite;
+  }
+  &:has(.loader){
+    @apply flex items-center justify-center aspect-square
+  }
+}
+h1{
+  @apply text-secondary leading-14 font-extrabold text-4xl
+}
+h2{
+  @apply text-secondary leading-12 font-bold text-2xl
+}
+h3{
+  @apply text-secondary leading-9 font-bold text-xl
+}
+h4{
+  @apply text-secondary leading-6 font-bold text-lg
+}
+h5{
+  @apply text-secondary  font-bold 
+}
+h6{
+  @apply text-secondary  font-bold text-sm
 }
 .bg-overlay {
   @apply fixed top-0 left-0 right-0 bottom-0 bg-black opacity-60 z-30 invisible;
@@ -43,84 +126,13 @@ body,
     @apply visible opacity-50;
   }
 }
-/* ===================================
-   ✅ Button Components (Global)
-=================================== */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-yekanBakh);
-  font-weight: 500;
-  border-radius: 8px;
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  border: none;
-}
 
-.btn-sm {
-  font-size: 0.75rem;
-  padding: 0.4rem 0.8rem;
-}
-
-.btn-md {
-  font-size: 0.875rem;
-  padding: 0.6rem 1.2rem;
-}
-
-.btn-lg {
-  font-size: 1rem;
-  padding: 0.8rem 1.5rem;
-}
-
-.btn-primary {
-  background-color: var(--color-primary);
-  color: white;
-}
-
-.btn-primary:hover {
-  background-color: #2b2b2b;
-}
-
-.btn-secondary {
-  background-color: var(--color-secondary);
-  color: white;
-}
-
-.btn-secondary:hover {
-  background-color: #17b18e;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
-}
-
-.btn-outline:hover {
-  background-color: var(--color-primary);
-  color: white;
-}
-
-.btn-ghost {
-  background-color: transparent;
-  color: var(--color-primary);
-}
-
-.btn-ghost:hover {
-  background-color: #f2f2f2;
-}
-
-.btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-/* ===================================
-   🔧 Button Components (Global)
-=================================== */
 /* ========================
    ✅ SYSTEM SECTION END
 ======================== */
+
+
+
 
 /* ========================
   🔧 STORIES SECTION START
@@ -145,6 +157,8 @@ body,
 /* ========================
    ✅ STORIES SECTION END
 ======================== */
+
+
 
 /* ========================
    🔧 FOOTER START
@@ -195,6 +209,8 @@ footer {
    ✅ FOOTER END
 ======================== */
 
+
+
 /* ========================
    ⏳ COUNTDOWN TIMER START
 ======================== */
@@ -230,6 +246,8 @@ footer {
    ⏳ COUNTDOWN TIMER END
 ======================== */
 
+
+
 /* ========================
    ✅ breadcrumb, SECTION END
 ======================== */
@@ -240,6 +258,9 @@ footer {
 /* ========================
   🔧 breadcrumb, SECTION START
 ======================== */
+
+
+
 
 /* ========================
    🔧 BLOG START
@@ -325,6 +346,7 @@ footer {
 /* ========================
    ✅ wishlist END
 ======================== */
+
 
 /* ========================
    🔧 login START
