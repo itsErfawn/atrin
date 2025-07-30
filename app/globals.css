@@ -31,34 +31,34 @@
 }
 @keyframes rotation {
   0% {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-  }
+}
 :root {
   --font-yekan: "IRANYekan";
-  --main-transition:all 0.4s ease-in-out;
+  --main-transition: all 0.4s ease-in-out;
 }
 @theme {
-  --color-primary: #DD5C34;
-  --color-primary-75: #E76941;
-  --color-primary-50: #FCB093;
-  --color-primary-25: #FFF5F3;
-  --color-primary-hover:#CD4F28;
+  --color-primary: #dd5c34;
+  --color-primary-75: #e76941;
+  --color-primary-50: #fcb093;
+  --color-primary-25: #fff5f3;
+  --color-primary-hover: #cd4f28;
 
-  --color-secondary: #0C1B43;
-  --color-secondary-80: #959EB1;
-  --color-secondary-40: #C3D9ED;
-  --color-secondary-20: #D5E6F6;
-  --color-secondary-10: #F0F5FA;
+  --color-secondary: #0c1b43;
+  --color-secondary-80: #959eb1;
+  --color-secondary-40: #c3d9ed;
+  --color-secondary-20: #d5e6f6;
+  --color-secondary-10: #f0f5fa;
   --radius-xlarge: 48px;
   --radius-large: 32px;
   --radius-medium: 16px;
   --radius-small: 12px;
   --radius-extrasmall: 8px;
-  
+
   --transition-delay: 0.4s;
 
   --color-bg-panel: #172b4d;
@@ -72,52 +72,49 @@
   --breakpoint-mobile: 576px;
 }
 
-
-
 body,
 * {
   @apply font-IRANYekan font-medium;
 }
 
 .container {
-  max-width: min(100%, 1328px, 1440px, 1600px);
+  max-width: min(100%, 1380px, 1440px, 1600px);
   @apply w-full px-4 my-0 mx-auto;
 }
 
-
-button{
-  @apply cursor-pointer p-2 rounded-extrasmall active:scale-95 transition-[var(--main-transition)] disabled:active:scale-none  disabled:opacity-50 disabled:cursor-not-allowed;
-  &[data-variant="primary"]{
+button {
+  @apply cursor-pointer p-3 rounded-extrasmall active:scale-95 transition-[var(--main-transition)] disabled:active:scale-none  disabled:opacity-50 disabled:cursor-not-allowed;
+  &[data-variant="primary"] {
     @apply bg-primary-75 text-white hover:bg-primary-hover active:bg-primary-hover  disabled:hover:bg-primary-75 focus:bg-primary;
   }
-  &[data-variant="secondary"]{
-    @apply bg-secondary-20 text-secondary hover:bg-secondary-40 disabled:hover:bg-secondary-20 focus:bg-secondary-40
+  &[data-variant="secondary"] {
+    @apply bg-secondary-20 text-secondary hover:bg-secondary-40 disabled:hover:bg-secondary-20 focus:bg-secondary-40;
   }
-  >.loader {
+  > .loader {
     @apply w-5 h-5 border-[0.3125rem] border-white border-b-transparent inline-block rounded-full;
     animation: rotation 1s linear infinite;
   }
-  &:has(.loader){
-    @apply flex items-center justify-center 
+  &:has(.loader) {
+    @apply flex items-center justify-center;
   }
 }
-h1{
-  @apply text-secondary leading-14 font-extrabold text-4xl
+h1 {
+  @apply text-secondary leading-14 font-extrabold text-4xl;
 }
-h2{
-  @apply text-secondary leading-12 font-bold text-2xl
+h2 {
+  @apply text-secondary leading-12 font-bold text-2xl;
 }
-h3{
-  @apply text-secondary leading-9 font-bold text-xl
+h3 {
+  @apply text-secondary leading-9 font-bold text-xl;
 }
-h4{
-  @apply text-secondary leading-6 font-bold text-lg
+h4 {
+  @apply text-secondary leading-6 font-bold text-lg;
 }
-h5{
-  @apply text-secondary  font-bold 
+h5 {
+  @apply text-secondary  font-bold;
 }
-h6{
-  @apply text-secondary  font-bold text-sm
+h6 {
+  @apply text-secondary  font-bold text-sm;
 }
 .bg-overlay {
   @apply fixed top-0 left-0 right-0 bottom-0 bg-black opacity-60 z-30 invisible;
@@ -130,9 +127,6 @@ h6{
 /* ========================
    ✅ SYSTEM SECTION END
 ======================== */
-
-
-
 
 /* ========================
   🔧 STORIES SECTION START
@@ -157,8 +151,6 @@ h6{
 /* ========================
    ✅ STORIES SECTION END
 ======================== */
-
-
 
 /* ========================
    🔧 FOOTER START
@@ -209,8 +201,6 @@ footer {
    ✅ FOOTER END
 ======================== */
 
-
-
 /* ========================
    ⏳ COUNTDOWN TIMER START
 ======================== */
@@ -246,8 +236,6 @@ footer {
    ⏳ COUNTDOWN TIMER END
 ======================== */
 
-
-
 /* ========================
    ✅ breadcrumb, SECTION END
 ======================== */
@@ -258,9 +246,6 @@ footer {
 /* ========================
   🔧 breadcrumb, SECTION START
 ======================== */
-
-
-
 
 /* ========================
    🔧 BLOG START
@@ -346,7 +331,6 @@ footer {
 /* ========================
    ✅ wishlist END
 ======================== */
-
 
 /* ========================
    🔧 login START

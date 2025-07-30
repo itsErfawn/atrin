@@ -16,7 +16,7 @@ export default function ShopLayout({
         </div>
 
         <div className="flex flex-col md:flex-row">
-          <div className="w-full md:w-[30%] md:sticky md:top-4 md:self-start">
+          <div className="w-full md:w-[37%] md:sticky md:top-4 md:self-start">
             <Sidebarshop />
           </div>
 

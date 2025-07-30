@@ -1,6 +1,7 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { ChevronLeft } from "lucide-react";
 
 export default function Breadcrumb() {
   const pathname = usePathname();
@@ -14,7 +15,7 @@ export default function Breadcrumb() {
   };
 
   return (
-    <nav className="text-sm breadcrumbs text-gray-600 py-2 px-4">
+    <nav className="text-sm breadcrumbs text-gray-600 py-5 px-5">
       <ol className="flex items-center space-x-2 rtl:space-x-reverse">
         <li>
           <Link href="/" className="hover:underline ">
@@ -26,7 +27,9 @@ export default function Breadcrumb() {
 
           return (
             <li key={href} className="flex items-center">
-              <span className="mx-2">/</span>
+              <span className="mx-1">
+                <ChevronLeft size={20} className=" text-secondary-80" />
+              </span>
               <Link href={href} className="hover:underline ">
                 {convertSlugToName(seg)}
               </Link>
