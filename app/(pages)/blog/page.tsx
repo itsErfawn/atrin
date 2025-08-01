@@ -1,51 +1,59 @@
-import PaginationBlog from "@/components/module/blog/PaginationBlog";
-import { getBlogs } from "@/controllers/BlogsController";
-import { Metadata } from "next";
-import Link from "next/link";
+import BlogCard from "@/components/module/Blog/BlogCard";
 import React from "react";
-export const metadata: Metadata = {
-  title: "وبلاگ",
-};
-async function Blog({
-  searchParams,
-}: {
-  searchParams: Promise<{
-    page: number | undefined;
-    search: string | undefined;
-  }>;
-}) {
-  const { page, search } = await searchParams;
-  const { blogs, pages } = await getBlogs(page, search);
-  const currentPage = page ?? 1;
+
+const blogPosts = [
+  {
+    id: 1,
+    title: "یادگیری React از صفر",
+    image: "/image/blog/1.png",
+  },
+  {
+    id: 2,
+    title: "راهنمای Next.js برای مبتدی‌ها",
+    image: "/image/blog/2.png",
+  },
+  {
+    id: 3,
+    title: "۵ اشتباه رایج در جاوااسکریپت",
+    image: "/image/blog/3.png",
+  },
+  {
+    id: 5,
+    title: "یادگیری React از صفر",
+    image: "/image/blog/1.png",
+  },
+  {
+    id: 6,
+    title: "راهنمای Next.js برای مبتدی‌ها",
+    image: "/image/blog/2.png",
+  },
+  {
+    id: 7,
+    title: "۵ اشتباه رایج در جاوااسکریپت",
+    image: "/image/blog/3.png",
+  },
+  {
+    id: 4,
+    title: "بهینه‌سازی سئو برای پروژه‌های ",
+    image: "/image/blog/4.png",
+  },
+  {
+    id: 8,
+    title: "ساخت API با Node.js",
+    image: "/image/blog/4.png",
+  },
+];
+
+function Page() {
   return (
-    <>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {blogs.map((blog) => (
-          <div
-            key={blog.id}
-            className="bg-white border border-stone-100 rounded-2xl overflow-hidden shadow-sm transition hover:shadow-md"
-          >
-            <Link href={`blog/${blog.slug}`}>
-              <img
-                src={blog.thumbnail}
-                alt={blog.title}
-                width={400}
-                height={250}
-                className="w-full h-48 object-cover rounded-t-2xl"
-              />
-            </Link>
-            <div className="p-4">
-              <h3 className="font-semibold text-base">{blog.title}</h3>
-              <p className="text-sm text-stone-500 bg-[#F5F5F5] mt-3 rounded-xl p-2">
-                {blog.createdAt.toLocaleDateString()} • admin
-              </p>
-            </div>
-          </div>
+    <div className="container mx-auto p-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {blogPosts.map((post) => (
+          <BlogCard key={post.id} title={post.title} image={post.image} />
         ))}
       </div>
-      <PaginationBlog search={search} currentPage={currentPage} pages={pages} />
-    </>
+    </div>
   );
 }
 
-export default Blog;
+export default Page;
